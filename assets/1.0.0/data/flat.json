@@ -1,0 +1,177 @@
+{
+  "conditions": {
+    "distance": {
+      "small": {
+        "name": "Do 5 kilometrów od firmy Future Processing",
+        "value": 2000,
+        "isMatched": true
+      },
+      "medium": {
+        "name": "Do 20 kilometrów od firmy Future Processing",
+        "value": 5000,
+        "isMatched": true
+      },
+      "far": {
+        "name": "Do 40 kilometrów od firmy Future Processing",
+        "value": 3000,
+        "isMatched": true,
+        "disabled": true,
+        "description": {
+          "matched": "Dalej być nie może, nikt nie będzie dojeżdzał ponad 30 minut do pracy codziennie."
+        }
+      }
+    },
+    "sizes": {
+      "small": {
+        "name": "Ponad 45 metrów i dwa pokoje",
+        "value": 20000,
+        "isMatched": true,
+        "disabled": true,
+        "description": {
+          "matched": "Mniejsze mieszkanka nie wchodzą w grę, a dodatkowo przedział 45-50 metrów może być dobry jedynie przez 5 lat, póki dzieci nie przekroczą wieku 4 latek."
+        }
+      },
+      "medium": {
+        "name": "Ponad 50 metrów i trzy pokoje",
+        "value": 50000,
+        "isMatched": true,
+        "description": {
+          "loss": "Szkoda, to ważne.",
+          "matched": "Jest to wystarczająca przestrzeń aby wygodnie żyć z dzieciakami do wieku przedszkolnego. Nie są to luksusy, ale udręka też nie jest. Problemy zaczną się kiedy dzieci osiągną wiek przedszkolny, i będą już powoli potrzebowały swojej przestrzeni. Lekko ponad 50 metrów to rozwiązanie na 5-7 lat.",
+          "unmatched": "Dwa pokoje trochę wymuszają krótki czas inwestycji. Kiedy dzieciaki zaczną wymagać łóżeczek, będzie trzeba pozbyć się salonu albo wciskać wszystko w super-sypialnię. Dość spartańsko, a przez to pewnie nie dłużej niż na 5-7 lat."
+        }
+      },
+      "big": {
+        "name": "Ponad 60 metrów i trzy pokoje",
+        "value": 25000,
+        "isMatched": true,
+        "description": {
+          "matched": "Im więcej miejsca tym lepiej, 60 metrów gwarantuje, że do 10-15 lat damy radę, chociaż brak 4 pokoi może doskwierać.",
+          "unmatched": "Ok, bez 60 metrów damy radę."
+        }
+      },
+      "roomed": {
+        "name": "Ponad 70 metrów i cztery pokoje",
+        "value": 25000,
+        "isMatched": true,
+        "description": {
+          "matched": "Rewelacja. 70 metrów to wszystko co potrzeba dla cztero lub pięcio osobowej rodziny. Nawet gdyby z planów nic nie wyszło i musielibyśmy zostać dłużej niż 15 lat, to 70 metrów gwarantuje spokój psychiczny, że się nawzajem nie podusimy.",
+          "unmatched": "Ok, 70 metrów to dość duży luksus jak na mieszkanie przejściowe."
+        }
+      }
+    },
+    "area": {
+      "aesthetics": {
+        "name": "Estetyka dzielnicy",
+        "value": 50000,
+        "isMatched": true,
+        "description": {
+          "loss": "Szkoda, to ważne.",
+          "matched": "Mieszkanie powinno znajdować się w przyjemnej dla oka i ucha okolicy. Zielono, z dala od ruchliwych ulic i źródeł hałasu, bez reprezentantów marginesu społecznego i jakiegokolwiek ścisku. Żadnych wieżowców do upychania ludzi jak sardynek ani wąskich jednokierunkowych uliczek. To nie Pekin, precz z komuną.",
+          "unmatched": "Bez tego - lepiej żeby wszystko inne było idealne. Młodzi jesteśmy to jakoś przeżyjemy, ale mieszkanie nie jest docelowe i po 5-10 latach trzeba będzie znaleźć coś lepszego."
+        }
+      },
+      "tested": {
+        "name": "Znajomość dzielnicy",
+        "value": 30000,
+        "isMatched": true,
+        "description": {
+          "loss": "Szkoda, ryzykownie.",
+          "matched": "Dzielnica nie musi być ekskluzywna, ale musimy unikać przestępczości, menelstwa i sośnicowych morderców z nożyczkami. Mili ludzie i fajna, zdrowa parafia to wartościowe środowisko do życia. To tutaj będziemy chodzić z niemowlętami na spacery.",
+          "unmatched": "Jakość dzielnicy wpływa bardzo mocno na wartość nieruchomości. Nie można zaprzeczyć, że prestiżowa dzielnica kosztuje więcej. Dodatkowo, niefajnie jest pakować się na 5-10 lat w miejsce gdzie mogą kraść, przeklinać, opluwać i generalnie krzywo patrzeć. Dodatkowo - kto to potem odkupi albo wynajmie?"
+        }
+      }
+    },
+    "private": {
+      "name": "Ogłoszenie bez pośrednika",
+      "value": 10000,
+      "isMatched": true,
+      "description": {
+        "matched": "Ok, troszkę taniej - więcej pieniędzy na samo mieszkanie.",
+        "unmatched": "Na pewno podnosi bezpieczeństwo umowy przedwstępnej, i pomaga zfinalizować transakcję."
+      }
+    },
+    "interiors": {
+      "renovation": {
+        "name": "Nie wymaga remontu przed wprowadzeniem",
+        "value": 15000,
+        "isMatched": true,
+        "description": {
+          "loss": "Trudno",
+          "matched": "Co nie znaczy, że musi być w idealnym stanie. Może wymagać remontu po wprowadzeniu, ale jest z działającą instalacją sanitarną i można ugotować obiad. Wtedy remont Maciek może wykonać samemu na miejscu.",
+          "unmatched": "Oprócz 6 do 12 miesięcy prac pojawia się ryzyko związane z naszym brakiem doświadczenia w takich sprawach."
+        }
+      },
+      "layout": {
+        "name": "Układ mieszkania jest ok",
+        "value": 5000,
+        "isMatched": true,
+        "description": {
+          "matched": "Dobry układ może równie dobrze oznaczać brak konieczności wyburzania ścian, co niewielki udział ścian nośnych. Plastyczne mieszkanie pod remont może być równie dobre, co mieszkanie dobrze rozplanowane.",
+          "unmatched": "Zły układ to strata przestrzeni i niepotrzebne, drogie remonty."
+        }
+      },
+      "rooms": {
+        "installations": {
+          "name": "Pokoje nie wymagają gruntownego remontu",
+          "value": 10000,
+          "isMatched": true,
+          "description": {
+            "matched": "Dobrze postawione ściany działowe, dobra instalacja elektryczna oraz ładne malowanie albo pokoje gotowe do malowania. Z tymi walorami, pokoje zyskują dużo na wartości.",
+            "unmatched": "Będzie dużo roboty do zrobienia. Nie mniej jeśli do mieszkania można się wprowadzić, to taki remont może być dla Maćka frajdą."
+          }
+        },
+        "aesthetics": {
+          "name": "Pokoje są urządzone nowocześnie i po naszemu",
+          "value": 5000,
+          "isMatched": true,
+          "description": {
+            "matched": "Fajnie, nie trzeba wnosić i wydawać pieniędzy. Z drugiej strony, to jest najprzyjemniejszy z obowiązków, więc wartość tego punktu jest średnia.",
+            "unmatched": "Zero problemu, kupimy sobie sami."
+          }
+        }
+      },
+      "bathroom": {
+        "installations": {
+          "name": "Łazienka bez problemów z instalacją i znośną glazurą",
+          "value": 10000,
+          "isMatched": true,
+          "description": {
+            "loss": "Niefortunnie",
+            "matched": "Bardzo dobrze, grube problemy z łazienką to nic miłego, co nasze obecne mieszkanie dobitnie udowadnia.",
+            "unmatched": "Rozbijanie pionu w bloku aby poprawić układ rur to coś co przerasta Maćka możliwości, i będzie wymagało pomocy z zewnątrz. Niefajna, brudna robota."
+          }
+        },
+        "aesthetics": {
+          "name": "Łazienka urządzona nowocześnie, gustownie i po naszemu",
+          "value": 15000,
+          "isMatched": true,
+          "description": {
+            "matched": "Glazura łazienkowa i instalacje to trudna sprawa, dobrze mieć ten element z głowy.",
+            "unmatched": "Nikt nie lubi łazienki w której goła ściana razi w oczy, a kafelki leżą na podłodze. Ale jak trzeba remontować, to się remontuje."
+          }
+        }
+      },
+      "kitchen": {
+        "installations": {
+          "name": "Kuchnia z dobrym układem, działająca, zadbana",
+          "value": 10000,
+          "isMatched": true,
+          "description": {
+            "matched": "Dobrze mieć sprawną kuchnię, która pozwoli na normalne życie w trakcie ewentualnego remontu pokoi lub łazienki. Pewien poziom higieny i podłączone instalacje są tu dużym plusem.",
+            "unmatched": "Ok, szybki remont albo dobra knajpa za rogiem będą koniecznością."
+          }
+        },
+        "aesthetics": {
+          "name": "Kuchnia urządzana nowocześnie i po naszemu",
+          "value": 10000,
+          "isMatched": true,
+          "description": {
+            "matched": "Zawsze to plus, kiedy nie trzeba pracować nad ważnym elementem mieszkania.",
+            "unmatched": ""
+          }
+        }
+      }
+    }
+  }
+}

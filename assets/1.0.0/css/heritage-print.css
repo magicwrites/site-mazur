@@ -1,0 +1,37 @@
+
+
+* {
+  background-image: none !important;
+}
+
+a {
+  font-weight: inherit !important;
+  color: inherit !important;
+}
+
+.slide.header {
+  background: white !important;
+}
+
+.slide.header .boxed,
+.slide.header .subtitle {
+  border-color: black !important;
+  color: black !important;
+}
+
+.slide.header:before,
+.bar,
+.home-navigation,
+.language-choice,
+.tile {
+  display: none !important;
+}
+
+.scroll-reveal,
+.scroll-reveal-1,
+.scroll-reveal-2,
+.scroll-reveal-3,
+.scroll-reveal-4 {
+  opacity: 1 !important;
+  transform: none !important;
+}

@@ -1,19 +1,86 @@
 <!doctype html>
-
 <html>
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width" />
 
-    <meta name="google-site-verification" content="5g98PtxMnQ8N-s5Kug2nmAmRfBMjJfZ6N_7V9P8NaiQ" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,300&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
 
-    <title>Mazur &bull; Firma</title>
+    <link href="/assets/1.1.0/css/heritage/images/favicon.png" rel="icon" />
+
+    <link href="/assets/1.1.0/css/heritage/reset.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/components/cover.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/components/main.css" rel="stylesheet" />
+
+    <title>Mazur</title>
   </head>
 
   <body>
 
-    work in progress
+    <style>
+      .h-covers {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .h-cover {
+        flex-grow: 1;
+        overflow: hidden;
+      }
+
+      a.h-cover {
+        text-decoration: none;
+        transition: 0.25s;
+      }
+
+      a.h-cover .h-header {
+        transition: 0.25s;
+      }
+
+      a.h-cover:hover .h-header {
+        transform: scale(1.05);
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+
+      @media (max-width: 700px) {
+        .h-header {
+          display: none;
+        }
+      }
+
+      @media (max-width: 1350px) {
+        .h-cover .h-header {
+          margin: auto 0 0 0;
+          width: 100%;
+          padding: 50px 36px;
+        }
+
+        .h-cover .h-header .h-title {
+          font-size: 29px;
+        }
+
+        .h-cover .h-header .h-subtitle {
+          font-size: 14px;
+        }
+      }
+    </style>
+
+    <section class="h-covers">
+      <a class="h-cover" style="background-image: url('./assets/1.0.0/images/covers/hel-balcony.jpg');" href="http://maciej.mazur.site">
+        <header class="h-header">
+          <strong class="h-title">MACIEJ MAZUR</strong>
+          <div class="h-subtitle">software developer</div>
+        </header>
+      </a>
+
+      <a class="h-cover" style="background-image: url('./assets/1.0.0/images/covers/hel-ona.jpg');" href="http://marcelina.mazur.site">
+        <header class="h-header">
+          <strong class="h-title">MARCELINA MAZUR</strong>
+          <div class="h-subtitle" style="letter-spacing: 14.1px;">księgowa &bull; organistka</div>
+        </header>
+      </a>
+    </section>
 
   </body>
 

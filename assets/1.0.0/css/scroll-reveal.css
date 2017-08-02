@@ -1,0 +1,5 @@
+/* Ensure elements load hidden before ScrollReveal runs */
+.sr .scroll-reveal-1,
+.sr .scroll-reveal-2,
+.sr .scroll-reveal-3,
+.sr .scroll-reveal { visibility: hidden; }

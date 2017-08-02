@@ -1,0 +1,45 @@
+.h-article {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 36px 36px 0 36px;
+
+  font-weight: 400;
+  font-size: 13pt;
+  line-height: 32px;
+  font-family: 'Source Sans Pro';
+}
+
+.h-article h2 {
+  margin: 36px 0;
+
+  font-weight: 300;
+  font-size: 22pt;
+  letter-spacing: 4px;
+  font-family: 'Montserrat';
+}
+
+.h-article a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #b37636;
+  transition: 0.25s;
+}
+
+.h-article a:hover {
+  color: #f9a247;
+}
+
+.h-article small {
+  opacity: 0.5;
+  font-size: 10pt;
+}
+
+
+
+@media (min-width: 768px) {
+  .h-article {
+    /* purely fluidable */
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
