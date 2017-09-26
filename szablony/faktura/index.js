@@ -78,9 +78,7 @@ angular.module('invoice').run(($rootScope, $filter) => {
   };
 
   $rootScope.hours = {
-    normal: 21 * 8,
-    afterhours: 8,
-    weekends: 0,
+    count: 21 * 8
   };
 
   $rootScope.dates = {

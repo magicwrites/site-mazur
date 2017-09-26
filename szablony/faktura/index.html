@@ -162,7 +162,7 @@
         </div>
 
         <div class="col-12">
-          <small>Faktura obejmuje {{ hours.normal + hours.afterhours + hours.weekends }} godzin pracy.</small>
+          <small>Faktura obejmuje <span i-sync i-parser="parsePrice" contenteditable ng-model="hours.count">{{ hours.count }}</span> <span contenteditable>godzin</span> pracy.</small>
         </div>
 
         <div class="col-5">
