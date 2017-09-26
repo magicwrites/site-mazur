@@ -1,0 +1,149 @@
+.h-input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+}
+
+.h-input label {
+  font-family: 'Montserrat';
+  font-size: 9pt;
+  font-weight: 500;
+  top: 4px;
+  left: 16px;
+  position: absolute;
+}
+
+.h-input textarea,
+.h-input input {
+  margin: 0;
+  padding: 20px 16px 0 16px;
+  font-family: 'Source Sans Pro';
+  font-size: 13pt;
+  border: 0;
+  width: 100%;
+  height: 44px;
+  background: rgba(0, 0, 0, 0);
+  outline-color: #ffc107;
+}
+
+.h-input textarea {
+  padding-top: 30px;
+}
+
+.h-input input[readonly] {
+  border: 1px dashed white;
+  margin: -1px;
+}
+
+
+
+.h-input ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+
+.h-input :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  opacity: 1;
+}
+
+.h-input ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+  opacity: 1;
+}
+
+.h-input :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+
+.h-input ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ccc;
+}
+
+
+
+.h-checkbox {
+  display: flex;
+  position: relative;
+}
+
+.h-checkbox label {
+  order: 2;
+  padding-left: 40px;
+  margin-left: -24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.h-checkbox input {
+  order: 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  outline-color: #ffc107;
+}
+
+.h-checkbox input:after {
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: white;
+
+  color: black;
+  font-weight: 700;
+  font-size: 13pt;
+  text-align: center;
+  line-height: 30px;
+}
+
+.h-checkbox input:checked:after {
+  content: '✔';
+}
+
+
+
+.h-buttons {
+  height: 48px;
+}
+
+.h-button {
+  display: inline-block;
+  background: #ccc;
+  border: 0;
+  margin-top: 1px;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid black;
+  border-radius: 2px;
+  height: 46px;
+  line-height: 46px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 128px;
+  cursor: pointer;
+  outline-color: #ffc107;
+}
+
+.h-button:hover {
+  transform: translate(0, -1px);
+  margin-top: 0;
+  height: 47px;
+  border-bottom: 2px solid black;
+}
+
+.h-button:active {
+  transform: translate(0, 1px);
+  border-bottom: 0;
+  height: 46px;
+}
+
+.h-button.primary {
+  background-color: antiquewhite;
+}

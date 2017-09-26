@@ -3,37 +3,46 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="viewport" content="initial-scale=4, minimum-scale=4, width=device-width" />
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,500,300,200&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
 
-    <link href="http://mazur.site/assets/1.0.0/images/favicon-circle.png" rel="icon" />
-    <link href="http://mazur.site/assets/1.0.0/css/fluidable.css" rel="stylesheet" />
+    <link href="/assets/1.0.0/images/favicon-circle.png" rel="icon" />
+    <link href="/assets/1.0.0/css/fluidable.css" rel="stylesheet" />
 
-    <link href="http://mazur.site/assets/1.1.0/css/heritage/reset.css" rel="stylesheet" />
-    <link href="http://mazur.site/assets/1.1.0/css/heritage/components/cover.css" rel="stylesheet" />
-    <link href="http://mazur.site/assets/1.1.0/css/heritage/components/main.css" rel="stylesheet" />
-    <link href="http://mazur.site/assets/1.1.0/css/heritage/components/footer.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/reset.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/components/cover.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/components/main.css" rel="stylesheet" />
+    <link href="/assets/1.1.0/css/heritage/components/footer.css" rel="stylesheet" />
+
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./index.print.css" rel="stylesheet" media="print" />
+
+    <script src="/assets/1.1.0/js/slownie.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.6.6/angular-locale_pl-pl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="./index.js"></script>
 
     <title>Mazur &bull; Brand</title>
   </head>
 
-  <body>
+  <body ng-app="invoice">
 
     <div class="h-article-container">
       <section class="h-article col-group">
         <div class="col-8">
-          <h2>Faktura VAT nr 20/09</h2>
-          <div style="transform: translate(0, -30px); text-transform: uppercase; font-family: 'Montserrat'; font-weight: 400; letter-spacing: 5px; font-size: 12px; margin-left: 2px;">Oryginał</div>
+          <h2>Faktura VAT nr <span contenteditable>01/2017</span></h2>
+          <div class="h-subtitle" contenteditable>Oryginał</div>
 
           <div class="col-group">
-            <div class="col-3">Miejscowość</div>
-            <div class="col-9" style="font-weight: bold;">Gliwice</div>
-            <div class="col-3">Data wydania</div>
-            <div class="col-9" style="font-weight: bold;">20-12-2017</div>
-            <div class="col-3">Data sprzedaży</div>
-            <div class="col-9" style="font-weight: bold;">20-12-2017</div>
+            <div class="col-4">Miejscowość</div>
+            <div class="col-8" style="font-weight: bold;" contenteditable>Gliwice</div>
+            <div class="col-4">Data wystawienia</div>
+            <div class="col-8" style="font-weight: bold;" contenteditable i-sync i-parser="parseDate" ng-model="dates.invoiced"></div>
+            <div class="col-4">Data sprzedaży</div>
+            <div class="col-8" style="font-weight: bold;">{{ !dates.invoiced ? 'Zła data wystawienia (dd-mm-rrrr).' : dates.invoiced | date: formats.date }}</div>
           </div>
         </div>
 
@@ -55,107 +64,85 @@
 
           <div class="col-group">
             <div class="col-3">NIP</div>
-            <div class="col-9" style="font-weight: bold;">123 321 12 23</div>
+            <div class="col-9" style="font-weight: bold;">637 215 53 28</div>
             <div class="col-3">Bank</div>
             <div class="col-9" style="font-weight: bold;">ING Bank Śląski</div>
             <div class="col-3">Konto</div>
-            <div class="col-9" style="font-weight: bold;">22 0040 4010 2010 1111 2133</div>
+            <div class="col-9" style="font-weight: bold;">47 1050 1618 1000 0023 2118 9355</div>
           </div>
         </div>
 
         <div class="col-6">
           <h2>Nabywca:</h2>
-          <div style="font-weight: bold;">Future Processing</div>
-          <div style="font-weight: bold;">ul. Bojkowska 37A</div>
-          <div style="font-weight: bold;">45-500 Bytom</div>
+          <div style="font-weight: bold;" contenteditable>KP Labs Sp. z o.o.</div>
+          <div style="font-weight: bold;" contenteditable>ul. Konarskiego 18C</div>
+          <div style="font-weight: bold;" contenteditable>44-100 Gliwice</div>
           <br />
 
           <div class="col-group">
-            <div class="col-3">NIP</div>
-            <div class="col-9" style="font-weight: bold;">500 200 10 20</div>
-            <div class="col-3">Bank</div>
-            <div class="col-9" style="font-weight: bold;">MBank</div>
-            <div class="col-3">Konto</div>
-            <div class="col-9" style="font-weight: bold;">22 2010 1111 0040 4010 2133</div>
+            <div class="col-3" contenteditable>NIP</div>
+            <div class="col-9" style="font-weight: bold;" contenteditable>626 302 21 43</div>
+            <div class="col-3" contenteditable></div>
+            <div class="col-9" style="font-weight: bold;" contenteditable></div>
+            <div class="col-3" contenteditable></div>
+            <div class="col-9" style="font-weight: bold;" contenteditable></div>
           </div>
         </div>
       </section>
 
-      <section class="h-article" style="margin-top: 40px;">
-        <style>
-          .invoice-table {
-            padding: 18px;
-            width: 100%;
-            border-spacing: 0;
-            font-size: 12px;
-            line-height: 24px;
-            /*font-family: 'Source Sans Pro';*/
-          }
-
-          .invoice-table th, td {
-            font-weight: 400;
-            padding: 5px 10px;
-            text-align: left;
-          }
-
-          .invoice-table tbody {
-            background-color: #eee;
-          }
-
-          .invoice-table thead {
-            letter-spacing: 1px;
-            background-color: antiquewhite;
-          }
-
-          .invoice-table tfoot * {
-            text-align: right;
-          }
-
-          .invoice-table tfoot .included {
-            background-color: #eee;
-          }
-        </style>
-
+      <section class="h-article">
         <table class="invoice-table">
+          <colgroup>
+            <col style="width: 6%;">
+            <col>
+            <col style="width: 6%;">
+            <col style="width: 6%;">
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 6%;">
+            <col style="width: 11%;">
+            <col style="width: 15%;">
+          </colgroup>
           <thead>
             <th style="width: 20px;">Lp.</th>
             <th>Nazwa usługi</th>
-            <th>PKWiU</th>
             <th>Ilość</th>
             <th>J.m.</th>
-            <th>Cenna Netto</th>
-            <th>Wartość Netto</th>
-            <th style="width: 20px;">%</th>
-            <th>Vat</th>
-            <th>Wartość Brutto</th>
+            <th style="text-align: right;">Cena Netto</th>
+            <th style="text-align: right;">Wartość Netto</th>
+            <th style="width: 20px; text-align: right;">%</th>
+            <th style="text-align: right;">Vat</th>
+            <th style="text-align: right;">Wartość Brutto</th>
           </thead>
           <tbody>
             <tr>
               <td>1.</td>
-              <td>Allocate, Sprint 48 i 49</td>
-              <td>-</td>
+              <td contenteditable>Usługa programistyczna</td>
               <td style="text-align: right;">1</td>
-              <td>szt</td>
-              <td style="text-align: right;">10,000 zł</td>
-              <td style="text-align: right;">10,000 zł</td>
-              <td style="text-align: right;">23</td>
-              <td style="text-align: right;">2,300 zł</td>
-              <td style="text-align: right;">12,300 zł</td>
+              <td>usł.</td>
+              <td style="text-align: right;">
+                <span i-sync i-parser="parsePrice" i-renderer="renderPrice" contenteditable ng-model="prices.netto">{{ prices.netto | number:2 }}</span>
+                <span>zł</span>
+              </td>
+              <td style="text-align: right;">{{ prices.netto | number:2 }} zł</td>
+              <td style="text-align: right;">{{ prices.vat * 100 }}</td>
+              <td style="text-align: right;">{{ getVat(prices.netto) | number:2 }} zł</td>
+              <td style="text-align: right;">{{ getVat(prices.netto) + prices.netto | number:2 }} zł</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="6">razem:</td>
-              <td class="included">10,000 zł</td>
-              <td class="included" colspan="2">2,300 zł</td>
-              <td class="included">12,300 zł</td>
+              <th colspan="5">razem:</th>
+              <td class="included">{{ prices.netto | number:2 }} zł</td>
+              <td class="included" colspan="2">{{ prices.netto * prices.vat | number:2 }} zł</td>
+              <td class="included">{{ prices.netto + getVat(prices.netto) | number:2 }} zł</td>
             </tr>
             <tr>
-              <td colspan="6">stawki VAT:</td>
-              <td class="included">10,000 zł</td>
-              <td class="included">23</td>
-              <td class="included">2,300 zł</td>
-              <td class="included">12,300 zł</td>
+              <th colspan="5">stawki VAT:</th>
+              <td class="included">{{ prices.netto | number:2 }} zł</td>
+              <td class="included">{{ prices.vat * 100 }}</td>
+              <td class="included">{{ getVat(prices.netto) | number:2 }} zł</td>
+              <td class="included">{{ getVat(prices.netto) + prices.netto | number:2 }} zł</td>
             </tr>
           </tfoot>
         </table>
@@ -163,24 +150,28 @@
 
       <section class="h-article col-group" style="margin-bottom: 80px;">
         <div class="col-12">
-          <h2>Razem: <strong>12,300 zł</strong></h2>
-          <div style="text-indent: 64px; margin-top: -35px;">
+          <h2>Razem: <strong>{{ prices.netto + getVat(prices.netto) | number:2 }} zł</strong></h2>
+          <div class="invoice-summary">
             <span>Słownie:</span>
-            <span style="margin-left: 10px;">dwanaście tysięcy trzysta złotych</span>
+            <span style="margin-left: 10px;">{{ prices.netto + getVat(prices.netto) | slownie }}.</span>
           </div>
         </div>
 
         <div class="col-12" style="padding-top: 20px;">
-          <strong>Do zapłaty dwanaście tysięcy trzysta złotych przelewem do dnia 01-02-2018, czyli 30 dni od daty wystawienia.</strong>
+          <strong>Do zapłaty przelewem do dnia {{ getDueDate(dates.invoiced) | date: formats.date }}, czyli <span i-sync i-parser="parsePrice" contenteditable ng-model="dates.delay">{{ dates.delay }}</span> dni od daty wystawienia.</strong>
+        </div>
+
+        <div class="col-12">
+          <small>Faktura obejmuje {{ hours.normal + hours.afterhours + hours.weekends }} godzin pracy.</small>
         </div>
 
         <div class="col-5">
-          <div style="height: 200px; border-bottom: 5px dotted #ccc;"></div>
+          <div style="height: 200px; border-bottom: 1px solid black;"></div>
           <small>Czytelny podpis osoby upoważnionej do odbioru faktury VAT</small>
         </div>
 
         <div class="col-5 col-offset-2">
-          <div style="height: 200px; border-bottom: 5px dotted #ccc;"></div>
+          <div style="height: 200px; border-bottom: 1px solid black;"></div>
           <small>Czytelny podpis osoby upoważnionej do wystawienia faktury VAT</small>
         </div>
       </section>
