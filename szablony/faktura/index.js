@@ -54,11 +54,26 @@ angular.module('invoice').filter('slownie', function () {
       return `${slownie.get(parts[0])} złotych`;
     }
   };
-})
+});
+
+function getLastWorkDayOfCurrentMonth() {
+  const nowAt = moment();
+  const lastMonthDayAt = nowAt.endOf('month');
+
+  if (lastMonthDayAt.format('ddd') === 'Sun') {
+    return lastMonthDayAt.subtract(2, 'days');
+  }
+
+  if (lastMonthDayAt.format('ddd') === 'Sat') {
+    return lastMonthDayAt.subtract(1, 'days');
+  }
+
+  return lastMonthDayAt;
+}
 
 angular.module('invoice').run(($rootScope, $filter) => {
   $rootScope.prices = {
-    netto: 9975 + 550,
+    netto: 10000,
     vat: 0.23,
   };
 
@@ -70,7 +85,7 @@ angular.module('invoice').run(($rootScope, $filter) => {
 
   $rootScope.dates = {
     delay: 7,
-    invoiced: moment().format('DD-MM-YYYY'),
+    invoiced: getLastWorkDayOfCurrentMonth().format('DD-MM-YYYY'),
   };
 
   $rootScope.formats = {
