@@ -25,11 +25,21 @@
   overflow: hidden;
 }
 
-.cover:nth-child(even) {
+.covers.six .cover:nth-child(even) {
   filter: sepia(1);
 }
 
-.cover:nth-child(odd) {
+.covers.six .cover:nth-child(odd) {
+  filter: grayscale(1);
+}
+
+.covers.four .cover:nth-child(4n + 4),
+.covers.four .cover:nth-child(4n + 1) {
+  filter: sepia(1);
+}
+
+.covers.four .cover:nth-child(4n + 3),
+.covers.four .cover:nth-child(4n + 2) {
   filter: grayscale(1);
 }
 
@@ -82,6 +92,16 @@ a.cover:hover .image {
 @media (max-width: 1200px) {
   .covers.six .cover {
     width: 50vw !important;
+  }
+
+  .cover:nth-child(4n + 4),
+  .cover:nth-child(4n + 1) {
+    filter: sepia(1);
+  }
+
+  .cover:nth-child(4n + 3),
+  .cover:nth-child(4n + 2) {
+    filter: grayscale(1);
   }
 }
 
