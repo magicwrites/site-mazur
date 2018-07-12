@@ -25,11 +25,11 @@
   overflow: hidden;
 }
 
-.cover.sepia {
+.cover:nth-child(even) {
   filter: sepia(1);
 }
 
-.cover.gray {
+.cover:nth-child(odd) {
   filter: grayscale(1);
 }
 
@@ -55,6 +55,10 @@ a.cover:hover .image {
   color: white;
   background: rgba(0, 0, 0, 0.75);
   transition: 0.25s;
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .cover .image {
@@ -67,4 +71,23 @@ a.cover:hover .image {
   background-position: center center;
   z-index: -1;
   -webkit-transition : all 0.5s linear;
+}
+
+@media (min-width: 1199px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+  .covers.six .cover {
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .covers.six .cover {
+    width: 100vw !important;
+    height: 60vw !important;
+  }
 }
