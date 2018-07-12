@@ -1,0 +1,72 @@
+
+.progress-list {
+  padding: 30px 0;
+}
+
+.progress-list li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.progress-list .steps {
+  padding-right: 10px;
+  display: flex;
+}
+
+.progress-list li:first-child {
+  padding-top: 0;
+}
+
+.progress-list .step {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid antiquewhite;
+  min-height: 40px;
+  min-width: 39px;
+  max-height: 40px;
+  max-width: 39px;
+  padding-left: 1px;
+  color: #b37636;
+}
+
+.progress-list .step.null {
+  background: transparent;
+  border-color: transparent;
+}
+
+.progress-list .step.completed {
+  background: #eeffe6;
+  border-color: #c6ecc6;
+  color: green;
+  text-decoration: line-through;
+}
+
+.progress-list .about {
+  padding-top: 7px;
+}
+
+.progress-list ol,
+.progress-list ul {
+  width: 100%;
+  padding-left: 100px;
+}
+
+.progress-list ol li,
+.progress-list ul li {
+  padding-top: 0;
+}
+
+.progress-list ol .completed,
+.progress-list ul .completed {
+  text-decoration: line-through;
+}
+
+.progress-list ol li:before,
+.progress-list ul li:before {
+  content: '•';
+  padding-right: 20px;
+}
