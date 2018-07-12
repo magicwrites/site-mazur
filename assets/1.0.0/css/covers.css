@@ -25,11 +25,11 @@
   overflow: hidden;
 }
 
-.covers.six .cover:nth-child(even) {
+.covers.six .cover:nth-child(odd) {
   filter: sepia(1);
 }
 
-.covers.six .cover:nth-child(odd) {
+.covers.six .cover:nth-child(even) {
   filter: grayscale(1);
 }
 
@@ -93,7 +93,9 @@ a.cover:hover .image {
   .covers.six .cover {
     width: 50vw !important;
   }
+}
 
+@media (max-width: 1200px) and (min-width: 801px) {
   .cover:nth-child(4n + 4),
   .cover:nth-child(4n + 1) {
     filter: sepia(1);
