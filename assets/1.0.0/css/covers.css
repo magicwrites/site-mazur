@@ -1,7 +1,16 @@
 
-.covers > div {
+.covers {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.covers.six .cover {
+  width: 33.35vw;
+}
+
+.covers.six .cover:nth-child(3n+3) {
+  width: 33.30vw;
 }
 
 .cover {
