@@ -1,0 +1,61 @@
+
+.covers > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.25s linear;
+  overflow: hidden;
+}
+
+.cover.sepia {
+  filter: sepia(1);
+}
+
+.cover.gray {
+  filter: grayscale(1);
+}
+
+a.cover:hover {
+  cursor: pointer;
+  filter: none;
+}
+
+a.cover:hover .image {
+  transform: scale(1.05);
+}
+
+.cover .text {
+  display: block;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  transition: 0.25s;
+}
+
+.cover .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  -webkit-transition : all 0.5s linear;
+}
