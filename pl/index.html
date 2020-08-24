@@ -45,6 +45,35 @@
         </div>
       </section>
 
+      <style>
+        .landing-page .family:not(:first-child) {
+          margin-top: 100px;
+        }
+
+        .landing-page .family .minor.member {
+          padding-bottom: 40px;
+        }
+
+        @media (min-width: 1000px) {
+          .landing-page .family .minor.member.lone {
+            margin-right: 0;
+          }
+
+          .landing-page .family .minor.member {
+            width: 305px;
+          }
+        }
+      </style>
+
+      <section class="family">
+        <div class="lone minor member">
+          <img class="avatar" src="https://s.gravatar.com/avatar/7817cdf448989cbc0540b023551f547d?s=120" />
+
+          <h2>Helena Mazur</h2>
+          <div>Mała poszukiwaczka uwagi</div>
+        </div>
+      </section>
+
       <section class="languages">
         <a class="language active" href="/pl">
           <div>po polsku?</div>
