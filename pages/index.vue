@@ -19,7 +19,7 @@
         <mazur-space class="smaller hide-on-md"></mazur-space>
         <tile
           name="Marcelina"
-          avatar="http://mazur.site/assets/1.0.0/images/avatars/marcelina-256.png"
+          avatar="https://www.linkpicture.com/q/her-perkoza.png"
           link="http://marcelina.mazur.site"
           :size="110"
           :isEnglish="isEnglish"
