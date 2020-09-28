@@ -19,7 +19,7 @@
         <mazur-space class="smaller hide-on-md"></mazur-space>
         <tile
           name="Marcelina"
-          avatar="https://www.linkpicture.com/q/her-perkoza.png"
+          avatar="https://s.gravatar.com/avatar/75acc8c4cb9708377360b2be5d9083d8?size=256"
           link="https://marcelina.mazur.site"
           :size="110"
           :isEnglish="isEnglish"
@@ -32,7 +32,7 @@
         <mazur-space class="smaller hide-on-lg"></mazur-space>
         <tile
           name="Maciej"
-          avatar="https://s.gravatar.com/avatar/d68f29b47d8ba2af9ca67fc723fe6907"
+          avatar="https://s.gravatar.com/avatar/d68f29b47d8ba2af9ca67fc723fe6907?size=256"
           link="https://maciej.mazur.site"
           :size="110"
           :isEnglish="isEnglish"
@@ -47,7 +47,7 @@
           class="small"
           name="Helena"
           icon="fas fa-baby"
-          avatar="https://s.gravatar.com/avatar/7817cdf448989cbc0540b023551f547d?s=120"
+          avatar="https://s.gravatar.com/avatar/7817cdf448989cbc0540b023551f547d?s=256"
           link="https://photos.app.goo.gl/ZBzunxbE2Xnv5SG27"
           :isEnglish="isEnglish"
           :about="
