@@ -20,7 +20,7 @@
         <tile
           name="Marcelina"
           avatar="https://www.linkpicture.com/q/her-perkoza.png"
-          link="http://marcelina.mazur.site"
+          link="https://marcelina.mazur.site"
           :size="110"
           :isEnglish="isEnglish"
           :about="
@@ -33,7 +33,7 @@
         <tile
           name="Maciej"
           avatar="https://s.gravatar.com/avatar/d68f29b47d8ba2af9ca67fc723fe6907"
-          link="http://maciej.mazur.site"
+          link="https://maciej.mazur.site"
           :size="110"
           :isEnglish="isEnglish"
           :about="
