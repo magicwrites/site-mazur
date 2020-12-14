@@ -11,7 +11,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@maciejmazur/core-components": "^3.0.1",
+    "@maciejmazur/core-components": "^3.3.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {

@@ -26,8 +26,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400&subset=latin,latin-ext' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400&subset=latin,latin-ext' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400&subset=latin,latin-ext' },
     ]
   },
   /*
