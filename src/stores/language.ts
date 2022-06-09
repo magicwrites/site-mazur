@@ -5,7 +5,7 @@ export const LANGUAGES = {
 	EN: 'en'
 };
 
-export const language = writable(LANGUAGES.EN);
+export const language = writable(LANGUAGES.EN); // todo: use browser detected lang
 
 export const isPolish = derived(language, ($language) => $language === LANGUAGES.PL);
 export const isEnglish = derived(language, ($language) => $language === LANGUAGES.EN);
