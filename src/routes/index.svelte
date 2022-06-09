@@ -10,6 +10,10 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
+<svelte:head>
+	<title>Mazur</title>
+</svelte:head>
+
 <div
 	class="sm-mazur-bg min-h-screen flex flex-col sm:px-16 md:p-4 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48"
 >
@@ -75,3 +79,20 @@
 		</div>
 	</footer>
 </div>
+
+<style>
+	@media (min-width: 1280px) {
+		.sm-mazur-bg {
+			background-image: url('./../assets/gliwice.png');
+			background-repeat: no-repeat;
+			background-position: 0 15vh;
+			background-size: cover;
+		}
+	}
+
+	@media (min-width: 1920px) {
+		.sm-mazur-bg {
+			background-position: 0 0;
+		}
+	}
+</style>

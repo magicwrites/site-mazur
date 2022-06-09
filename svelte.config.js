@@ -12,7 +12,12 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$src: 'src',
+			$components: 'src/components',
+			$assets: 'src/assets'
+		}
 	},
 
 	experimental: {

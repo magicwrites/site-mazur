@@ -11,18 +11,3 @@ body *::selection {
 .grayscale {
 	filter: grayscale(1);
 }
-
-@media (min-width: 1280px) {
-	.sm-mazur-bg {
-		background-image: url('./assets/gliwice.png');
-		background-repeat: no-repeat;
-		background-position: 0 15vh;
-		background-size: cover;
-	}
-}
-
-@media (min-width: 1920px) {
-	.sm-mazur-bg {
-		background-position: 0 0;
-	}
-}
