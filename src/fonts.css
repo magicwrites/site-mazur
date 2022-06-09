@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Varela+Round&family=Work+Sans&family=Nunito&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+
+.font-nunito {
+	font-family: 'Nunito';
+}
+
+.font-montserrat {
+	font-family: 'Montserrat';
+}
+
+.font-baloo {
+	font-family: 'Baloo Thambi 2';
+}
+
+.font-work {
+	font-family: 'Work Sans';
+}
+
+.font-dosis {
+	font-family: 'Dosis';
+}
+
+.font-varela {
+	font-family: 'Varela Round';
+}
