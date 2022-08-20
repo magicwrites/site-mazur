@@ -54,7 +54,7 @@
 <style>
 	@media (min-width: 1280px) {
 		.sm-maciej {
-			background-image: url('$assets/maciej.png');
+			/* background-image: url('$assets/maciej.png'); */
 			background-repeat: no-repeat;
 			background-position: 110% 100%;
 			background-size: 50%;
