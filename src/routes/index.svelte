@@ -1,9 +1,9 @@
 <script>
-	import Language from './../components/shared/Language.svelte';
-	import Logo from './../components/shared/Logo.svelte';
-	import Copyrights from './../components/shared/Copyrights.svelte';
-	import Link from './../components/shared/Link.svelte';
-	import Title from './../components/shared/Title.svelte';
+	import Language from '$components/shared/Language.svelte';
+	import Logo from '$components/shared/Logo.svelte';
+	import Copyrights from '$components/shared/Copyrights.svelte';
+	import Link from '$components/shared/Link.svelte';
+	import Title from '$components/shared/Title.svelte';
 	import { en, pl } from './index.content';
 	import { isPolish } from './../stores/language';
 
