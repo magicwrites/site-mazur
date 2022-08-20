@@ -16,18 +16,18 @@
 </svelte:head>
 
 <section>
-	<section class="pb-6 xl:pb-0">
+	<section class="pb-6 xl:pb-0 print:pb-0">
 		<About />
 	</section>
 
 	<section class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent">
-		<div class="py-10 xl:h-screen print:h-auto flex items-center" id="experience">
+		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="experience">
 			<Experience />
 		</div>
 	</section>
 
 	<section class="sm:px-16 lg:px-24 2xl:px-48">
-		<div class="py-10 2xl:min-h-screen print:h-auto flex items-center" id="skillset">
+		<div class="py-10 print:py-0 2xl:min-h-screen print:h-auto flex items-center" id="skillset">
 			<Skillset />
 		</div>
 	</section>

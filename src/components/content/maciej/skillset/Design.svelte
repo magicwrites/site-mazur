@@ -14,7 +14,7 @@
 				form the core of your software.
 			</div>
 			<div class="pt-4">
-				Conscious of my shortcomings I&nbsp;maintain a <span class="text-gray-700">minimalist</span>
+				I favor a <span class="text-gray-700">minimalist</span>
 				approach, leveraging <span class="text-gray-700">less is more</span>
 				principle.
 			</div>
