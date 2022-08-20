@@ -2,8 +2,8 @@
 	"name": "site-mazur",
 	"version": "0.0.1",
 	"engines": {
-		"node": "16.13",
-		"npm": "8.1"
+		"node": "16.15",
+		"npm": "8.5.5"
 	},
 	"scripts": {
 		"dev": "svelte-kit dev",
