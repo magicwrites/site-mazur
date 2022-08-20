@@ -3,11 +3,12 @@ export const en = {
 		casumo: {
 			name: 'Casumo',
 			iconUrl: 'logo-casumo.webp',
+			from: 'since 2018',
 			roles: [
 				{
 					from: '2022',
 					to: null,
-					name: 'Front-end chapter lead'
+					name: 'Software Architect'
 				},
 				{
 					from: '2018',
@@ -19,6 +20,8 @@ export const en = {
 		fp: {
 			name: 'Future-Processing',
 			iconUrl: 'logo-fp.jpg',
+			from: '2011',
+			to: '2018',
 			roles: [
 				{
 					from: '2016',
@@ -35,6 +38,8 @@ export const en = {
 		goodpoint: {
 			name: 'Goodpoint',
 			icon: 'fas fa-sun',
+			from: '2010',
+			to: '2011',
 			roles: [
 				{
 					from: '2010',
