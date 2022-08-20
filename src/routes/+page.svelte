@@ -4,7 +4,7 @@
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Link from '$components/shared/Link.svelte';
 	import Title from '$components/shared/Title.svelte';
-	import { en, pl } from './index.content';
+	import { en, pl } from '$content/page.content.ts';
 	import { isPolish } from './../stores/language';
 
 	$: texts = $isPolish ? pl : en;
