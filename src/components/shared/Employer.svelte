@@ -12,7 +12,7 @@
 		/>
 		<main>
 			<div
-				class="xl:float-right mb-2 2xl:mb-0 text-right -mt-2 text-4xl font-work font-thin text-gray-200"
+				class="xl:float-right print:float-right mb-2 2xl:mb-0 text-right -mt-2 text-4xl font-work font-thin text-gray-300 print:text-gray-200"
 			>
 				<span>{from}</span>
 				{#if to}

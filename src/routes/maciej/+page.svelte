@@ -16,33 +16,34 @@
 </svelte:head>
 
 <section>
-	<About />
+	<section class="pb-6 xl:pb-0">
+		<About />
+	</section>
 
-	<section class="sm:px-16 lg:px-24 2xl:px-48">
-		<div class="2xl:h-screen-1/10 print:hidden h-20" id="experience" />
-		<div class="2xl:h-screen-8/10 print:h-auto flex items-center">
+	<section class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent">
+		<div class="py-10 xl:h-screen print:h-auto flex items-center" id="experience">
 			<Experience />
 		</div>
+	</section>
 
-		<div class="2xl:h-screen-1/10 print:hidden h-20" id="skillset" />
-
-		<div class="2xl:h-screen-8/10 print:h-auto flex items-center">
+	<section class="sm:px-16 lg:px-24 2xl:px-48">
+		<div class="py-10 2xl:min-h-screen print:h-auto flex items-center" id="skillset">
 			<Skillset />
 		</div>
-
-		<div class="2xl:h-screen-1/10 print:hidden h-20" />
 	</section>
 
 	<footer
-		class="sm:px-16 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48 2xl:pb-8 grid 2xl:grid-cols-2 items-end print:hidden"
+		class="sm:px-16 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48 2xl:py-8 grid 2xl:grid-cols-2 items-end print:hidden bg-gray-100"
 	>
-		<section class="2xl:grid 2xl:order-1">
+		<section class="py-14 2xl:py-0 2xl:grid 2xl:order-1">
 			<div class="col-start-2 2xl:col-start-1 col-span-3">
 				<Links />
 			</div>
 		</section>
 
-		<div class="p-8 pt-12 2xl:p-0 2xl:pt-0 flex items-center justify-center 2xl:justify-start">
+		<div
+			class="p-8 pt-12 xl:pt-0 2xl:p-0 2xl:pt-0 flex items-center justify-center 2xl:justify-start"
+		>
 			<div class="w-7">
 				<Logo />
 			</div>

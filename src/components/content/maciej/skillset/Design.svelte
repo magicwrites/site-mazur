@@ -22,7 +22,7 @@
 
 		<section class="pb-4 text-sm">
 			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">UX and design</div>
-			<div>Application is supposed to deliver.</div>
+			<div>Apps are supposed to deliver value.</div>
 			<div class="pt-4">
 				In my work I am able to rise above the "engineering dream" and put <span
 					class="text-gray-700">priority on what really matters</span

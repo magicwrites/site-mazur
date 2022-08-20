@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="p-6 font-work border border-gray-200 rounded cursor-pointer transition hover:border-black"
+	class="p-6 bg-white font-work border border-gray-200 rounded cursor-pointer transition hover:border-black"
 	on:click
 >
 	<div class="flex justify-between items-center pr-1">

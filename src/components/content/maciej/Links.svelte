@@ -8,7 +8,7 @@
 
 <div class="px-4 grid lg:grid-cols-2 gap-4 font-sm">
 	<div on:click={() => window.print()}>
-		<Button subtitle="For recruiters" icon="fas fa-download">Download Curriculum Vitae</Button>
+		<Button subtitle="For head hunters" icon="fas fa-download">Download Curriculum Vitae</Button>
 	</div>
 	<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 		<Button subtitle="For technical recruiters" icon="fab fa-github">Code of this website</Button>
