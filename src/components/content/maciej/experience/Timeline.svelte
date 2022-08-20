@@ -18,7 +18,7 @@
 			from={texts.employers.casumo.from}
 			to={texts.employers.casumo.to}
 		>
-			<img slot="icon" src={casumo} />
+			<img slot="icon" src={casumo} alt="logo" />
 			<div slot="default">
 				<div>
 					<span class="whitespace-nowrap">Front-end</span> developer in one of the most innovative
@@ -38,7 +38,7 @@
 			from={texts.employers.fp.from}
 			to={texts.employers.fp.to}
 		>
-			<img slot="icon" src={fp} />
+			<img slot="icon" src={fp} alt="logo" />
 			<div slot="default">
 				<div>
 					Over seven years of work in a software outsourcing company. Exposure to a vast array of

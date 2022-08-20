@@ -20,7 +20,11 @@
 
 	<section class="flex flex-col flex-grow">
 		<header class="px-4 py-16 mb-6 sm:py-8 md:py-20 md:pt-12 xl:py-4 2xl:py-16 flex flex-col">
-			<img src={avatar} class="xl:hidden mx-auto w-48 mb-20 rounded-full border border-gray-700" />
+			<img
+				src={avatar}
+				alt="avatar"
+				class="xl:hidden mx-auto w-48 mb-20 rounded-full border border-gray-700"
+			/>
 			<div class="mx-auto xl:ml-0">
 				<Title subtitle="Software developer"
 					>Maciej <a class="hidden md:inline print:inline" href="/">Mazur</a></Title
@@ -65,10 +69,10 @@
 			background-size: 53%;
 		}
 
-		.sm-suit {
+		/* .sm-suit {
 			background-image: url('$assets/maciej-suit-contrast.png');
 			background-size: auto 100%;
-		}
+		} */
 	}
 
 	@media (min-width: 1920px) {
@@ -81,9 +85,9 @@
 			background-size: 46%;
 		}
 
-		.sm-suit {
+		/* .sm-suit {
 			background-position: 80% bottom;
 			background-size: auto 95%;
-		}
+		} */
 	}
 </style>

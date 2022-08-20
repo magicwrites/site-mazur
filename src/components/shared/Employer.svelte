@@ -2,9 +2,6 @@
 	export let to = null;
 	export let from = null;
 	export let name = null;
-	export let roles = [];
-	export let icon = 'fas fa-handshake';
-	export let iconUrl = null;
 </script>
 
 <div>

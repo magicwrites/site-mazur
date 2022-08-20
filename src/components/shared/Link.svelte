@@ -1,5 +1,4 @@
 <script>
-	export let icon = null;
 	export let items = [];
 </script>
 
