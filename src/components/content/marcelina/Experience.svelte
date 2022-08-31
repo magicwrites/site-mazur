@@ -2,6 +2,9 @@
 	import ExperienceOverview from '$components/content/maciej/experience/Overview.svelte';
 	import ExperienceTimeline from '$components/content/maciej/experience/Timeline.svelte';
 	import Point from '$components/shared/Point.svelte';
+	import Button from '$components/shared/Button.svelte';
+	import Logo from '$components/shared/Logo.svelte';
+	import Copyrights from '$components/shared/Copyrights.svelte';
 	// import { en, pl } from './index.content';
 	// import { isPolish } from './../../stores/language';
 
@@ -9,52 +12,82 @@
 </script>
 
 <section class="flex flex-col print:h-screen print:pt-4">
-	<div class="xl:grid xl:grid-cols-3 gap-x-20 font-work">
-		<section class="mx-4">
-			<div class="text-4xl font-light font-work" style="margin-left: -1.5px">Prowadzisz firmę?</div>
-			<div class="text-lg pt-4 pb-8">A może dopiero planujesz jej założenie?</div>
+	<div class="xl:grid xl:grid-cols-3 gap-x-48 font-work">
+		<section class="mx-4 col-span-2">
+			<div class="text-4xl font-light font-work pb-8" style="margin-left: -1.5px">O mnie</div>
 
-			<div class="text-gray-500 text-lg font-work">
-				<div>Od dwóch lat pomagam w prowadzeniu jednoosobowych działalności gospodarczych.</div>
-				<div class="pt-8">
-					Jesteś programistą, konsultantem albo innego rodzaju specjalistą zainteresowanym większą
-					swobodą zawodową?
+			<section class="flex flex-col gap-y-5">
+				<div class="text-gray-500 text-lg font-work relative pl-10 mb-10">
+					<aside class="border-l border-4 border-gray-700 rounded absolute top-0 bottom-0 left-0" />
+					<div class="flex items-center gap-x-3">Szczęśliwa mama dwójki bobasów.</div>
 				</div>
-				<div class="pt-8">
-					A może rozkręcasz działalność handlową i potrzebujesz uregulować swoją sytuację
-					księgowo-urzędową?
-				</div>
-			</div>
-		</section>
 
-		<section class="mx-4 mt-24 col-span-2 xl:mt-0 print:mt-8">
-			<div class="text-4xl font-light font-work" style="margin-left: -1.5px">
-				Oto co mogę dla Ciebie zrobić
-			</div>
-			<div class="text-lg pt-4 pb-8">Między innymi:</div>
-
-			<section class="text-lg text-gray-500">
-				<div class="leading-9 text-center py-8 sm:py-0">
-					<Point first={true}>
-						<span class="text-gray-800 underline">indywidualne</span>&nbsp;podejście do twoich
-						potrzeb księgowych
-					</Point>
-					<Point>wsparcie przy zakładaniu firmy i wyborze formy opodatkowania</Point>
-					<Point>prowadzenie podatkowej księgi przychodów i rozchodów - KPIR</Point>
-					<Point>prowadzenie ryczałtu ewidencjonowanego</Point>
-					<Point>prowadzenie ewidencji vat i sporządzanie deklaracji</Point>
-					<Point>prowadzenie ewidencji IP box i wsparcie przy ubieganiu się o ulgę</Point>
-					<Point>pomoc w poprawnym wystawianiu faktur</Point>
-					<Point>pomoc w ramach rozpoznawania kosztów uzyskania przychodu</Point>
-					<Point>obsługę w zakresie zakładu ubezpieczeń społecznych</Point>
-				</div>
-				<div class="pt-8">
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-700 rounded absolute top-0 bottom-0 left-0" />
 					<div>
-						Oczywiście twoja sytuacja jest niepowtarzalna - warto więc podjąć współpracę z
-						doświadczoną księgową. Razem uda nam się uwolnić potencjał drzemiący w twojej firmie.
+						Trzy lata prowadzenia jednoosobowych działalności gospodarczych. Klienci indywidualni,
+						IT, handel oraz inne. Praca na własny rachunek.
 					</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-700 rounded absolute top-0 bottom-0 left-0" />
+					<div>
+						Dwa lata zakładania od podstaw i prowadzenia księgowości uniezależniającej się
+						spółki-córki Adaptive Vision.
+					</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-700 rounded absolute top-0 bottom-0 left-0" />
+					<div>
+						Pięć lat na stanowisku księgowej w Future Processing. Praca w dedykowanym dziale firmy z
+						branży IT zatrudniającej niespełna tysiąc osób. Kontakt z zagranicznymi kontrahentami.
+					</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-300 rounded absolute top-0 bottom-0 left-0" />
+					<div>
+						Rok doświadczenia na recepcji, umiejętność odnajdywania się w niespodziewanych
+						sytuacjach.
+					</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-300 rounded absolute top-0 bottom-0 left-0" />
+					<div>Nauczyciel w szkole podstawowej gdzieśtam daleko nikt nie wie gdzie.</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10 mt-10">
+					<aside class="border-l border-4 border-gray-300 rounded absolute top-0 bottom-0 left-0" />
+					<div>Ukończona szkoła wyższa na kierunku psychologia. Dyplom i medale.</div>
+				</div>
+
+				<div class="text-gray-500 text-lg font-work relative pl-10">
+					<aside class="border-l border-4 border-gray-300 rounded absolute top-0 bottom-0 left-0" />
+					<div>Zakończona szkoła organistowska. Praca jako organista kościelny.</div>
 				</div>
 			</section>
 		</section>
+
+		<aside class="flex flex-col h-full justify-between">
+			<section class="flex flex-col gap-y-5">
+				<Button subtitle="Dla firm i rekruterów" icon="fas fa-download">Pobierz CV</Button>
+				<Button subtitle="Dla klientów indywidualnych" icon="fas fa-download">Pobierz ofertę</Button
+				>
+				<Button subtitle="Napisz do mnie" icon="fa-brands fa-whatsapp">Whatsapp</Button>
+				<Button subtitle="Napisz do mnie" icon="fas fa-envelope">Wiadomość E-mail</Button>
+			</section>
+
+			<footer class="ml-auto flex items-center">
+				<div class="w-7">
+					<Logo />
+				</div>
+				<div class="pl-3">
+					<Copyrights />
+				</div>
+			</footer>
+		</aside>
 	</div>
 </section>
