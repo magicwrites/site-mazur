@@ -20,7 +20,7 @@
 				{/if}
 			</div>
 			<div class="text-2xl font-varela pb-4">{name}</div>
-			<div class="text-gray-400 font-work">
+			<div class="text-gray-500 font-work">
 				<slot />
 			</div>
 		</main>

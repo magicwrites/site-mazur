@@ -40,7 +40,10 @@
 			<main
 				class="grid gap-y-1 xl:grid-cols-1 xl:gap-y-1 md:grid-cols-2 md:gap-x-4 md:gap-y-8 xl:order-2 2xl:col-start-1"
 			>
-				<Link items={texts.marcelina.skills} icon="fa-person-dress">{texts.marcelina.name}</Link>
+				<a href="/marcelina"
+					><Link items={texts.marcelina.skills} icon="fa-person-dress">{texts.marcelina.name}</Link
+					></a
+				>
 				<a href="/maciej"
 					><Link items={texts.maciej.skills} icon="fa-person">{texts.maciej.name}</Link></a
 				>
@@ -58,7 +61,9 @@
 			<aside
 				class="grid gap-y-1 xl:grid-cols-1 xl:gap-y-1 xl:col-start-3 2xl:col-start-4 xl:mb-auto xl:items-start md:grid-cols-2 md:gap-x-4 md:gap-y-8 xl:order-3 2xl:order-5"
 			>
-				<Link items={texts.applications.features}>{texts.applications.name}</Link>
+				<a href="/maciej"
+					><Link items={texts.applications.features}>{texts.applications.name}</Link></a
+				>
 				<Link items={texts.accounting.features}>{texts.accounting.name}</Link>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />
 				<a href="https://eleganckiefaktury.pl" target="_blank">
