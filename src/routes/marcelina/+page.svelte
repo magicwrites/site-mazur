@@ -22,14 +22,25 @@
 	</section>
 
 	<section class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent">
-		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="offer">
+		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="oferta">
 			<Offer />
 		</div>
 	</section>
 
 	<section class="sm:px-16 lg:px-24 2xl:px-48">
-		<div class="py-10 print:py-0 2xl:min-h-screen print:h-auto flex items-center" id="experience">
+		<div class="py-10 print:py-0 2xl:min-h-screen print:h-auto flex items-center" id="o-mnie">
 			<Experience />
 		</div>
 	</section>
+
+	<footer
+		class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent flex items-center justify-center py-10"
+	>
+		<div class="w-7">
+			<Logo />
+		</div>
+		<div class="pl-3">
+			<Copyrights />
+		</div>
+	</footer>
 </section>
