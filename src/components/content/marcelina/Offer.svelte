@@ -28,13 +28,11 @@
 		</section>
 
 		<section class="mx-4 mt-24 col-span-2 xl:mt-0 print:mt-8">
-			<div class="text-4xl font-light font-work" style="margin-left: -1.5px">
-				Oto co mogę dla Ciebie zrobić
-			</div>
-			<div class="text-lg pt-4 pb-8">Między innymi:</div>
+			<div class="text-4xl font-light font-work" style="margin-left: -1.5px">Moja propozycja</div>
+			<div class="text-lg pt-4 pb-8">Oto co mogę Ci zapewnić:</div>
 
 			<section class="text-lg text-gray-500">
-				<div class="leading-9 text-center py-8 sm:py-0">
+				<div class="leading-9 sm:py-0">
 					<Point first={true}>
 						<span class="text-gray-800 underline">indywidualne</span>&nbsp;podejście do twoich
 						potrzeb księgowych
