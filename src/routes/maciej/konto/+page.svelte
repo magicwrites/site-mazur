@@ -19,6 +19,13 @@
 
 <section class="flex h-screen font-work">
 	<section class="m-auto flex flex-col gap-y-10">
+		<div class="fixed top-0 left-0">
+			<a class="p-4 mb-20 flex items-center text-gray-400 transition hover:text-gray-700" href="/">
+				<i class="fa-solid fa-arrow-left text-gray-700 pr-3" />
+				<span class="text-sm font-work">na stronę główną</span>
+			</a>
+		</div>
+
 		<section>
 			<div class="px-4 pb-2 text-gray-400">Środki w EURO</div>
 			<div class="px-4 text-4xl -ml-0.5">

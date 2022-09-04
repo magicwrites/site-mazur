@@ -48,8 +48,12 @@
 					><Link items={texts.maciej.skills} icon="fa-person">{texts.maciej.name}</Link></a
 				>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />
-				<Link items={texts.helena.skills} icon="fa-child-reaching">{texts.helena.name}</Link>
-				<Link items={texts.mateusz.skills} icon="fa-baby">{texts.mateusz.name}</Link>
+				<a href="https://photos.app.goo.gl/ZBzunxbE2Xnv5SG27" target="_blank">
+					<Link items={texts.helena.skills} icon="fa-child-reaching">{texts.helena.name}</Link>
+				</a>
+				<a href="https://photos.app.goo.gl/M7ZYb4GhJPxvBAAF9" target="_blank">
+					<Link items={texts.mateusz.skills} icon="fa-baby">{texts.mateusz.name}</Link>
+				</a>
 			</main>
 
 			<header class="p-4 pt-16 md:pt-14 xl:pt-0 flex items-center xl:order-1 2xl:col-start-4">
@@ -61,10 +65,12 @@
 			<aside
 				class="grid gap-y-1 xl:grid-cols-1 xl:gap-y-1 xl:col-start-3 2xl:col-start-4 xl:mb-auto xl:items-start md:grid-cols-2 md:gap-x-4 md:gap-y-8 xl:order-3 2xl:order-5"
 			>
-				<a href="/maciej"
-					><Link items={texts.applications.features}>{texts.applications.name}</Link></a
-				>
-				<Link items={texts.accounting.features}>{texts.accounting.name}</Link>
+				<a href="/maciej">
+					<Link items={texts.applications.features}>{texts.applications.name}</Link>
+				</a>
+				<a href="/marcelina">
+					<Link items={texts.accounting.features}>{texts.accounting.name}</Link>
+				</a>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />
 				<a href="https://eleganckiefaktury.pl" target="_blank">
 					<Link items={texts.invoices.features}>{texts.invoices.name}</Link></a

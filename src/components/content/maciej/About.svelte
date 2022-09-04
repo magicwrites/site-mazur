@@ -48,7 +48,7 @@
 				<div class="font-work">maciej@mazur.site</div>
 			</div>
 			<div>
-				<div class="text-sm text-gray-400">Also sometimes at:</div>
+				<div class="text-sm text-gray-400">Sometimes at:</div>
 				<div class="font-work">linkedin</div>
 			</div>
 		</footer>
