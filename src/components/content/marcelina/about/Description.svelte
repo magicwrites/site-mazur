@@ -1,7 +1,3 @@
-<script>
-	import Tooltip from 'svelte-tooltip';
-</script>
-
 <section class="font-work text-lg text-gray-400">
 	<div>
 		Moja przygoda z księgowością rozpoczęła się w 2013 roku i nieprzerwanie trwa do dziś. Swoje
