@@ -47,8 +47,14 @@
 				<div class="text-sm text-gray-400">Porozmawiajmy:</div>
 				<div class="font-work flex items-center">
 					<span>+ 48 697 952 558</span>
-					<span class="text-gray-400 text-xs pl-2 pr-1.5"> - również whatsapp</span>
-					<i class="text-gray-400 fa-brands fa-whatsapp" />
+					<a
+						class="flex items-center text-gray-400 hover:text-gray-700 transition"
+						href="https://wa.me/48697952558"
+						target="_blank"
+					>
+						<span class="text-xs pl-2 pr-1.5"> - również whatsapp </span>
+						<i class="fa-brands fa-whatsapp" />
+					</a>
 				</div>
 			</div>
 			<div>

@@ -15,14 +15,12 @@
 			<div class="text-lg pt-4 pb-8">A może dopiero planujesz jej założenie?</div>
 
 			<div class="text-gray-500 text-lg font-work">
-				<div>Od dwóch lat pomagam w prowadzeniu jednoosobowych działalności gospodarczych.</div>
-				<div class="pt-8">
+				<div>
 					Jesteś programistą, konsultantem albo innego rodzaju specjalistą zainteresowanym większą
 					swobodą zawodową?
 				</div>
 				<div class="pt-8">
-					A może rozkręcasz działalność handlową i potrzebujesz uregulować swoją sytuację
-					księgowo-urzędową?
+					A może rozkręcasz działalność handlową i potrzebujesz uregulować swoją sytuację formalną?
 				</div>
 			</div>
 		</section>
@@ -33,7 +31,36 @@
 
 			<section class="text-lg text-gray-500">
 				<div class="leading-9 sm:py-0">
-					<Point first={true}>
+					<Point first={true}
+						><span class="font-semibold text-gray-700">Indywidualne</span> podejście do Twoich potrzeb
+						księgowych</Point
+					>
+					<Point>Wsparcie przy zakładaniu firmy i wyborze formy opodatkowania</Point>
+					<Point>Prowadzenie podatkowej księgi przychodów i rozchodów - KPiR</Point>
+					<Point>Prowadzenie ryczałtu ewidencjonowanego</Point>
+					<Point>
+						<div>Obsługa podatku VAT</div>
+						<div class="text-sm -mt-1 mb-1">
+							Prowadzenie ewidencji VAT i sporządzanie deklaracji JPK
+						</div>
+					</Point>
+					<Point>
+						<div>Obsługa ZUS</div>
+						<div class="text-sm -mt-1 mb-1">
+							W tym sporządzanie stosownych deklaracji, obliczanie wartości składki zdrowotnej
+						</div>
+					</Point>
+					<Point>
+						<div>Wsparcie w rozliczeniu ulgi IP box</div>
+						<div class="text-sm -mt-1 mb-1">
+							Prowadzenie ewidencji kosztów kwalifikowanych, roczne rozliczenie z uwzględnieniem
+							ulgi
+						</div>
+					</Point>
+					<Point>Pomoc w poprawnym wystawianiu faktur</Point>
+					<Point>Pomoc w ramach rozpoznawania kosztów uzyskania przychodu</Point>
+
+					<!-- <Point first={true}>
 						<span class="text-gray-800 underline">indywidualne</span>&nbsp;podejście do twoich
 						potrzeb księgowych
 					</Point>
@@ -44,7 +71,7 @@
 					<Point>prowadzenie ewidencji IP box i wsparcie przy ubieganiu się o ulgę</Point>
 					<Point>pomoc w poprawnym wystawianiu faktur</Point>
 					<Point>pomoc w ramach rozpoznawania kosztów uzyskania przychodu</Point>
-					<Point>obsługę w zakresie zakładu ubezpieczeń społecznych</Point>
+					<Point>obsługę w zakresie zakładu ubezpieczeń społecznych</Point> -->
 				</div>
 			</section>
 		</section>

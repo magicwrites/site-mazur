@@ -1,18 +1,17 @@
+<script>
+	import Tooltip from 'svelte-tooltip';
+</script>
+
 <section class="font-work text-lg text-gray-400">
 	<div>
-		Od ponad pięciu lat <a
-			href="#o-mnie"
-			class="text-gray-700 border-b border-transparent hover:border-black transition"
-			>pracuję jako księgowa</a
-		> w firmie zatrudniającej setki pracowników i współpracującej z przedsiębiorstwami z całej Europy.
+		Moja przygoda z księgowością rozpoczęła się w 2013 roku i nieprzerwanie trwa do dziś. Swoje
+		doświadczenie zawodowe zdobywałam głównie w dużej firmie zatrudniającej setki pracowników jak
+		również prowadząc księgowość jednoosobowych działalności gospodarczych różnych branż.
 	</div>
 	<div class="mt-8">
-		Moje obowiązki i płynąca z nich możliwość nieustannego rozwoju pozwalają mi czerpać wiele
-		satysfakcji z mojej codziennej pracy. Dotykają one <a
-			href="#oferta"
-			class="text-gray-700 border-b border-transparent hover:border-black transition">tematów</a
-		> takich jak: koszty uzyskania przychodów, rozliczanie podatku VAT, rozliczanie podróży służbowych,
-		obsługa samochodu w firmie (w tym leasing samochodowy), środki trwałe i ich amortyzacja, wystawianie
-		faktur dla kontrahentów polskich jak również zagranicznych.
+		Na co dzień pomagam moim klientom odnaleźć się w świecie zawiłych i skomplikowanych przepisów.
+		Czerpię ogromną satysfakcję, gdy moją wiedzę z zakresu podatków mogę wykorzystać w praktyce
+		rozwiązując realne problemy przedsiębiorców. Cenię sobie kontakt z klientem, wspólne omawianie
+		problemu i indywidualne podejście do każdego tematu.
 	</div>
 </section>
