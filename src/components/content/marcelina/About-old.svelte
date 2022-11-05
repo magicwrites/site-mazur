@@ -3,8 +3,8 @@
 	import Title from '$components/shared/Title.svelte';
 	import Description from './about/Description.svelte';
 	import Contact from './about/Contact.svelte';
-	import avatar from '$assets/avatar-2.png';
-	import maciej from '$assets/maciej-chair.jpg';
+	import avatar from '$assets/marcelina-avatar.png';
+	import marcelina from '$assets/marcelina-chair.jpg';
 	import Framer from '$components/shared/Framer.svelte';
 	// import { en, pl } from './index.content';
 	// import { isPolish } from './../../stores/language';
@@ -13,11 +13,11 @@
 </script>
 
 <div
-	class="sm-business xl:h-screen print:h-screen flex flex-col sm:px-16 xl:py-4 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48"
+	class="relative xl:h-screen print:h-screen flex flex-col sm:px-16 xl:py-4 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48"
 >
 	<Framer>
-		<div class="sm-maciej absolute">
-			<img src={maciej} class="h-full" alt="maciej" />
+		<div class="sm-marcelina absolute">
+			<img src={marcelina} class="h-full" alt="marcelina" />
 		</div>
 	</Framer>
 
@@ -29,14 +29,9 @@
 
 	<section class="flex flex-col flex-grow">
 		<header class="px-4 py-16 mb-6 sm:py-8 md:py-20 md:pt-12 xl:py-4 2xl:py-16 flex flex-col">
-			<img
-				src={avatar}
-				alt="avatar"
-				class="xl:hidden mx-auto w-48 mb-20 rounded-full border border-gray-700"
-			/>
 			<div class="mx-auto xl:ml-0">
 				<Title subtitle="Software developer"
-					>Maciej <a class="hidden md:inline print:inline" href="/">Mazur</a></Title
+					>Marcelina <a class="hidden md:inline print:inline" href="/">Mazur</a></Title
 				>
 			</div>
 		</header>
@@ -59,12 +54,12 @@
 	}
 
 	@media (min-width: 1920px) {
-		.sm-maciej {
-			right: 3.75%;
+		.sm-marcelina {
+			right: 0;
 			bottom: 0;
 		}
 
-		.sm-maciej img {
+		.sm-marcelina img {
 			height: auto;
 			width: 92.5%;
 		}

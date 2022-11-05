@@ -17,11 +17,14 @@
 </svelte:head>
 
 <section>
-	<section class="pb-6 xl:pb-0 print:pb-0">
+	<About />
+	<Offer />
+	<Experience />
+	<!-- <section class="pb-6 xl:pb-0 print:pb-0">
 		<About />
 	</section>
 
-	<section class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent">
+	<section class="sm:px-16 lg:px-24 2xl:px-48 print:bg-transparent">
 		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="oferta">
 			<Offer />
 		</div>
@@ -42,5 +45,5 @@
 		<div class="pl-3">
 			<Copyrights />
 		</div>
-	</footer>
+	</footer> -->
 </section>

@@ -1,17 +1,19 @@
 <script>
-	export const subtitle = null;
+	export let subtitle = null;
 </script>
 
-<div class="flex flex-col text-center text-gray-700">
-	<span class="sm-title uppercase text-7xl xl:text-8xl font-dosis"><slot /></span>
+<div class="flex flex-col gap-2 text-gray-700">
+	<span class="sm-title uppercase text-6xl sm:text-7xl xl:text-8xl font-dosis">
+		<slot />
+	</span>
 	{#if subtitle}
-		<span class="sm-subtitle xl:text-left pt-8 xl:pt-2 text-xl font-work">{subtitle}</span>
+		<span class="sm-subtitle xl:text-left font-work text-gray-400">{subtitle}</span>
 	{/if}
 </div>
 
 <style>
 	.sm-title {
-		margin-left: -4.5px;
+		margin-left: -1.25px;
 	}
 
 	@media (min-width: 1280px) {

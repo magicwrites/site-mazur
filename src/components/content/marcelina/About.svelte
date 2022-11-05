@@ -2,102 +2,71 @@
 	import Language from '$components/shared/Language.svelte';
 	import Title from '$components/shared/Title.svelte';
 	import Description from './about/Description.svelte';
+	import Actions from './about/Actions.svelte';
+	import Contact from './about/Contact.svelte';
 	import avatar from '$assets/marcelina-avatar.png';
+	import marcelina from '$assets/marcelina-chair.jpg';
+	import Framer from '$components/shared/Framer.svelte';
 	// import { en, pl } from './index.content';
 	// import { isPolish } from './../../stores/language';
 
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div
-	class="sm-maciej sm-business xl:h-screen print:h-screen flex flex-col sm:px-16 xl:py-4 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48"
->
-	<header class="flex p-4 print:hidden">
-		<div class="ml-auto">
-			<Language />
-		</div>
-	</header>
-
-	<section class="flex flex-col flex-grow">
-		<header class="px-4 py-16 mb-6 sm:py-8 md:py-20 md:pt-12 xl:py-4 2xl:py-16 flex flex-col">
-			<img
-				src={avatar}
-				alt="avatar"
-				class="xl:hidden mx-auto w-48 mb-20 rounded-full border border-gray-700"
-			/>
-			<div class="mx-auto xl:ml-0">
-				<Title subtitle="Software developer"
-					>Marcelina <a class="hidden md:inline print:inline" href="/">Mazur</a></Title
-				>
-			</div>
+<div>
+	<section class="relative h-screen flex flex-col overflow-hidden">
+		<header class="p-8">
+			<Actions />
 		</header>
 
-		<main class="px-4 xl:w-1/2">
-			<Description />
-		</main>
+		<div class="p-8 pt-0">
+			<Title subtitle="Księgowa">
+				<span style="margin-left: -2px">Marcelina</span>
+				<a class="hidden md:inline print:inline" href="/">Mazur</a>
+			</Title>
+		</div>
 
-		<footer
-			class="mt-auto p-4 pt-24 xl:pt-4 xl:pb-48 font-work grid xl:grid-cols-4 2xl:grid-cols-1 gap-4 xl:mt-20 2xl:mt-auto"
-		>
-			<div class="hidden print:block">
-				<div class="text-sm text-gray-400">Online:</div>
-				<div class="font-work">https://marcelina.mazur.site</div>
+		<Framer>
+			<div class="sm-marcelina absolute flex justify-center">
+				<img src={marcelina} alt="marcelina" />
 			</div>
-			<div>
-				<div class="text-sm text-gray-400">Porozmawiajmy:</div>
-				<div class="font-work flex items-center">
-					<span>+ 48 697 952 558</span>
-					<a
-						class="flex items-center text-gray-400 hover:text-gray-700 transition"
-						href="https://wa.me/48697952558"
-						target="_blank"
-					>
-						<span class="text-xs pl-2 pr-1.5"> - również whatsapp </span>
-						<i class="fa-brands fa-whatsapp" />
-					</a>
-				</div>
-			</div>
-			<div>
-				<div class="text-sm text-gray-400">Pisemnie:</div>
-				<div class="font-work">marcelina@mazur.site</div>
-			</div>
-		</footer>
+		</Framer>
+	</section>
+
+	<section class="bg-gray-50">
+		<div class="p-8 text-gray-500">
+			<Description />
+		</div>
 	</section>
 </div>
 
 <style>
+	.sm-marcelina {
+		bottom: 0;
+		width: 200vw;
+		margin-left: -50vw;
+	}
+
+	.sm-marcelina img {
+		height: calc(100vh - 220px);
+		width: auto;
+	}
+
 	@media (min-width: 1280px) {
-		.sm-maciej {
-			/* background-image: url('$assets/maciej.png'); */
-			background-repeat: no-repeat;
-			background-position: 110% 100%;
-			background-size: 50%;
-		}
+	}
 
-		.sm-business {
-			background-image: url('$assets/marcelina-kid.jpg');
-			background-size: 40%;
-		}
-
-		/* .sm-suit {
-			background-image: url('$assets/maciej-suit-contrast.png');
-			background-size: auto 100%;
-		} */
+	@media (min-width: 1333px) {
 	}
 
 	@media (min-width: 1920px) {
-		.sm-maciej {
-			background-position: right 30%;
+		.sm-marcelina {
+			right: 0;
+			bottom: 0;
 		}
 
-		.sm-business {
-			background-position: 80% bottom;
-			background-size: 30%;
+		.sm-marcelina img {
+			height: auto;
+			width: 92.5%;
 		}
-
-		/* .sm-suit {
-			background-position: 80% bottom;
-			background-size: auto 95%;
-		} */
 	}
 </style>

@@ -1,4 +1,4 @@
-<section class="font-work text-lg text-gray-400">
+<section class="font-work">
 	<div>
 		Moja przygoda z księgowością rozpoczęła się w 2013 roku i nieprzerwanie trwa do dziś. Swoje
 		doświadczenie zawodowe zdobywałam głównie w dużej firmie zatrudniającej setki pracowników jak
