@@ -95,7 +95,7 @@
 		.sm-marcelina img {
 			height: auto;
 			width: 600px;
-			margin-right: 80px;
+			margin-right: 40px;
 		}
 	}
 </style>
