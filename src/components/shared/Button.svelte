@@ -12,7 +12,7 @@
 			{#if subtitle}
 				<div class="text-xs text-gray-400">{subtitle}</div>
 			{/if}
-			<span><slot /></span>
+			<span class="text-base"><slot /></span>
 		</div>
 		<i class={icon} />
 	</div>

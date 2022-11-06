@@ -1,6 +1,6 @@
-<section class="font-work">
+<section class="font-work 2xl:text-lg">
 	<div>
-		Moja przygoda z księgowością rozpoczęła się w 2013 roku i nieprzerwanie trwa do dziś. Swoje
+		Moja przygoda z zawodem rozpoczęła się w 2013 roku i nieprzerwanie trwa do dziś. Swoje
 		doświadczenie zawodowe zdobywałam głównie w dużej firmie zatrudniającej setki pracowników jak
 		również prowadząc księgowość jednoosobowych działalności gospodarczych różnych branż.
 	</div>

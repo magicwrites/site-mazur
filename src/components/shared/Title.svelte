@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-col gap-2 text-gray-700">
-	<span class="sm-title uppercase text-6xl sm:text-7xl xl:text-8xl font-dosis">
+	<span class="sm-title uppercase text-6xl xl:text-7xl 2xl:text-8xl font-dosis">
 		<slot />
 	</span>
 	{#if subtitle}
@@ -18,11 +18,13 @@
 
 	@media (min-width: 1280px) {
 		.sm-title {
-			margin-left: -6px;
+			margin-left: -2.25px;
 		}
+	}
 
-		.sm-subtitle {
-			margin-left: -1px;
+	@media (min-width: 1580px) {
+		.sm-title {
+			margin-left: -4px;
 		}
 	}
 </style>

@@ -6,12 +6,12 @@
 <section>
 	<slot />
 
-	<div class="hidden xl:block sm-frame-1 absolute opacity-5">
-		<img src={frame1} class="h-full" alt="frame-1" />
+	<div class="hidden 2xl:block sm-frame-1 absolute opacity-5">
+		<img src={frame1} class="h-full select-none" alt="frame-1" />
 	</div>
 
-	<div class="hidden xl:block sm-frame-2 absolute opacity-30">
-		<img src={frame2} class="h-full" alt="frame-2" />
+	<div class="hidden 2xl:block sm-frame-2 absolute opacity-30">
+		<img src={frame2} class="h-full select-none" alt="frame-2" />
 	</div>
 </section>
 

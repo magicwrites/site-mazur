@@ -7,7 +7,7 @@
 </script>
 
 <section class="w-full flex justify-between">
-	<div class="flex gap-4">
+	<div class="flex gap-4 xl:hidden">
 		<div class="rounded-full bg-gray-100 w-10 h-10 flex items-center justify-center">
 			<i class="fab fa-whatsapp" />
 		</div>
@@ -21,5 +21,7 @@
 		</div>
 	</div>
 
-	<Language />
+	<div class="ml-auto">
+		<Language />
+	</div>
 </section>

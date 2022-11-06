@@ -20,30 +20,13 @@
 	<About />
 	<Offer />
 	<Experience />
-	<!-- <section class="pb-6 xl:pb-0 print:pb-0">
-		<About />
-	</section>
 
-	<section class="sm:px-16 lg:px-24 2xl:px-48 print:bg-transparent">
-		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="oferta">
-			<Offer />
-		</div>
-	</section>
-
-	<section class="sm:px-16 lg:px-24 2xl:px-48">
-		<div class="py-10 print:py-0 2xl:min-h-screen print:h-auto flex items-center" id="o-mnie">
-			<Experience />
-		</div>
-	</section>
-
-	<footer
-		class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent flex items-center justify-center py-10"
-	>
-		<div class="w-7">
-			<Logo />
-		</div>
-		<div class="pl-3">
+	<footer class="p-8 pt-4 xl:pt-8 bg-gray-50 mx-0.5">
+		<div class="flex items-center justify-between sm:justify-center gap-4">
+			<div class="w-6">
+				<Logo />
+			</div>
 			<Copyrights />
 		</div>
-	</footer> -->
+	</footer>
 </section>

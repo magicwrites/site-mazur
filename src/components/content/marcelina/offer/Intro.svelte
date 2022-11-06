@@ -7,11 +7,7 @@
 </script>
 
 <section class="flex flex-col gap-8 p-8">
-	<Preface
-		icon="fas fa-briefcase"
-		iconBackground="bg-gray-50"
-		subtitle="Może planujesz jej założenie?"
-	>
+	<Preface icon="fas fa-briefcase" background="bg-gray-50" subtitle="Może planujesz jej założenie?">
 		Prowadzisz firmę?
 	</Preface>
 
