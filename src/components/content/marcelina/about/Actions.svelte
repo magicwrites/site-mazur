@@ -14,7 +14,7 @@
 			</div>
 		</a>
 
-		<a href="tel:+48697952558" target="_blank">
+		<a href="tel:+48697952558">
 			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
 				<i class="fas fa-phone" />
 			</div>

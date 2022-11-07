@@ -17,7 +17,6 @@
 				<a
 					class="border-b border-transparent hover:border-gray-700 transition"
 					href="tel:+48697952558"
-					target="_blank"
 				>
 					+ 48 697 952 558
 				</a>

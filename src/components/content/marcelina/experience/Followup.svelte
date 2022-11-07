@@ -22,7 +22,7 @@
 	<a href="mailto:marcelina@mazur.site" target="_blank">
 		<Button subtitle="Napisz do mnie" icon="fas fa-envelope">Wiadomość E-mail</Button>
 	</a>
-	<a href="tel:+48697952558" target="_blank" class="md:hidden">
+	<a href="tel:+48697952558" class="md:hidden">
 		<Button subtitle="Zadzwoń do mnie" icon="fas fa-phone">+48 697 952 558</Button>
 	</a>
 </section>
