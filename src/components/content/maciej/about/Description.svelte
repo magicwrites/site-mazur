@@ -1,4 +1,4 @@
-<section class="font-work text-lg text-gray-400">
+<section class="font-work 2xl:text-lg">
 	<div>
 		I
 		<a
@@ -6,11 +6,11 @@
 			target="_blank"
 			class="border-b border-transparent hover:border-gray-400 transition">build</a
 		>
-		web applications that are a pleasure to use. I do so individually, as a part of informal startup
+		enjoyable user interfaces for web applications. I do so individually, as a part of informal startup
 		team or in enterprise environments that operate at scale.
 	</div>
 	<div class="mt-8">
-		I am a software developer that understands how
+		I am a software professional who understands how
 		<a
 			href="https://gettingthingsdone.com"
 			target="_blank"

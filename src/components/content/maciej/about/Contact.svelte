@@ -5,7 +5,7 @@
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<section class="font-work grid xl:grid-cols-4 2xl:grid-cols-1 gap-4">
+<section class="font-work grid gap-4">
 	<div class="hidden print:block">
 		<div class="text-sm text-gray-400">Online at:</div>
 		<div class="font-work">https://maciej.mazur.site</div>

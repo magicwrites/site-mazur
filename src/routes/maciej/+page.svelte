@@ -16,40 +16,20 @@
 </svelte:head>
 
 <section>
-	<section class="pb-6 xl:pb-0 print:pb-0">
-		<About />
-	</section>
+	<About />
+	<Experience />
+	<Skillset />
 
-	<section class="sm:px-16 lg:px-24 2xl:px-48 bg-gray-50 print:bg-transparent">
-		<div class="py-10 print:py-0 xl:h-screen print:h-auto flex items-center" id="experience">
-			<Experience />
-		</div>
-	</section>
+	<footer class="xl:bg-gray-50 xl:px-8 2xl:px-44">
+		<Links />
 
-	<section class="sm:px-16 lg:px-24 2xl:px-48">
-		<div class="py-10 print:py-0 2xl:min-h-screen print:h-auto flex items-center" id="skillset">
-			<Skillset />
-		</div>
-	</section>
-
-	<footer
-		class="sm:px-16 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48 2xl:py-8 grid 2xl:grid-cols-2 items-end print:hidden bg-gray-100"
-	>
-		<section class="py-14 2xl:py-0 2xl:grid 2xl:order-1">
-			<div class="col-start-2 2xl:col-start-1 col-span-3">
-				<Links />
-			</div>
-		</section>
-
-		<div
-			class="p-8 pt-12 xl:pt-0 2xl:p-0 2xl:pt-0 flex items-center justify-center 2xl:justify-start"
-		>
-			<div class="w-7">
-				<Logo />
-			</div>
-			<div class="pl-3">
+		<section class="bg-gray-50 p-8 xl:pt-0 2xl:pt-4 mx-0.5">
+			<div class="flex items-center justify-between sm:justify-center gap-4">
+				<div class="w-6">
+					<Logo />
+				</div>
 				<Copyrights />
 			</div>
-		</div>
+		</section>
 	</footer>
 </section>

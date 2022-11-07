@@ -1,4 +1,5 @@
 <script>
+	import Unavailable from '$components/shared/Unavailable.svelte';
 	import Button from '$components/shared/Button.svelte';
 	// import { en, pl } from './index.content';
 	// import { isPolish } from './../../stores/language';
@@ -6,17 +7,17 @@
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div class="px-4 grid lg:grid-cols-2 gap-4 font-sm">
-	<div on:click={() => window.print()}>
-		<Button subtitle="For head hunters" icon="fas fa-download">Download Curriculum Vitae</Button>
-	</div>
+<div class="p-8 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 font-sm">
+	<Unavailable>
+		<Button subtitle="For head hunters" icon="fas fa-download">Download CV</Button>
+	</Unavailable>
 	<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 		<Button subtitle="For technical recruiters" icon="fab fa-github">Code of this website</Button>
 	</a>
-	<a href="https://eleganckiefaktury.pl" target="_blank">
-		<Button subtitle="Case study" icon="fas fa-calculator">Invoice handling application</Button>
-	</a>
-	<a href="https://eleganckiefaktury.pl" target="_blank">
-		<Button subtitle="Case study" icon="fas fa-layer-group">Monolith to micro-frontends</Button>
-	</a>
+	<Unavailable>
+		<Button subtitle="Case study" icon="fas fa-calculator">Invoice application</Button>
+	</Unavailable>
+	<Unavailable>
+		<Button subtitle="Case study" icon="fas fa-layer-group">Micro frontends setup</Button>
+	</Unavailable>
 </div>

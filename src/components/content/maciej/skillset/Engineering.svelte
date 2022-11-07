@@ -1,83 +1,78 @@
 <script>
-	import Percenter from './../../../shared/Percenter.svelte';
+	import Preface from '$components/shared/Preface.svelte';
+	// import { en, pl } from './index.content';
+	// import { isPolish } from './../../stores/language';
+
+	// $: texts = $isPolish ? pl : en;
+
+	let lists = [
+		{
+			major: ['JS / nodeJS', 'typescript', 'svelte'],
+			minor: ['coffescript'],
+			patch: ['PHP', 'C# and related', 'java', 'ruby', 'python']
+		},
+		{
+			major: ['react', 'vue', 'web components', 'angular 1.6', 'knockoutJS'],
+			minor: ['angular 2+'],
+			patch: ['ember', 'backboneJS', '.NET']
+		},
+		{
+			major: [
+				'git / NPM / semver',
+				'HTTP / websockets',
+				'REST',
+				'MVC / MVVM',
+				'redux / vuex',
+				'webpack / vite'
+			],
+			minor: ['grunt / bower'],
+			patch: []
+		},
+		{
+			major: ['clean coding', 'domain driven design', 'testability', 'CI / CD'],
+			minor: ['3rd party integration', 'web operations', 'cloud systems'],
+			patch: []
+		}
+	];
 </script>
 
-<div>
-	<Percenter value={0.5}>Five parts engineer</Percenter>
+<section class="p-8 bg-gray-50 xl:p-0 xl:bg-transparent">
+	<div class="pb-4 border-b-4 border-gray-400">
+		<Preface icon="fas fa-microchip" background="bg-white" subtitle="Five parts software developer"
+			>Engineering</Preface
+		>
+	</div>
 
-	<section class="pt-4 font-work text-gray-400 text-sm print:text-xs">
-		<section class="pb-4">
-			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">Programming languages</div>
-			<div class="print:inline">
-				Frequent exposure to both vanilla and modern
-				<span class="text-gray-700">Javascript</span>,
-				<span class="text-gray-700">Typescript</span> and
-				<span class="text-gray-700">Coffeescript</span>.
-			</div>
-			<div class="print:inline">
-				Brief experience of .NET technologies, Java, <span class="text-gray-700">Svelte</span> and a
-				few other languages.
-			</div>
-		</section>
+	<div class="py-4">
+		From the hard skill of programming in a particular language to the high abstrations of
+		architecture design. As an author of user interfaces I have found myself learning and applying
+		many technologies, practices, concepts and patterns. Recently, the most notable among those are:
+	</div>
 
-		<section class="pb-4">
-			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">Front-end stack</div>
-			<div class="print:inline">
-				Strong understanding of
-				<span class="text-gray-700">React</span>,
-				<span class="text-gray-700">Vue</span> and good old
-				<span class="text-gray-700">AngularJS</span>.
-			</div>
-
-			<div class="print:inline">
-				Past experience with KnockoutJS, Ember, BackboneJS or even things like
-				<a href="https://github.com/quirkey/sammy" target="_blank">sammyJS</a>.
-			</div>
-			<div class="text-gray-700 print:inline">
-				Ability to work outside of mainstream tools, frameworks and libraries.
-			</div>
-			<div class="pt-4 print:inline">
-				Understanding of uni-directional data flow tools such as
-				<span class="text-gray-700">Redux</span> or
-				<span class="text-gray-700">Vuex</span>.
-			</div>
-			<div class="print:inline">
-				Proficiency in leveraging event-driven applications and more traditional MVC or MVVM
-				frameworks.
-			</div>
-			<div class="pt-4 print:pt-0 print:inline">
-				Capacity to work on the build level with tools like
-				<span class="text-gray-700">webpack</span>,
-				<span class="text-gray-700">gulp</span>,
-				<span class="text-gray-700">grunt</span> and even
-				<span class="text-gray-700">bower</span>.
-			</div>
-			<div class="print:inline">
-				Familiarity with modern front-end environment of
-				<span class="text-gray-700">NodeJS</span> and
-				<span class="text-gray-700">NPM</span>.
-			</div>
-		</section>
-
-		<section class="pb-4">
-			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">Architecture</div>
-			<div class="print:inline">
-				I build robust products by
-				<span class="text-gray-700">clean coding</span>, following
-				<span class="text-gray-700">12-factor app</span> methodology,
-				<span class="text-gray-700">TDD</span> and others.
-			</div>
-			<!-- <div>
-          <span class="text-gray-700">SOAP</span>,
-          <span class="text-gray-700">REST</span> and
-          <span class="text-gray-700">SPA</span> are not afterhours phrases for
-          me.
-        </div> -->
-			<div class="pt-4 print:pt-0 print:inline">
-				Delivery of user interfaces is my craft, but creation of modern UI is a demanding process -
-				therefore I can operate unix based systems, create and modify CI/CD process, configure and
-				setup cloud environments that will host the application, integrate 3rd party tools and more.
-			</div>
-		</section>
-	</section>
-</div>
+	<div class="pt-4 font-work">
+		<div class="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2 2xl:grid-cols-4 gap-4 gap-y-8">
+			{#each lists as list}
+				<section class="flex flex-col gap-1.5 xl:gap-1 2xl:gap-2 text-gray-700">
+					{#each list.major as item}
+						<div class="text-sm whitespace-nowrap">
+							<i class="fas fa-circle text-xs mr-2" />
+							<span>{item}</span>
+						</div>
+					{/each}
+					{#each list.minor as item}
+						<div class="text-sm text-gray-400">
+							<i class="fas fa-circle text-xs mr-2" />
+							<span>{item}</span>
+						</div>
+					{/each}
+					{#each list.patch as item}
+						<div class="text-sm text-gray-400">
+							<i class="fas fa-circle text-xs mr-2 text-gray-200" />
+							<span>{item}</span>
+						</div>
+					{/each}
+				</section>
+			{/each}
+		</div>
+	</div>
+</section>

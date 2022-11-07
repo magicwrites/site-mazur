@@ -1,38 +1,26 @@
 <script>
-	import Percenter from './../../../shared/Percenter.svelte';
+	import Preface from '$components/shared/Preface.svelte';
+	// import { en, pl } from './index.content';
+	// import { isPolish } from './../../stores/language';
+
+	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div>
-	<Percenter value={0.2}>Two parts artist</Percenter>
+<section class="p-8 bg-gray-50 xl:p-0 xl:bg-transparent">
+	<div class="flex flex-col gap-4">
+		<div class="pb-4 border-b-4 border-gray-400">
+			<Preface icon="fas fa-compass-drafting" background="bg-white" subtitle="Two parts artist"
+				>Design</Preface
+			>
+		</div>
 
-	<section class="pt-4 font-work text-gray-400 text-sm print:text-xs">
-		<section class="pb-4">
-			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">Aesthethic sense</div>
-			<div>
-				Years of interactions with well crafted design systems and aesthetic ideas left me with
-				<span class="text-gray-700">ability to create simple but pleasing UI elements</span> that can
-				form the core of your software.
-			</div>
-			<div class="pt-4">
-				I favor a <span class="text-gray-700">minimalist</span>
-				approach, leveraging <span class="text-gray-700">less is more</span>
-				principle.
-			</div>
-		</section>
+		<div>At the end of our struggle, there is a product that we build for humans.</div>
 
-		<section class="pb-4 text-sm">
-			<div class="uppercase text-gray-700 mt-4 underline print:mt-0">UX and design</div>
-			<div>Apps are supposed to deliver value.</div>
-			<div class="pt-4">
-				In my work I am able to rise above the "engineering dream" and put <span
-					class="text-gray-700">priority on what really matters</span
-				> for our users.
-			</div>
-			<div class="pt-4">
-				Being <span class="text-gray-700">business-aware</span> I can propose changes that help us
-				mitigate technical and time constrains. Often <span class="text-gray-700">redesign</span> is
-				the best solution.
-			</div>
-		</section>
-	</section>
-</div>
+		<div>
+			I can put my engineering spirit aside and optimise for simplicity of use. I am able to bypass
+			the technical pitfals by proposing alternative user flows.
+		</div>
+
+		<div>If need be, I can propose simple and effective designs for the project.</div>
+	</div>
+</section>

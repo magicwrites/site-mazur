@@ -11,7 +11,7 @@
 </script>
 
 <div>
-	<section class="grid gap-14 xl:gap-10 print:pt-8">
+	<section class="p-8 grid gap-14 xl:gap-10 print:pt-8">
 		<Employer
 			name={texts.employers.casumo.name}
 			roles={texts.employers.casumo.roles}
@@ -27,8 +27,8 @@
 					guide the evolution of company software.
 				</div>
 				<div class="pt-4">
-					Eventually taking up the mantle of software architect in order to design and deliver the
-					second iteration of Casumo UI in form of micro-frontends.
+					Eventually taking up the mantle of software architect and chapter lead in order to design
+					and deliver the second iteration of Casumo UI in form of micro frontends.
 				</div>
 			</div>
 		</Employer>
@@ -48,8 +48,8 @@
 				</div>
 				<div class="pt-4">
 					Performing role of a <span class="whitespace-nowrap">front-end</span> developer using
-					mainstream javascript solutions. Some of the more unconventional projects required usage
-					of niche languages, <span class="whitespace-nowrap">full-stack</span>
+					mainstream javascript solutions. Some of the more unconventional projects have required
+					usage of niche languages, <span class="whitespace-nowrap">full-stack</span>
 					work or delivery of <span class="whitespace-nowrap">cross-platform</span> UI among other unorthodox
 					techniques.
 				</div>

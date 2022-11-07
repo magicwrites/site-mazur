@@ -1,9 +1,8 @@
 <script>
-	import Language from '$components/shared/Language.svelte';
 	import Title from '$components/shared/Title.svelte';
 	import Description from './about/Description.svelte';
+	import Actions from './about/Actions.svelte';
 	import Contact from './about/Contact.svelte';
-	import avatar from '$assets/avatar-2.png';
 	import maciej from '$assets/maciej-chair.jpg';
 	import Framer from '$components/shared/Framer.svelte';
 	// import { en, pl } from './index.content';
@@ -12,61 +11,90 @@
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div
-	class="sm-business xl:h-screen print:h-screen flex flex-col sm:px-16 xl:py-4 lg:px-24 md:mx-auto xl:max-w-none 2xl:px-48"
->
-	<Framer>
-		<div class="sm-maciej absolute">
-			<img src={maciej} class="h-full" alt="maciej" />
-		</div>
-	</Framer>
+<div class="relative xl:h-screen">
+	<div class="xl:mx-8 2xl:mx-44">
+		<section class="relative xl:static h-screen xl:h-auto flex flex-col overflow-hidden">
+			<header class="p-8 z-10">
+				<Actions />
+			</header>
 
-	<header class="flex p-4 print:hidden">
-		<div class="ml-auto">
-			<Language />
-		</div>
-	</header>
-
-	<section class="flex flex-col flex-grow">
-		<header class="px-4 py-16 mb-6 sm:py-8 md:py-20 md:pt-12 xl:py-4 2xl:py-16 flex flex-col">
-			<img
-				src={avatar}
-				alt="avatar"
-				class="xl:hidden mx-auto w-48 mb-20 rounded-full border border-gray-700"
-			/>
-			<div class="mx-auto xl:ml-0">
-				<Title subtitle="Software developer"
-					>Maciej <a class="hidden md:inline print:inline" href="/">Mazur</a></Title
-				>
+			<div class="p-8 pt-0 2xl:pt-10 z-10">
+				<Title subtitle="Software architect">
+					<span style="margin-left: -2px">Maciej</span>
+					<a class="hidden md:inline print:inline" href="/">Mazur</a>
+				</Title>
 			</div>
-		</header>
 
-		<main class="px-4 xl:w-1/2">
-			<Description />
-		</main>
+			<Framer>
+				<div class="sm-maciej absolute flex justify-center 2xl:justify-end z-0">
+					<img src={maciej} alt="maciej" class="select-none" />
+				</div>
+			</Framer>
+		</section>
 
-		<footer class="mt-auto p-4 pt-24 xl:pt-4 xl:pb-48 xl:mt-20 2xl:mt-auto">
-			<Contact />
-		</footer>
-	</section>
+		<div class="relative z-10 xl:w-1/2">
+			<section class="bg-gray-50 xl:bg-transparent">
+				<div class="p-8 xl:pt-12 2xl:pt-16 xl:pr-0 text-gray-500 xl:text-gray-400">
+					<Description />
+				</div>
+
+				<div class="hidden xl:block">
+					<div class="p-8 xl:pt-12 2xl:pt-16">
+						<Contact />
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
 </div>
 
 <style>
-	@media (min-width: 1280px) {
+	.sm-maciej {
+		bottom: 0;
+		width: 200vw;
+		margin-left: -50vw;
 	}
 
-	@media (min-width: 1333px) {
+	.sm-maciej img {
+		height: calc(100vh - 220px);
+		width: auto;
 	}
 
-	@media (min-width: 1920px) {
+	@media (min-width: 640px) {
 		.sm-maciej {
-			right: 3.75%;
-			bottom: 0;
+			right: 0;
+			width: auto;
+			margin-left: 0;
 		}
 
 		.sm-maciej img {
+			height: 95vh;
+			margin-right: 100px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.sm-maciej {
+			width: 100vw;
+		}
+
+		.sm-maciej img {
+			height: calc(100vh - 220px);
+			width: auto;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.sm-maciej {
+			width: 50vw;
+		}
+	}
+
+	@media (min-width: 1920px) {
+		.sm-maciej img {
 			height: auto;
-			width: 92.5%;
+			width: 590px;
+			margin-right: 120px;
 		}
 	}
 </style>

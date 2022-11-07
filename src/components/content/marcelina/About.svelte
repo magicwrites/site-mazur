@@ -1,10 +1,8 @@
 <script>
-	import Language from '$components/shared/Language.svelte';
 	import Title from '$components/shared/Title.svelte';
 	import Description from './about/Description.svelte';
 	import Actions from './about/Actions.svelte';
 	import Contact from './about/Contact.svelte';
-	import avatar from '$assets/marcelina-avatar.png';
 	import marcelina from '$assets/marcelina-chair.jpg';
 	import Framer from '$components/shared/Framer.svelte';
 	// import { en, pl } from './index.content';
@@ -94,8 +92,8 @@
 	@media (min-width: 1920px) {
 		.sm-marcelina img {
 			height: auto;
-			width: 600px;
-			margin-right: 40px;
+			width: 610px;
+			margin-right: 0px;
 		}
 	}
 </style>
