@@ -73,7 +73,7 @@
 		}
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 768px) and (min-height: 640px) {
 		.sm-maciej {
 			width: 100vw;
 		}

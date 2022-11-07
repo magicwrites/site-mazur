@@ -72,7 +72,7 @@
 		}
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 768px) and (min-height: 640px) {
 		.sm-marcelina {
 			width: 100vw;
 		}

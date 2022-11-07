@@ -7,7 +7,7 @@
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div class="p-8 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 font-sm">
+<div class="p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 font-sm">
 	<Unavailable>
 		<Button subtitle="For head hunters" icon="fas fa-download">Download CV</Button>
 	</Unavailable>
