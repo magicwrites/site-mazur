@@ -8,17 +8,23 @@
 
 <section class="w-full flex justify-between">
 	<div class="flex gap-4 xl:hidden">
-		<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
-			<i class="fab fa-whatsapp" />
-		</div>
+		<a href="https://wa.me/48697952558" target="_blank">
+			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
+				<i class="fab fa-whatsapp" />
+			</div>
+		</a>
 
-		<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
-			<i class="fas fa-phone" />
-		</div>
+		<a href="tel:+48697952558" target="_blank">
+			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
+				<i class="fas fa-phone" />
+			</div>
+		</a>
 
-		<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
-			<i class="fas fa-envelope" />
-		</div>
+		<a href="mailto:marcelina@mazur.site" target="_blank">
+			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
+				<i class="fas fa-envelope" />
+			</div>
+		</a>
 	</div>
 
 	<div class="ml-auto">

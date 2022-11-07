@@ -13,19 +13,36 @@
 	<div>
 		<div class="text-sm text-gray-400">Porozmawiajmy:</div>
 		<div class="font-work flex items-center">
-			<span>+ 48 697 952 558</span>
+			<span>
+				<a
+					class="border-b border-transparent hover:border-gray-700 transition"
+					href="tel:+48697952558"
+					target="_blank"
+				>
+					+ 48 697 952 558
+				</a>
+			</span>
+			<span class="text-gray-400 pr-2">&nbsp; - </span>
 			<a
-				class="flex items-center text-gray-400 hover:text-gray-700 transition"
+				class="flex items-center text-gray-400 border-b border-transparent hover:border-gray-700 hover:text-gray-700 transition"
 				href="https://wa.me/48697952558"
 				target="_blank"
 			>
-				<span class="text-xs pl-2 pr-1.5"> - również whatsapp </span>
-				<i class="fa-brands fa-whatsapp" />
+				<span class="text-xs">również whatsapp </span>
 			</a>
+			<i class="fa-brands fa-whatsapp text-gray-400 pl-1.5" />
 		</div>
 	</div>
 	<div>
 		<div class="text-sm text-gray-400">Pisemnie:</div>
-		<div class="font-work">marcelina@mazur.site</div>
+		<div class="font-work">
+			<a
+				class="border-b border-transparent hover:border-gray-700 transition"
+				href="mailto:marcelina@mazur.site"
+				target="_blank"
+			>
+				marcelina@mazur.site
+			</a>
+		</div>
 	</div>
 </section>
