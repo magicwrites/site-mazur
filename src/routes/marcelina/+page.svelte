@@ -3,17 +3,17 @@
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Experience from '$components/content/marcelina/Experience.svelte';
 	import Offer from '$components/content/marcelina/Offer.svelte';
-	// import Skillset from '$components/content/marcelina/Skillset.svelte';
 	import About from '$components/content/marcelina/About.svelte';
-	// import Links from '$components/content/marcelina/Links.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
 
-	// $: texts = $isPolish ? pl : en;
+	import { en, pl } from '$components/content/marcelina/About.content';
+	import { isPolish } from '$src/stores/language';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <svelte:head>
 	<title>Marcelina Mazur</title>
+	<meta name="description" content={texts.accountant} />
 </svelte:head>
 
 <section>

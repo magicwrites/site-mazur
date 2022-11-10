@@ -6,10 +6,16 @@
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import About from '$components/content/mateusz/About.svelte';
 	import mateusz from '$assets/mateusz-chair.jpg';
+
+	import { en, pl } from '$components/content/mateusz/About.content';
+	import { isPolish } from '$src/stores/language';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <svelte:head>
 	<title>Mateusz Mazur</title>
+	<meta name="description" content={texts.paragraphs.join(' ')} />
 </svelte:head>
 
 <div>

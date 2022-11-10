@@ -5,14 +5,16 @@
 	import Skillset from '$components/content/maciej/Skillset.svelte';
 	import About from '$components/content/maciej/About.svelte';
 	import Links from '$components/content/maciej/Links.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
 
-	// $: texts = $isPolish ? pl : en;
+	import { en, pl } from '$components/content/maciej/About.content';
+	import { isPolish } from '$src/stores/language';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <svelte:head>
 	<title>Maciej Mazur</title>
+	<meta name="description" content={texts.job} />
 </svelte:head>
 
 <section>
