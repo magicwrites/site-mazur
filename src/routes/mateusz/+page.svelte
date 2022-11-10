@@ -23,7 +23,7 @@
 
 		<main class="flex flex-grow flex-col sm:flex-row md:flex-col justify-between">
 			<section>
-				<div class="px-8 xl:px-4 xl:p-4 xl:py-16">
+				<div class="px-8 xl:px-4 xl:p-4 xl:py-16 z-10 relative">
 					<Title>
 						<span style="margin-left: -2px">Mateusz</span>
 						<a class="hidden md:inline print:inline" href="/">Mazur</a>
