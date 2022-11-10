@@ -1,5 +1,6 @@
 <script>
 	import Language from '$components/shared/Language.svelte';
+	import Icon from '$components/shared/Icon.svelte';
 	// import { en, pl } from './index.content';
 	// import { isPolish } from './../../stores/language';
 
@@ -9,15 +10,11 @@
 <section class="w-full flex justify-between">
 	<div class="flex gap-4 xl:hidden">
 		<a href="mailto:maciej@mazur.site" target="_blank">
-			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
-				<i class="fas fa-envelope" />
-			</div>
+			<Icon reactive name="fas fa-envelope" />
 		</a>
 
 		<a href="https://www.linkedin.com/in/maciek-mazur-b922953a/" target="_blank">
-			<div class="rounded-full bg-gray-50 w-10 h-10 flex items-center justify-center">
-				<i class="fab fa-linkedin-in" />
-			</div>
+			<Icon reactive name="fab fa-linkedin-in" />
 		</a>
 	</div>
 
