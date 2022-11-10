@@ -21,7 +21,9 @@
 			</div>
 			<div class="text-2xl font-work pb-4">{name}</div>
 			<div class="text-gray-500 font-work">
-				<slot />
+				<div class="flex flex-col gap-4">
+					<slot />
+				</div>
 			</div>
 		</main>
 	</section>

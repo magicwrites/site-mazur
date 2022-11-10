@@ -3,10 +3,6 @@
 	import Engineering from './skillset/Engineering.svelte';
 	import Management from './skillset/Management.svelte';
 	import Design from './skillset/Design.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
-
-	// $: texts = $isPolish ? pl : en;
 </script>
 
 <div class="font-work" id="skillset">

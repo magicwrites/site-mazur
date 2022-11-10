@@ -1,17 +1,17 @@
 <script>
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
+	import { isPolish } from '$src/stores/language';
+	import { en, pl } from './Contact.content';
 
-	// $: texts = $isPolish ? pl : en;
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <section class="font-work grid gap-4">
 	<div class="hidden print:block">
-		<div class="text-sm text-gray-400">Online at:</div>
+		<div class="text-sm text-gray-400">Online:</div>
 		<div class="font-work">https://maciej.mazur.site</div>
 	</div>
 	<div>
-		<div class="text-sm text-gray-400">Reach me:</div>
+		<div class="text-sm text-gray-400">{texts.email}</div>
 		<div class="font-work">
 			<a
 				class="border-b border-transparent hover:border-gray-700 transition"
@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<div>
-		<div class="text-sm text-gray-400">Sometimes at:</div>
+		<div class="text-sm text-gray-400">{texts.linkedin}</div>
 		<div class="font-work">
 			<a
 				class="border-b border-transparent hover:border-gray-700 transition"

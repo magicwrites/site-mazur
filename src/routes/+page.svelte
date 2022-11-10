@@ -90,7 +90,7 @@
 <style>
 	@media (min-width: 1280px) {
 		.sm-mazur-bg {
-			background-image: url('./../assets/gliwice.png');
+			background-image: url('./../assets/gliwice.jpg');
 			background-repeat: no-repeat;
 			background-position: 0 15vh;
 			background-size: cover;

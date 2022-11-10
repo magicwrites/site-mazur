@@ -5,10 +5,11 @@
 	import Contact from './about/Contact.svelte';
 	import maciej from '$assets/maciej-chair.jpg';
 	import Framer from '$components/shared/Framer.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
 
-	// $: texts = $isPolish ? pl : en;
+	import { isPolish } from '$src/stores/language';
+	import { en, pl } from './About.content';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <div class="relative xl:h-screen">
@@ -19,7 +20,7 @@
 			</header>
 
 			<div class="p-8 pt-0 2xl:pt-12 z-10">
-				<Title subtitle="Software architect">
+				<Title subtitle={texts.job}>
 					<span style="margin-left: -2px">Maciej</span>
 					<a class="hidden md:inline print:inline" href="/">Mazur</a>
 				</Title>
@@ -34,7 +35,7 @@
 
 		<div class="relative z-10 xl:w-1/2">
 			<section class="bg-gray-50 xl:bg-transparent">
-				<div class="p-8 xl:pt-12 2xl:pt-16 xl:pr-0 text-gray-500 xl:text-gray-400">
+				<div class="p-8 xl:pr-0 text-gray-500 xl:text-gray-400">
 					<Description />
 				</div>
 

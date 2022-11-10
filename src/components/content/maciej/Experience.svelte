@@ -1,10 +1,6 @@
 <script>
 	import Overview from '$components/content/maciej/experience/Overview.svelte';
 	import Timeline from '$components/content/maciej/experience/Timeline.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
-
-	// $: texts = $isPolish ? pl : en;
 </script>
 
 <div class="font-work xl:bg-gray-50" id="experience">
