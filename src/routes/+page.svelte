@@ -48,10 +48,10 @@
 					><Link items={texts.maciej.skills} icon="fa-person">{texts.maciej.name}</Link></a
 				>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />
-				<a href="https://photos.app.goo.gl/ZBzunxbE2Xnv5SG27" target="_blank">
+				<a href="/helena">
 					<Link items={texts.helena.skills} icon="fa-child-reaching">{texts.helena.name}</Link>
 				</a>
-				<a href="https://photos.app.goo.gl/M7ZYb4GhJPxvBAAF9" target="_blank">
+				<a href="/mateusz">
 					<Link items={texts.mateusz.skills} icon="fa-baby">{texts.mateusz.name}</Link>
 				</a>
 			</main>
@@ -68,7 +68,7 @@
 				<a href="/maciej">
 					<Link items={texts.applications.features}>{texts.applications.name}</Link>
 				</a>
-				<a href="/marcelina">
+				<a href="/marcelina#oferta">
 					<Link items={texts.accounting.features}>{texts.accounting.name}</Link>
 				</a>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />

@@ -16,11 +16,11 @@
 
 		<div>
 			Software can be delivered in an orderly and transparent fashion. Over the years I have built
-			skills that keep me focused, efficient and organised even in a fast, chaotic environments.
+			skills that keep me focused, efficient and organised even in a fast, chaotic environment.
 		</div>
 
 		<div>
-			As a member of a group I arrange my work in relation to others. I follow the <span
+			As a member of a team I arrange my work in relation to others. I follow the <span
 				class="text-gray-700">critical path</span
 			>, share responsibilities, <span class="text-gray-700">take ownership</span> and propose improvements.
 		</div>

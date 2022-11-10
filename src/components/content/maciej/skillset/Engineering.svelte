@@ -23,7 +23,7 @@
 				'REST',
 				'MVC / MVVM',
 				'redux / vuex',
-				'webpack / vite'
+				'webpack / parcel'
 			],
 			minor: ['grunt / bower'],
 			patch: []

@@ -7,7 +7,7 @@
 	// $: texts = $isPolish ? pl : en;
 </script>
 
-<div class="font-work xl:bg-gray-50">
+<div class="font-work xl:bg-gray-50" id="oferta">
 	<div class="xl:h-screen xl:mx-8 xl:flex xl:items-center 2xl:mx-44 2xl:text-lg">
 		<div class="grid xl:grid-cols-2 xl:gap-8">
 			<Intro />
