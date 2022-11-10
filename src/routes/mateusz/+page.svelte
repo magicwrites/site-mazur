@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div>
-	<div class="h-screen flex flex-col xl:px-8 xl:pt-4 2xl:px-48">
+	<div class="h-screen flex flex-col xl:px-8 xl:pt-4 2xl:px-48 relative">
 		<header class="p-8 xl:p-4 z-10 flex justify-between">
 			<a href="/" class="xl:opacity-0 xl:pointer-events-none">
 				<Icon reactive light name="fas fa-arrow-left" />
