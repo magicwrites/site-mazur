@@ -4,7 +4,8 @@
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Link from '$components/shared/Link.svelte';
 	import Title from '$components/shared/Title.svelte';
-	import { en, pl } from '$content/page.content.ts';
+
+	import { en, pl } from '$components/content/Index.content.ts';
 	import { isPolish } from './../stores/language';
 
 	$: texts = $isPolish ? pl : en;
@@ -40,19 +41,14 @@
 			<main
 				class="grid gap-y-1 xl:grid-cols-1 xl:gap-y-1 md:grid-cols-2 md:gap-x-4 md:gap-y-8 xl:order-2 2xl:col-start-1"
 			>
-				<a href="/marcelina"
-					><Link items={texts.marcelina.skills} icon="fa-person-dress">{texts.marcelina.name}</Link
-					></a
-				>
-				<a href="/maciej"
-					><Link items={texts.maciej.skills} icon="fa-person">{texts.maciej.name}</Link></a
-				>
+				<a href="/marcelina"><Link items={texts.marcelina.skills}>{texts.marcelina.name}</Link></a>
+				<a href="/maciej"><Link items={texts.maciej.skills}>{texts.maciej.name}</Link></a>
 				<div class="h-5 2xl:h-10 md:hidden xl:block" />
 				<a href="/helena">
-					<Link items={texts.helena.skills} icon="fa-child-reaching">{texts.helena.name}</Link>
+					<Link items={texts.helena.skills}>{texts.helena.name}</Link>
 				</a>
 				<a href="/mateusz">
-					<Link items={texts.mateusz.skills} icon="fa-baby">{texts.mateusz.name}</Link>
+					<Link items={texts.mateusz.skills}>{texts.mateusz.name}</Link>
 				</a>
 			</main>
 

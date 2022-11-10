@@ -9,7 +9,7 @@ export const pl = {
 	},
 	marcelina: {
 		name: 'Marcelina',
-		skills: ['księgowość', 'muzyka liturgiczna']
+		skills: ['księgowość']
 	},
 	helena: {
 		name: 'Helena',
@@ -44,7 +44,7 @@ export const en = {
 	},
 	marcelina: {
 		name: 'Marcelina',
-		skills: ['accounting', 'liturgical music']
+		skills: ['accounting']
 	},
 	helena: {
 		name: 'Helena',

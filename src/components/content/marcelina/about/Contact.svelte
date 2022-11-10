@@ -1,8 +1,8 @@
 <script>
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
+	import { isPolish } from '$src/stores/language';
+	import { en, pl } from './Contact.content';
 
-	// $: texts = $isPolish ? pl : en;
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <section class="font-work grid gap-4">
@@ -11,7 +11,7 @@
 		<div class="font-work">https://marcelina.mazur.site</div>
 	</div>
 	<div>
-		<div class="text-sm text-gray-400">Porozmawiajmy:</div>
+		<div class="text-sm text-gray-400">{texts.phone}:</div>
 		<div class="font-work flex items-center">
 			<span>
 				<a
@@ -27,13 +27,13 @@
 				href="https://wa.me/48697952558"
 				target="_blank"
 			>
-				<span class="text-xs">również whatsapp </span>
+				<span class="text-xs">{texts.also} whatsapp </span>
 			</a>
 			<i class="fa-brands fa-whatsapp text-gray-400 pl-1.5" />
 		</div>
 	</div>
 	<div>
-		<div class="text-sm text-gray-400">Pisemnie:</div>
+		<div class="text-sm text-gray-400">{texts.email}:</div>
 		<div class="font-work">
 			<a
 				class="border-b border-transparent hover:border-gray-700 transition"

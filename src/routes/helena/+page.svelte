@@ -4,6 +4,7 @@
 	import Icon from '$components/shared/Icon.svelte';
 	import Logo from '$components/shared/Logo.svelte';
 	import Copyrights from '$components/shared/Copyrights.svelte';
+	import About from '$components/content/helena/About.svelte';
 	import helena from '$assets/helena-chair.jpg';
 </script>
 
@@ -32,12 +33,7 @@
 
 				<section class="grid xl:grid-cols-2">
 					<div class="xl:col-start-2">
-						<div class="font-work xl:text-lg text-gray-400">
-							<div class="p-2 px-8 xl:p-0 flex flex-col gap-4">
-								<div>Pasowany przedszkolak.</div>
-								<div>Psoty i poszukiwanie uwagi.</div>
-							</div>
-						</div>
+						<About />
 					</div>
 				</section>
 			</section>

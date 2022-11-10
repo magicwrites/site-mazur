@@ -5,10 +5,11 @@
 	import Contact from './about/Contact.svelte';
 	import marcelina from '$assets/marcelina-chair.jpg';
 	import Framer from '$components/shared/Framer.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
 
-	// $: texts = $isPolish ? pl : en;
+	import { isPolish } from '$src/stores/language';
+	import { en, pl } from './About.content';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
 <div class="relative xl:h-screen">
@@ -19,7 +20,7 @@
 			</header>
 
 			<div class="p-8 pt-0 2xl:pt-12 z-10">
-				<Title subtitle="Księgowa">
+				<Title subtitle={texts.accountant}>
 					<span style="margin-left: -2px">Marcelina</span>
 					<a class="hidden md:inline print:inline" href="/">Mazur</a>
 				</Title>

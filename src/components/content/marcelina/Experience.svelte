@@ -2,10 +2,6 @@
 	import Story from './experience/Story.svelte';
 	import Followup from './experience/Followup.svelte';
 	import Preface from '$components/shared/Preface.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
-
-	// $: texts = $isPolish ? pl : en;
 </script>
 
 <div class="font-work">

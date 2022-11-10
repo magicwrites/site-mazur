@@ -5,9 +5,4 @@
 body *::selection {
 	color: white;
 	background: #444;
-	font-family: 'Nunito';
-}
-
-.grayscale {
-	filter: grayscale(1);
 }

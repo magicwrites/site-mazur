@@ -1,10 +1,6 @@
 <script>
 	import Language from '$components/shared/Language.svelte';
 	import Icon from '$components/shared/Icon.svelte';
-	// import { en, pl } from './index.content';
-	// import { isPolish } from './../../stores/language';
-
-	// $: texts = $isPolish ? pl : en;
 </script>
 
 <section class="w-full flex justify-between">
