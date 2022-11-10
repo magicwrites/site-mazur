@@ -18,7 +18,7 @@
 				<Actions />
 			</header>
 
-			<div class="p-8 pt-0 2xl:pt-10 z-10">
+			<div class="p-8 pt-0 2xl:pt-12 z-10">
 				<Title subtitle="Software architect">
 					<span style="margin-left: -2px">Maciej</span>
 					<a class="hidden md:inline print:inline" href="/">Mazur</a>
