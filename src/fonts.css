@@ -1,17 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Varela+Round&family=Work+Sans:wght@300;400&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Varela+Round&family=Work+Sans:wght@300;400&display=swap');
 @import url('https://use.fontawesome.com/releases/v6.2.0/css/all.css');
-
-.font-nunito {
-	font-family: 'Nunito', 'Trebutchet MS', 'Geneva', 'Verdana', sans-serif;
-}
-
-.font-montserrat {
-	font-family: 'Montserrat', 'Trebutchet MS', 'Geneva', 'Verdana', sans-serif;
-}
-
-.font-baloo {
-	font-family: 'Baloo Thambi 2', 'Trebutchet MS', 'Geneva', 'Verdana', sans-serif;
-}
 
 .font-work {
 	font-family: 'Work Sans', 'Trebutchet MS', 'Geneva', 'Verdana', sans-serif;
