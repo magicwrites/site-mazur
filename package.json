@@ -1,6 +1,6 @@
 {
 	"name": "site-mazur",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"node": ">=16.0.0 <17.0.0",
 		"npm": ">=8.1.0"
