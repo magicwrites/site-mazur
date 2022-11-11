@@ -10,7 +10,7 @@ It implements a [svelte kit](https://kit.svelte.dev/) as it was defined in late 
 
 And that's it.
 
-There are a few tricks like SSR language detection or HTTP redirection from `maciej.mazur.site` into `mazur.site/maciej`, but I will abstain from describing this level of technicalities.
+There are a few tricks like SSR language detection or vercel level redirection from `maciej.mazur.site` into `mazur.site/maciej`, but I will abstain from describing this level of technicalities.
 
 Most of the code should be fairly readable on it's own.
 
