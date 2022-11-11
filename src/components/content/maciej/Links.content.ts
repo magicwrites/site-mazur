@@ -1,6 +1,6 @@
 export const pl = {
 	cv: {
-		title: 'Pobierx CV',
+		title: 'Pobierz CV',
 		subtitle: 'Dla rekruterów'
 	},
 	code: {
@@ -12,7 +12,7 @@ export const pl = {
 		subtitle: 'Studium przypadku'
 	},
 	frontends: {
-		title: 'Migracja - micro frontends',
+		title: 'Micro frontends',
 		subtitle: 'Studium przypadku'
 	}
 };

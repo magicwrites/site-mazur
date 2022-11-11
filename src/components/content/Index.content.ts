@@ -24,8 +24,8 @@ export const pl = {
 		features: ['oprogramowanie', 'front-end']
 	},
 	accounting: {
-		name: 'Księgowość indywidualna',
-		features: ['działalność gospodarcza', 'mikrofirmy']
+		name: 'Księgowość',
+		features: ['działalność gospodarcza', 'firmy']
 	},
 	invoices: {
 		name: 'Eleganckie faktury',
