@@ -21,7 +21,7 @@
 			"destination": "/marcelina/:path*"
 		},
 		{
-			"source": "/:path*",
+			"source": "*",
 			"has": [
 				{
 					"type": "host",
