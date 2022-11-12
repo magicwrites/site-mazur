@@ -28,7 +28,7 @@
 					"value": "mateusz.mazur.site"
 				}
 			],
-			"destination": "/mateusz/:path*"
+			"destination": "https://mazur.site/mateusz/:path*"
 		},
 		{
 			"source": "/:path*",
