@@ -1,14 +1,14 @@
 {
 	"rewrites": [
 		{
-			"source": "*",
+			"source": "/:path*",
 			"has": [
 				{
 					"type": "host",
 					"value": "maciej.mazur.site"
 				}
 			],
-			"destination": "/maciej"
+			"destination": "/maciej/:path*"
 		},
 		{
 			"source": "/:path*",
