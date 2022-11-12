@@ -11,16 +11,6 @@
 			"destination": "/maciej/:path*"
 		},
 		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "marcelina.mazur.site"
-				}
-			],
-			"destination": "/marcelina/:path*"
-		},
-		{
 			"source": "/",
 			"has": [
 				{
