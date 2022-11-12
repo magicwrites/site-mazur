@@ -1,8 +1,14 @@
 {
 	"rewrites": [
 		{
-			"source": "/",
-			"destination": "/maciej"
+			"source": "/:path*",
+			"has": [
+				{
+					"type": "host",
+					"value": "maciej.mazur.site"
+				}
+			],
+			"destination": "/maciej/:path*"
 		}
 	]
 }
