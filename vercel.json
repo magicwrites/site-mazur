@@ -2,33 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "maciej.mazur.site"
-				}
-			],
 			"destination": "/maciej/:path*"
-		},
-		{
-			"source": "/",
-			"has": [
-				{
-					"type": "host",
-					"value": "mateusz.mazur.site"
-				}
-			],
-			"destination": "/mateusz"
-		},
-		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "helena.mazur.site"
-				}
-			],
-			"destination": "/helena/:path*"
 		}
 	]
 }
