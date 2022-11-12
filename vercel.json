@@ -21,14 +21,14 @@
 			"destination": "/marcelina/:path*"
 		},
 		{
-			"source": "*",
+			"source": "/",
 			"has": [
 				{
 					"type": "host",
 					"value": "mateusz.mazur.site"
 				}
 			],
-			"destination": "https://mazur.site/mateusz"
+			"destination": "/mateusz"
 		},
 		{
 			"source": "/:path*",
