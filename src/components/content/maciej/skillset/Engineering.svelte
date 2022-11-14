@@ -1,5 +1,6 @@
 <script>
 	import Preface from '$components/shared/Preface.svelte';
+	import Item from '$components/shared/Item.svelte';
 
 	import { isPolish } from '$src/stores/language';
 	import { en, pl } from './Engineering.content';
@@ -23,21 +24,18 @@
 			{#each texts.lists as list}
 				<section class="flex flex-col gap-1.5 xl:gap-1 2xl:gap-2 text-gray-700">
 					{#each list.major as item}
-						<div class="text-sm whitespace-nowrap">
-							<i class="fas fa-circle text-xs mr-2" />
-							<span>{item}</span>
+						<div class="whitespace-nowrap">
+							<Item size="sm">{item}</Item>
 						</div>
 					{/each}
 					{#each list.minor as item}
-						<div class="text-sm text-gray-400">
-							<i class="fas fa-circle text-xs mr-2" />
-							<span>{item}</span>
+						<div class="text-gray-400">
+							<Item size="sm">{item}</Item>
 						</div>
 					{/each}
 					{#each list.patch as item}
-						<div class="text-sm text-gray-400">
-							<i class="fas fa-circle text-xs mr-2 text-gray-200" />
-							<span>{item}</span>
+						<div class="text-gray-400">
+							<Item size="sm" accent="gray-200">{item}</Item>
 						</div>
 					{/each}
 				</section>

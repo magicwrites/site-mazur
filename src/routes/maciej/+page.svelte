@@ -5,6 +5,7 @@
 	import Skillset from '$components/content/maciej/Skillset.svelte';
 	import About from '$components/content/maciej/About.svelte';
 	import Links from '$components/content/maciej/Links.svelte';
+	import CurriculumVitae from '$components/content/maciej/cv/Page.svelte';
 
 	import { en, pl } from '$components/content/maciej/About.content';
 	import { isPolish } from '$src/stores/language';
@@ -17,7 +18,11 @@
 	<meta name="description" content={texts.job} />
 </svelte:head>
 
-<section>
+<section class="hidden print:block">
+	<CurriculumVitae />
+</section>
+
+<section class="print:hidden">
 	<About />
 	<Experience />
 	<Skillset />

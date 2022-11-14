@@ -9,11 +9,11 @@
 </script>
 
 <div class="p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 font-sm">
-	<Unavailable>
+	<a href="/curriculum-vitae-maciej.pdf" target="_blank">
 		<Button subtitle={texts.cv.subtitle} icon="fas fa-download">
 			{texts.cv.title}
 		</Button>
-	</Unavailable>
+	</a>
 	<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 		<Button subtitle={texts.code.subtitle} icon="fab fa-github">
 			{texts.code.title}
