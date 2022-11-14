@@ -7,6 +7,6 @@ export const load = ({ url }) => {
 	const subdomain = subdomains.find((subdomain) => host.includes(subdomain));
 
 	if (subdomain) {
-		throw redirect(307, `www.mazur.site/${subdomain}`);
+		throw redirect(307, `https://www.mazur.site/${subdomain}`);
 	}
 };
