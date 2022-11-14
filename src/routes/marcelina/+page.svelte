@@ -4,6 +4,7 @@
 	import Experience from '$components/content/marcelina/Experience.svelte';
 	import Offer from '$components/content/marcelina/Offer.svelte';
 	import About from '$components/content/marcelina/About.svelte';
+	import CurriculumVitae from '$components/content/marcelina/cv/Page.svelte';
 
 	import { en, pl } from '$components/content/marcelina/About.content';
 	import { isPolish } from '$src/stores/language';
@@ -16,7 +17,11 @@
 	<meta name="description" content={texts.accountant} />
 </svelte:head>
 
-<section>
+<section class="hidden print:block font-work">
+	<CurriculumVitae />
+</section>
+
+<section class="print:hidden">
 	<About />
 	<Offer />
 	<Experience />

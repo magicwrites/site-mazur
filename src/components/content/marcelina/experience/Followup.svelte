@@ -9,9 +9,9 @@
 </script>
 
 <section class="p-8 xl:py-0 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-8">
-	<Unavailable>
+	<a href="/curriculum-vitae-marcelina.pdf" target="_blank">
 		<Button subtitle={texts.cv.subtitle} icon="fas fa-download">{texts.cv.title}</Button>
-	</Unavailable>
+	</a>
 	<Unavailable>
 		<Button subtitle={texts.pricing.subtitle} icon="fas fa-download">
 			{texts.pricing.title}

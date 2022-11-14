@@ -18,7 +18,7 @@
 	<meta name="description" content={texts.job} />
 </svelte:head>
 
-<section class="hidden print:block">
+<section class="hidden print:block font-work">
 	<CurriculumVitae />
 </section>
 
