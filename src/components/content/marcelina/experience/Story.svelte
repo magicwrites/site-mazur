@@ -13,7 +13,7 @@
 
 	<section class="flex flex-col gap-4 text-gray-500">
 		{#each texts.periods as period, i}
-			<Period color={i > 2 ? 'gray-400' : 'gray-500'} last={i === texts.periods.length - 1}>
+			<Period color="text-gray-500" last={i === texts.periods.length - 1}>
 				{@html period}
 			</Period>
 		{/each}

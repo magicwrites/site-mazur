@@ -31,7 +31,7 @@
 			</div>
 		</header>
 
-		<div class="p-4 xl:my-8 xl:grid xl:grid-cols-3 2xl:grid-cols-4">
+		<div class="p-4 xl:my-4 xl:grid xl:grid-cols-3 2xl:grid-cols-4">
 			<div
 				class="p-4 pb-2 sm:pt-8 text-gray-400 hidden xl:block xl:pt-0 xl:col-span-2 xl:order-0 font-varela 2xl:col-span-3"
 			>
@@ -80,7 +80,7 @@
 	</section>
 
 	<footer
-		class="flex items-center p-8 pt-32 sm:pt-16 xl:pt-8 mt-auto justify-between xl:justify-start"
+		class="flex items-center p-8 pt-32 sm:pt-16 xl:pt-4 mt-auto justify-between xl:justify-start"
 	>
 		<div class="w-7">
 			<Logo />

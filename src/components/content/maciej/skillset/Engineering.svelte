@@ -25,17 +25,17 @@
 				<section class="flex flex-col gap-1.5 xl:gap-1 2xl:gap-2 text-gray-700">
 					{#each list.major as item}
 						<div class="whitespace-nowrap">
-							<Item size="sm">{item}</Item>
+							<Item size="text-sm xl:text-xs 2xl:text-sm">{item}</Item>
 						</div>
 					{/each}
 					{#each list.minor as item}
 						<div class="text-gray-400">
-							<Item size="sm">{item}</Item>
+							<Item size="text-sm xl:text-xs 2xl:text-sm">{item}</Item>
 						</div>
 					{/each}
 					{#each list.patch as item}
 						<div class="text-gray-400">
-							<Item size="sm" accent="gray-200">{item}</Item>
+							<Item size="text-sm xl:text-xs 2xl:text-sm" accent="gray-200">{item}</Item>
 						</div>
 					{/each}
 				</section>

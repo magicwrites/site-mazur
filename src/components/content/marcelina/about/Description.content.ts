@@ -1,7 +1,7 @@
 export const pl = {
 	paragraphs: [
-		'Moja przygoda z księgowością rozpoczęła się jedenaście lat temu i trwa do dziś. Swoje doświadczenie zdobywałam w dużej firmie z sektora IT oraz prowadząc księgowość mniejszych, jednoosobowych działalności gospodarczych operujących w&nbsp;ramach różnych branż.',
-		'Na co dzień pomagam moim klientom odnaleźć się w świecie zawiłych i&nbsp;skomplikowanych przepisów. Czerpię ogromną satysfakcję gdy moją wiedzę z&nbsp;zakresu podatków mogę wykorzystać do rozwiązywania realnych problemów przedsiębiorców. Cenię sobie kontakt z klientem, wspólne omawianie problemu i&nbsp;indywidualne podejście do każdego tematu.'
+		'Moja przygoda z księgowością rozpoczęła się {years} lat temu i trwa do dziś. Swoje doświadczenie zdobywałam w dużej firmie z sektora IT oraz prowadząc księgowość mniejszych, jednoosobowych działalności gospodarczych operujących w&nbsp;ramach różnych branż.',
+		'Na co dzień pomagam moim klientom odnaleźć się w świecie zawiłych i&nbsp;skomplikowanych przepisów. Czerpię ogromną satysfakcję, gdy moją wiedzę z&nbsp;zakresu podatków mogę wykorzystać do rozwiązywania realnych problemów przedsiębiorców. Cenię sobie kontakt z klientem, wspólne omawianie problemu i&nbsp;indywidualne podejście do każdego tematu.'
 	]
 };
 

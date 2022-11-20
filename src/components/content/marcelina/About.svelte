@@ -19,7 +19,7 @@
 				<Actions />
 			</header>
 
-			<div class="p-8 pt-0 2xl:pt-12 z-10">
+			<div class="p-8 pt-0 xl:pb-4 2xl:pb-8 2xl:pt-12 z-10">
 				<Title subtitle={texts.accountant}>
 					<span style="margin-left: -2px">Marcelina</span>
 					<a class="hidden md:inline print:inline" href="/">Mazur</a>
@@ -35,12 +35,12 @@
 
 		<div class="relative z-10 xl:w-1/2">
 			<section class="bg-gray-50 xl:bg-transparent">
-				<div class="p-8 xl:pr-0 text-gray-500 xl:text-gray-400">
+				<div class="p-8 xl:pr-0 xl:py-4 2xl:py-8 text-gray-500 xl:text-gray-400">
 					<Description />
 				</div>
 
 				<div class="hidden xl:block">
-					<div class="p-8">
+					<div class="p-8 xl:py-4 2xl:py-8">
 						<Contact />
 					</div>
 				</div>

@@ -22,7 +22,7 @@
 	<CurriculumVitae />
 </section>
 
-<section class="print:hidden">
+<section class="print:hidden xl:text-sm 2xl:text-base">
 	<About />
 	<Experience />
 	<Skillset />
