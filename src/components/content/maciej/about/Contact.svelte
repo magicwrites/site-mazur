@@ -23,11 +23,19 @@
 	<div>
 		<div class="text-sm text-gray-400">{texts.linkedin}</div>
 		<div class="font-work">
-			<a
-				class="border-b border-transparent hover:border-gray-700 transition"
-				href="https://www.linkedin.com/in/maciek-mazur-b922953a/"
-				target="_blank">linkedin</a
-			>
+			{#if $isPolish}
+				<a
+					class="border-b border-transparent hover:border-gray-700 transition"
+					href="https://www.goldenline.pl/maciej-mazur15/"
+					target="_blank">goldenline</a
+				>
+			{:else}
+				<a
+					class="border-b border-transparent hover:border-gray-700 transition"
+					href="https://www.linkedin.com/in/maciek-mazur-b922953a/"
+					target="_blank">linkedin</a
+				>
+			{/if}
 		</div>
 	</div>
 </section>
