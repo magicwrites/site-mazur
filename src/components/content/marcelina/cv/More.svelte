@@ -12,7 +12,7 @@
 		<div class="grid grid-cols-4 gap-1 w-3/4 text-xs">
 			<div class="text-gray-400">data urodzenia</div>
 			<div class="col-span-3">
-				<span>10-05-1987</span>
+				<span>11-05-1987</span>
 				<span class="text-gray-400">- {age} lat</span>
 			</div>
 			<div class="text-gray-400">lokalizacja</div>
