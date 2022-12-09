@@ -1,6 +1,5 @@
 <script>
 	import Item from '$components/shared/Item.svelte';
-	import Sheet from '$components/shared/Sheet.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +8,7 @@
 </svelte:head>
 
 <section class="m-8 print:m-0 font-work">
-	<Sheet>
+	<div class="mx-auto" style="max-width: 800px">
 		<section class="p-4 py-8 flex flex-col gap-8">
 			<header class="flex flex-col gap-2">
 				<div class="uppercase font-dosis text-5xl -ml-0.5">dziękuję</div>
@@ -97,5 +96,5 @@
 				</div>
 			</main>
 		</section>
-	</Sheet>
+	</div>
 </section>
