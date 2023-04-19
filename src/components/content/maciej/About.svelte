@@ -4,7 +4,6 @@
 	import Actions from './about/Actions.svelte';
 	import Contact from './about/Contact.svelte';
 	import maciej from '$assets/maciej-chair.jpg';
-	import Framer from '$components/shared/Framer.svelte';
 
 	import { isPolish } from '$src/stores/language';
 	import { en, pl } from './About.content';
@@ -26,11 +25,9 @@
 				</Title>
 			</div>
 
-			<Framer>
-				<div class="sm-maciej absolute flex justify-center 2xl:justify-end z-0">
-					<img src={maciej} alt="maciej" class="select-none" />
-				</div>
-			</Framer>
+			<div class="sm-maciej absolute flex justify-center 2xl:justify-end z-0">
+				<img src={maciej} alt="maciej" class="select-none" />
+			</div>
 		</section>
 
 		<div class="relative z-10 xl:w-1/2">
@@ -94,7 +91,7 @@
 	@media (min-width: 1920px) {
 		.sm-maciej img {
 			height: auto;
-			width: 590px;
+			width: 680px;
 			margin-right: 120px;
 		}
 	}
