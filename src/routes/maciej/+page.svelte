@@ -1,5 +1,5 @@
 <script>
-	import Logo from '$components/shared/Logo.svelte';
+	import Language from '$components/shared/Language.svelte';
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Experience from '$components/content/maciej/Experience.svelte';
 	import Skillset from '$components/content/maciej/Skillset.svelte';
@@ -22,21 +22,70 @@
 	<CurriculumVitae />
 </section>
 
-<section class="print:hidden xl:text-sm 2xl:text-base">
-	<About />
-	<Experience />
-	<Skillset />
+<section class="print:hidden font-work text-neutral-700 flex flex-col gap-32">
+	<article class="grid grid-cols-8">
+		<div />
 
-	<footer class="xl:bg-gray-50 xl:px-8 2xl:px-44">
-		<Links />
+		<div class="col-span-6 flex flex-col gap-8">
+			<aside class="flex justify-end py-8">
+				<Language />
+			</aside>
 
-		<section class="p-8 pt-4 mx-0.5">
-			<div class="flex items-center justify-between sm:justify-center gap-4">
-				<div class="w-6">
-					<Logo />
-				</div>
-				<Copyrights />
+			<div>
+				<About />
 			</div>
-		</section>
+		</div>
+
+		<div />
+	</article>
+
+	<article class="grid grid-cols-8">
+		<div />
+
+		<div class="col-span-6 relative">
+			<div class="absolute -top-28" id="experience" />
+
+			<Experience />
+		</div>
+
+		<div />
+	</article>
+
+	<div class="grid grid-cols-8">
+		<div class="col-span-1" />
+		<div class="col-span-6 border-t border-neutral-300 border-dashed" />
+		<div class="col-span-1" />
+	</div>
+
+	<article class="grid grid-cols-8">
+		<div />
+
+		<div class="col-span-6 relative">
+			<div class="absolute -top-28" id="skillset" />
+
+			<Skillset />
+		</div>
+
+		<div />
+	</article>
+
+	<div class="grid grid-cols-8">
+		<div class="col-span-1" />
+		<div class="col-span-6 border-t border-neutral-300 border-dashed" />
+		<div class="col-span-1" />
+	</div>
+
+	<footer class="grid grid-cols-8">
+		<div />
+
+		<div class="col-span-6">
+			<Links />
+		</div>
+
+		<div />
 	</footer>
+
+	<aside class="pb-32">
+		<Copyrights />
+	</aside>
 </section>

@@ -7,7 +7,7 @@ export const pl = {
 
 export const en = {
 	paragraphs: [
-		'I <a href="http://cleancoder.com" target="_blank" class="border-b border-transparent hover:border-gray-400 transition">build</a> enjoyable user interfaces for web applications. I do so individually, as a part of informal startup team or in enterprise environments that operate at scale.',
-		'I am a software professional who understands how <a href="https://gettingthingsdone.com" target="_blank" class="border-b border-transparent hover:border-gray-400 transition">things are made</a> and loves what he does. I can fill any role in your delivery process but I excel at front-end&nbsp;/&nbsp;JS development. Please review my <a href="/maciej#experience" class="text-gray-700 border-b border-transparent hover:border-black transition">experience</a> and <a href="/maciej#skillset" class="text-gray-700 border-b border-transparent hover:border-black transition">detailed skillset</a> if you want to make sure that I am a good match for your next endeavour.'
+		'I build enjoyable user interfaces for web applications. I do so individually, as a part of informal startup team or in enterprise environments that operate at scale.',
+		'I am a software professional who understands how things are made and loves what he does. I can fill any role in your delivery process but I excel at <span class="whitespace-nowrap" 	>front-end / JS</span > development. Please review my <a href="#experience" class="border-b border-neutral-700">experience</a> and detailed <a href="#skillset" class="border-b border-neutral-700">skillset</a> if you want to make sure that I am a good match for your next endeavour.'
 	]
 };

@@ -1,6 +1,5 @@
 <script>
-	import Unavailable from '$components/shared/Unavailable.svelte';
-	import Button from '$components/shared/Button.svelte';
+	import Redirect from '$components/shared/Redirect.svelte';
 
 	import { isPolish } from '$src/stores/language';
 	import { en, pl } from './Links.content';
@@ -8,25 +7,48 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<div class="p-8 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 font-sm">
-	<a href="/curriculum-vitae-maciej.pdf" target="_blank">
-		<Button subtitle={texts.cv.subtitle} icon="fas fa-download">
-			{texts.cv.title}
-		</Button>
-	</a>
-	<a href="https://github.com/magicwrites/site-mazur" target="_blank">
-		<Button subtitle={texts.code.subtitle} icon="fab fa-github">
-			{texts.code.title}
-		</Button>
-	</a>
-	<Unavailable>
-		<Button subtitle={texts.invoices.subtitle} icon="fas fa-calculator">
-			{texts.invoices.title}
-		</Button>
-	</Unavailable>
-	<Unavailable>
-		<Button subtitle={texts.frontends.subtitle} icon="fas fa-layer-group">
-			{texts.frontends.title}
-		</Button>
-	</Unavailable>
-</div>
+<section class="grid grid-cols-11">
+	<div class="col-span-2 flex">
+		<a href="/curriculum-vitae-maciej.pdf" target="_blank">
+			<Redirect icon="fas fa-download">
+				<div class="text-neutral-400 text-xs">For head hunters</div>
+				<div>Download CV</div>
+			</Redirect>
+		</a>
+	</div>
+
+	<div />
+
+	<div class="col-span-2">
+		<div class="flex items-center gap-4">
+			<a href="https://github.com/magicwrites/site-mazur" target="_blank">
+				<Redirect icon="fab fa-github">
+					<div class="text-neutral-400 text-xs">For technical recruiters</div>
+					<div>Code of this website</div>
+				</Redirect>
+			</a>
+		</div>
+	</div>
+
+	<div />
+
+	<div class="col-span-2">
+		<div class="flex items-center gap-4">
+			<Redirect icon="fas fa-calculator" disabled="w przygotowaniu">
+				<div class="text-neutral-400 text-xs">Case study</div>
+				<div>Invoice application</div>
+			</Redirect>
+		</div>
+	</div>
+
+	<div />
+
+	<div class="col-span-2">
+		<div class="flex items-center gap-4">
+			<Redirect icon="fas fa-layer-group" disabled="w przygotowaniu">
+				<div class="text-neutral-400 text-xs">Case study</div>
+				<div>Micro frontends setup</div>
+			</Redirect>
+		</div>
+	</div>
+</section>

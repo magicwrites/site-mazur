@@ -1,12 +1,12 @@
 <script>
-	import { isPolish, isEnglish, toggle } from '../../stores/language';
+	import { isPolish } from '../../stores/language';
 
 	const year = new Date().getFullYear();
 </script>
 
-<div class="text-gray-700 text-sm flex items-center font-work">
-	<span>{$isPolish ? 'wszystkie prawa zastrzeżone' : 'all rights reserved'}</span>
-	<i class="px-2 far fa-copyright" />
-	<a class="pr-1" href="/">Mazur</a>
+<section class="text-xs text-center text-neutral-400">
+	<span>{$isPolish ? 'wszelkie prawa zastrzeżone' : 'all rights reserved'}</span>
+	<i class="far fa-copyright" />
 	<span>{year}</span>
-</div>
+	<a href="/" class="text-neutral-700 border-b border-neutral-700">Mazur</a>
+</section>
