@@ -1,5 +1,6 @@
 <script>
-	import Language from '$components/shared/Language.svelte';
+	import cx from 'classnames';
+
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Experience from '$components/content/maciej/Experience.svelte';
 	import Skillset from '$components/content/maciej/Skillset.svelte';
@@ -23,11 +24,11 @@
 	<CurriculumVitae />
 </section>
 
-<section class="print:hidden font-work text-neutral-700 flex flex-col gap-16 lg:gap-24 xl:gap-32">
+<section class="print:hidden font-work text-neutral-700 flex flex-col gap-16 xl:gap-24 2xl:gap-32">
 	<article class="lg:grid lg:grid-cols-8">
 		<div />
 
-		<div class="lg:col-span-6 flex flex-col xl:gap-8">
+		<div class="lg:col-span-6 flex flex-col 2xl:gap-8">
 			<aside class="py-8 px-8 2xl:px-0">
 				<Actions />
 			</aside>
@@ -54,7 +55,7 @@
 
 	<div class="lg:grid lg:grid-cols-8">
 		<div class="lg:col-span-1" />
-		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 xl:mx-0" />
+		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 2xl:mx-0" />
 		<div class="lg:col-span-1" />
 	</div>
 
@@ -72,7 +73,7 @@
 
 	<div class="lg:grid lg:grid-cols-8">
 		<div class="lg:col-span-1" />
-		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 xl:mx-0" />
+		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 2xl:mx-0" />
 		<div class="lg:col-span-1" />
 	</div>
 

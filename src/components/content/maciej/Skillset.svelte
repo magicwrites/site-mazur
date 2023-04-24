@@ -21,8 +21,8 @@
 <section class="flex flex-col gap-8 px-8 2xl:px-0">
 	<h2 class="text-3xl hidden">Skillset</h2>
 
-	<section class="xl:grid xl:grid-cols-11 flex flex-col gap-8 xl:gap-0">
-		<div class="xl:col-span-4 flex flex-col gap-8">
+	<section class="xl:grid xl:grid-cols-11 flex flex-col gap-8 xl:gap-y-16 2xl:gap-0">
+		<div class="xl:col-span-11 2xl:col-span-4 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.engineering.title}</h3>
 				<div class="text-neutral-400">{texts.engineering.subtitle}</div>
@@ -55,9 +55,9 @@
 			</section>
 		</div>
 
-		<div class="xl:col-span-1" />
+		<div class="xl:hidden 2xl:block 2xl:col-span-1" />
 
-		<div class="xl:col-span-3 flex flex-col gap-8">
+		<div class="xl:col-span-6 2xl:col-span-3 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.management.title}</h3>
 				<div class="text-neutral-400">{texts.management.subtitle}</div>
@@ -72,7 +72,7 @@
 
 		<div class="xl:col-span-1" />
 
-		<div class="xl:col-span-2 flex flex-col gap-8">
+		<div class="xl:col-span-4 2xl:col-span-2 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.design.title}</h3>
 				<div class="text-neutral-400">{texts.design.subtitle}</div>

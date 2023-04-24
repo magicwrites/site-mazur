@@ -7,8 +7,10 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<section class="sm:grid sm:grid-cols-2 xl:grid-cols-11 flex flex-col gap-8 xl:gap-0 px-8 xl:px-0">
-	<div class="xl:col-span-2 flex flex-col xl:flex-row">
+<section
+	class="sm:grid sm:grid-cols-2 2xl:grid-cols-11 flex flex-col gap-8 2xl:gap-0 px-8 2xl:px-0"
+>
+	<div class="2xl:col-span-2 flex flex-col xl:flex-row">
 		<a href="/curriculum-vitae-maciej.pdf" target="_blank">
 			<Redirect icon="fas fa-download">
 				<div class="text-neutral-400 text-xs">For head hunters</div>
@@ -17,9 +19,9 @@
 		</a>
 	</div>
 
-	<div class="hidden xl:block" />
+	<div class="hidden 2xl:block" />
 
-	<div class="xl:col-span-2">
+	<div class="2xl:col-span-2">
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 				<Redirect icon="fab fa-github">
@@ -30,9 +32,9 @@
 		</div>
 	</div>
 
-	<div class="hidden xl:block" />
+	<div class="hidden 2xl:block" />
 
-	<div class="xl:col-span-2">
+	<div class="2xl:col-span-2">
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-calculator" disabled="w przygotowaniu">
 				<div class="text-neutral-400 text-xs">Case study</div>
@@ -41,13 +43,13 @@
 		</div>
 	</div>
 
-	<div class="hidden xl:block" />
+	<div class="hidden 2xl:block" />
 
-	<div class="xl:col-span-2">
+	<div class="2xl:col-span-2">
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-layer-group" disabled="w przygotowaniu">
 				<div class="text-neutral-400 text-xs">Case study</div>
-				<div>Micro frontends setup</div>
+				<div>Micro frontends</div>
 			</Redirect>
 		</div>
 	</div>
