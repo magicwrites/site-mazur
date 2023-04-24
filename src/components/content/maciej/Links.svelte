@@ -7,8 +7,8 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<section class="sm:grid sm:grid-cols-2 lg:grid-cols-11 flex flex-col gap-8 lg:gap-0 px-8 lg:px-0">
-	<div class="lg:col-span-2 flex flex-col sm:flex-row">
+<section class="sm:grid sm:grid-cols-2 xl:grid-cols-11 flex flex-col gap-8 xl:gap-0 px-8 xl:px-0">
+	<div class="xl:col-span-2 flex flex-col xl:flex-row">
 		<a href="/curriculum-vitae-maciej.pdf" target="_blank">
 			<Redirect icon="fas fa-download">
 				<div class="text-neutral-400 text-xs">For head hunters</div>
@@ -17,10 +17,10 @@
 		</a>
 	</div>
 
-	<div class="hidden lg:block" />
+	<div class="hidden xl:block" />
 
-	<div class="lg:col-span-2">
-		<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+	<div class="xl:col-span-2">
+		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 				<Redirect icon="fab fa-github">
 					<div class="text-neutral-400 text-xs">For technical recruiters</div>
@@ -30,10 +30,10 @@
 		</div>
 	</div>
 
-	<div class="hidden lg:block" />
+	<div class="hidden xl:block" />
 
-	<div class="lg:col-span-2">
-		<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+	<div class="xl:col-span-2">
+		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-calculator" disabled="w przygotowaniu">
 				<div class="text-neutral-400 text-xs">Case study</div>
 				<div>Invoice application</div>
@@ -41,10 +41,10 @@
 		</div>
 	</div>
 
-	<div class="hidden lg:block" />
+	<div class="hidden xl:block" />
 
-	<div class="lg:col-span-2">
-		<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+	<div class="xl:col-span-2">
+		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-layer-group" disabled="w przygotowaniu">
 				<div class="text-neutral-400 text-xs">Case study</div>
 				<div>Micro frontends setup</div>

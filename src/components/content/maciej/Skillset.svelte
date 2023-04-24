@@ -18,11 +18,11 @@
 		  };
 </script>
 
-<section class="flex flex-col gap-8 px-8 lg:px-0">
+<section class="flex flex-col gap-8 px-8 2xl:px-0">
 	<h2 class="text-3xl hidden">Skillset</h2>
 
-	<section class="lg:grid lg:grid-cols-11 flex flex-col gap-8">
-		<div class="lg:col-span-4 flex flex-col gap-8">
+	<section class="xl:grid xl:grid-cols-11 flex flex-col gap-8 xl:gap-0">
+		<div class="xl:col-span-4 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.engineering.title}</h3>
 				<div class="text-neutral-400">{texts.engineering.subtitle}</div>
@@ -32,7 +32,7 @@
 				<p>{@html texts.engineering.about}</p>
 			</div>
 
-			<section class="text-xs grid grid-cols-2 md:grid-cols-4 gap-y-8 lg:gap-y-0">
+			<section class="text-xs grid grid-cols-2 md:grid-cols-4 gap-y-8 xl:gap-y-0">
 				{#each texts.engineering.lists as list}
 					<div class="flex flex-col gap-2 text-gray-700">
 						{#each list.major as item}
@@ -55,9 +55,9 @@
 			</section>
 		</div>
 
-		<div class="lg:col-span-1" />
+		<div class="xl:col-span-1" />
 
-		<div class="lg:col-span-3 flex flex-col gap-8">
+		<div class="xl:col-span-3 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.management.title}</h3>
 				<div class="text-neutral-400">{texts.management.subtitle}</div>
@@ -70,9 +70,9 @@
 			</div>
 		</div>
 
-		<div class="lg:col-span-1" />
+		<div class="xl:col-span-1" />
 
-		<div class="lg:col-span-2 flex flex-col gap-8">
+		<div class="xl:col-span-2 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.design.title}</h3>
 				<div class="text-neutral-400">{texts.design.subtitle}</div>
