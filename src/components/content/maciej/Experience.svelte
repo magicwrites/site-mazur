@@ -19,7 +19,7 @@
 	<div />
 
 	<section class="lg:col-span-6">
-		<ol class="flex flex-col gap-8 lg:gap-12">
+		<ol class="flex flex-col gap-16 lg:gap-12">
 			{#each texts.entries as entry}
 				<li class="flex flex-col gap-8">
 					<header>

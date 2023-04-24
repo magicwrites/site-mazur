@@ -21,7 +21,7 @@
 <section class="flex flex-col gap-8 px-8 lg:px-0">
 	<h2 class="text-3xl hidden">Skillset</h2>
 
-	<section class="lg:grid lg:grid-cols-11 flex flex-col gap-4">
+	<section class="lg:grid lg:grid-cols-11 flex flex-col gap-8">
 		<div class="lg:col-span-4 flex flex-col gap-8">
 			<header class="flex flex-col gap-1">
 				<h3 class="text-3xl -ml-0.5">{texts.engineering.title}</h3>
