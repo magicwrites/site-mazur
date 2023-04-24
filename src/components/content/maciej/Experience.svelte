@@ -5,8 +5,8 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<section class="grid grid-cols-11">
-	<section class="col-span-4 flex flex-col gap-8">
+<section class="lg:grid lg:grid-cols-11 px-8 lg:px-0 flex flex-col gap-8 lg:gap-0">
+	<section class="lg:col-span-4 flex flex-col gap-8">
 		<h2 class="text-3xl -ml-0.5">{texts.description.header}</h2>
 
 		<div class="flex flex-col gap-4">
@@ -18,8 +18,8 @@
 
 	<div />
 
-	<section class="col-span-6">
-		<ol class="flex flex-col gap-12">
+	<section class="lg:col-span-6">
+		<ol class="flex flex-col gap-8 lg:gap-12">
 			{#each texts.entries as entry}
 				<li class="flex flex-col gap-8">
 					<header>

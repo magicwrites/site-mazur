@@ -10,25 +10,25 @@ export const pl = {
 			patch: ['PHP', 'C# i powiązane', 'java', 'ruby', 'python']
 		},
 		{
-			major: ['react', 'vue', 'web components', 'angular 1.6', 'knockoutJS'],
-			minor: ['angular 2+'],
+			major: ['react', 'vue', 'angular 1.6', 'knockoutJS'],
+			minor: ['angular 2'],
 			patch: ['ember', 'backboneJS', '.NET']
 		},
 		{
 			major: [
-				'git / NPM / semver',
-				'HTTP / websockets',
+				'git / semver',
+				'HTTP / others',
 				'REST',
 				'MVC / MVVM',
 				'redux / vuex',
-				'webpack / parcel'
+				'vite / others'
 			],
 			minor: ['grunt / bower'],
 			patch: []
 		},
 		{
-			major: ['clean coding', 'domain driven design', 'testability', 'CI / CD'],
-			minor: ['3rd party integration', 'web operations', 'cloud systems'],
+			major: ['clean coding', 'domain design', 'testability', 'CI / CD'],
+			minor: ['integrations', 'web operations', 'cloud systems'],
 			patch: []
 		}
 	]
@@ -46,25 +46,18 @@ export const en = {
 			patch: ['PHP', 'C# and related', 'java', 'ruby', 'python']
 		},
 		{
-			major: ['react', 'vue', 'web components', 'angular 1.6', 'knockoutJS'],
-			minor: ['angular 2+'],
+			major: ['react', 'vue', 'angular 1.6', 'knockoutJS'],
+			minor: ['angular 2'],
 			patch: ['ember', 'backboneJS', '.NET']
 		},
 		{
-			major: [
-				'git / NPM / semver',
-				'HTTP / websockets',
-				'REST',
-				'MVC / MVVM',
-				'redux / vuex',
-				'webpack / parcel'
-			],
+			major: ['git / semver', 'HTTP', 'REST', 'MVC / MVVM', 'redux / vuex', 'vite / others'],
 			minor: ['grunt / bower'],
 			patch: []
 		},
 		{
-			major: ['clean coding', 'domain driven design', 'testability', 'CI / CD'],
-			minor: ['3rd party integration', 'web operations', 'cloud systems'],
+			major: ['clean coding', 'domain design', 'testability', 'CI / CD'],
+			minor: ['integrations', 'web operations', 'cloud systems'],
 			patch: []
 		}
 	]

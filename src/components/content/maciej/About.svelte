@@ -1,4 +1,5 @@
 <script>
+	import cx from 'classnames';
 	import maciej from '$assets/maciej-chair.jpg';
 	import { isPolish } from '$src/stores/language';
 	import * as about from './About.content';
@@ -15,22 +16,25 @@
 		  };
 </script>
 
-<section class="grid grid-cols-11">
-	<div class="col-span-5 flex flex-col gap-32">
+<section class={cx('lg:grid lg:grid-cols-11')}>
+	<div class={cx('lg:col-span-5', 'flex flex-col gap-32')}>
 		<div class="flex flex-col gap-16">
-			<header class="flex flex-col gap-2">
-				<h1 class="uppercase text-6xl font-dosis -ml-1">Maciej Mazur</h1>
+			<header class="flex flex-col gap-2 px-8 lg:px-0">
+				<h1 class="uppercase text-6xl font-dosis -ml-1">
+					<span>Maciej</span>
+					<span class="hidden sm:inline">Mazur</span>
+				</h1>
 				<div class="text-neutral-400">{texts.about.job}</div>
 			</header>
 
-			<main class="flex flex-col gap-8">
+			<main class="hidden lg:flex flex-col gap-8">
 				{#each texts.description.paragraphs as paragraph}
 					<p>{@html paragraph}</p>
 				{/each}
 			</main>
 		</div>
 
-		<footer class="flex flex-col gap-4">
+		<footer class="hidden lg:flex flex-col gap-4">
 			{#each texts.about.links as link}
 				<div>
 					<div class="text-neutral-400 text-sm">{link.label}</div>
@@ -46,11 +50,25 @@
 		</footer>
 	</div>
 
-	<div class="col-span-1" />
+	<div class="lg:col-span-1 hidden lg:block" />
 
-	<div class="col-span-5 pt-24">
-		<div class="border-[64px] border-neutral-100">
-			<img src={maciej} alt="maciej" />
+	<div class="lg:col-span-5 lg:pt-24 pt-8">
+		<div class={cx('lg:border-[64px] lg:border-neutral-100', 'overflow-hidden max-w-[100vw]')}>
+			<img
+				src={maciej}
+				alt="maciej"
+				class={cx(
+					'max-w-[130vw] w-[130vw] -ml-[15vw]',
+					'sm:w-full sm:-ml-0',
+					'md:mx-auto md:w-4/5'
+				)}
+			/>
 		</div>
 	</div>
 </section>
+
+<main class="lg:hidden flex flex-col gap-8 p-8 pb-0">
+	{#each texts.description.paragraphs as paragraph}
+		<p>{@html paragraph}</p>
+	{/each}
+</main>

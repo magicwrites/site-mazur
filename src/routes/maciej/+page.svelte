@@ -4,6 +4,7 @@
 	import Experience from '$components/content/maciej/Experience.svelte';
 	import Skillset from '$components/content/maciej/Skillset.svelte';
 	import About from '$components/content/maciej/About.svelte';
+	import Actions from '$components/content/maciej/about/Actions.svelte';
 	import Links from '$components/content/maciej/Links.svelte';
 	import CurriculumVitae from '$components/content/maciej/cv/Page.svelte';
 
@@ -22,13 +23,13 @@
 	<CurriculumVitae />
 </section>
 
-<section class="print:hidden font-work text-neutral-700 flex flex-col gap-32">
-	<article class="grid grid-cols-8">
+<section class="print:hidden font-work text-neutral-700 flex flex-col gap-16 lg:gap-32">
+	<article class="grid lg:grid-cols-8">
 		<div />
 
-		<div class="col-span-6 flex flex-col gap-8">
-			<aside class="flex justify-end py-8">
-				<Language />
+		<div class="lg:col-span-6 flex flex-col lg:gap-8">
+			<aside class="py-8 px-8 lg:px-0">
+				<Actions />
 			</aside>
 
 			<div>
@@ -39,10 +40,10 @@
 		<div />
 	</article>
 
-	<article class="grid grid-cols-8">
+	<article class="lg:grid lg:grid-cols-8">
 		<div />
 
-		<div class="col-span-6 relative">
+		<div class="lg:col-span-6 relative">
 			<div class="absolute -top-28" id="experience" />
 
 			<Experience />
@@ -51,16 +52,16 @@
 		<div />
 	</article>
 
-	<div class="grid grid-cols-8">
-		<div class="col-span-1" />
-		<div class="col-span-6 border-t border-neutral-300 border-dashed" />
-		<div class="col-span-1" />
+	<div class="grid lg:grid-cols-8">
+		<div class="lg:col-span-1" />
+		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 lg:mx-0" />
+		<div class="lg:col-span-1" />
 	</div>
 
-	<article class="grid grid-cols-8">
+	<article class="lg:grid lg:grid-cols-8">
 		<div />
 
-		<div class="col-span-6 relative">
+		<div class="lg:col-span-6 relative">
 			<div class="absolute -top-28" id="skillset" />
 
 			<Skillset />
@@ -69,23 +70,23 @@
 		<div />
 	</article>
 
-	<div class="grid grid-cols-8">
-		<div class="col-span-1" />
-		<div class="col-span-6 border-t border-neutral-300 border-dashed" />
-		<div class="col-span-1" />
+	<div class="grid lg:grid-cols-8">
+		<div class="lg:col-span-1" />
+		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 lg:mx-0" />
+		<div class="lg:col-span-1" />
 	</div>
 
-	<footer class="grid grid-cols-8">
+	<footer class="lg:grid lg:grid-cols-8">
 		<div />
 
-		<div class="col-span-6">
+		<div class="lg:col-span-6">
 			<Links />
 		</div>
 
 		<div />
 	</footer>
 
-	<aside class="pb-32">
+	<aside class="pb-16 lg:pb-32">
 		<Copyrights />
 	</aside>
 </section>
