@@ -7,7 +7,7 @@
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<section class="sm:grid sm:grid-cols-2 lg:grid-cols-11 flex flex-col gap-8 px-8 lg:px-0">
+<section class="sm:grid sm:grid-cols-2 lg:grid-cols-11 flex flex-col gap-8 lg:gap-0 px-8 lg:px-0">
 	<div class="lg:col-span-2 flex">
 		<a href="/curriculum-vitae-maciej.pdf" target="_blank">
 			<Redirect icon="fas fa-download">
