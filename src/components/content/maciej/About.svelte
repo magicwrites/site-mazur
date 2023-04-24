@@ -60,7 +60,8 @@
 				class={cx(
 					'max-w-[130vw] w-[130vw] -ml-[15vw]',
 					'sm:w-full sm:-ml-0',
-					'md:mx-auto md:w-4/5'
+					'md:mx-auto md:w-4/5',
+					'xl:w-full'
 				)}
 			/>
 		</div>
