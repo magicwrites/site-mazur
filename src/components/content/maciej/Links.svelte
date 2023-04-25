@@ -13,8 +13,8 @@
 	<div class="2xl:col-span-2 flex flex-col xl:flex-row">
 		<a href="/curriculum-vitae-maciej.pdf" target="_blank">
 			<Redirect icon="fas fa-download">
-				<div class="text-neutral-400 text-xs">For head hunters</div>
-				<div>Download CV</div>
+				<div class="text-neutral-400 text-xs">{texts.cv.subtitle}</div>
+				<div>{texts.cv.title}</div>
 			</Redirect>
 		</a>
 	</div>
@@ -25,8 +25,8 @@
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<a href="https://github.com/magicwrites/site-mazur" target="_blank">
 				<Redirect icon="fab fa-github">
-					<div class="text-neutral-400 text-xs">For technical recruiters</div>
-					<div>Code of this website</div>
+					<div class="text-neutral-400 text-xs">{texts.code.subtitle}</div>
+					<div>{texts.code.title}</div>
 				</Redirect>
 			</a>
 		</div>
@@ -37,8 +37,8 @@
 	<div class="2xl:col-span-2">
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-calculator" disabled="w przygotowaniu">
-				<div class="text-neutral-400 text-xs">Case study</div>
-				<div>Invoice application</div>
+				<div class="text-neutral-400 text-xs">{texts.invoices.subtitle}</div>
+				<div>{texts.invoices.title}</div>
 			</Redirect>
 		</div>
 	</div>
@@ -48,8 +48,8 @@
 	<div class="2xl:col-span-2">
 		<div class="flex flex-col xl:flex-row xl:items-center gap-4">
 			<Redirect icon="fas fa-layer-group" disabled="w przygotowaniu">
-				<div class="text-neutral-400 text-xs">Case study</div>
-				<div>Micro frontends</div>
+				<div class="text-neutral-400 text-xs">{texts.frontends.subtitle}</div>
+				<div>{texts.frontends.title}</div>
 			</Redirect>
 		</div>
 	</div>

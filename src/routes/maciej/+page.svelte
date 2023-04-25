@@ -1,6 +1,4 @@
 <script>
-	import cx from 'classnames';
-
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Experience from '$components/content/maciej/Experience.svelte';
 	import Skillset from '$components/content/maciej/Skillset.svelte';
@@ -45,7 +43,7 @@
 		<div />
 
 		<div class="lg:col-span-6 relative">
-			<div class="absolute -top-28" id="experience" />
+			<div class="absolute -top-14 2xl:-top-28" id="experience" />
 
 			<Experience />
 		</div>
@@ -63,7 +61,7 @@
 		<div />
 
 		<div class="lg:col-span-6 relative">
-			<div class="absolute -top-28" id="skillset" />
+			<div class="absolute -top-14 2xl:-top-28" id="skillset" />
 
 			<Skillset />
 		</div>

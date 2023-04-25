@@ -2,7 +2,7 @@ export const pl = {
 	title: 'Inżynieria',
 	subtitle: 'Pięć części programisty',
 	about:
-		'Od szczegółowych umiejętności takich jak programowanie w danym języku aż po dalekie abstrakcje architektury systemowej. Jako autor nowoczesnych interfejsów użytkownika musiałem poznać i zrozumieć wiele technologii, praktyk, koncepcji oraz wzorców. Wśród najistotniejszych mogę wymienić:',
+		'Od szczegółowych umiejętności takich jak programowanie w danym języku aż po dalekie abstrakcje architektury systemowej. Jako autor nowoczesnych interfejsów użytkownika musiałem poznać i zrozumieć wiele technologii, praktyk, koncepcji oraz wzorców. Ostatnio:',
 	lists: [
 		{
 			major: ['JS / nodeJS', 'typescript', 'svelte'],
@@ -38,7 +38,7 @@ export const en = {
 	title: 'Engineering',
 	subtitle: 'Five parts software developer',
 	about:
-		'From the hard skill of programming in a particular language to the high abstrations of architecture design. As an author of modern user interfaces I have found myself learning and applying many technologies, practices, concepts and patterns. Recently the most notable among those are:',
+		'From the hard skill of programming in a particular language to the high abstrations of architecture design. As an author of modern user interfaces I have found myself learning and applying many technologies, practices, concepts and patterns. Recently:',
 	lists: [
 		{
 			major: ['JS / nodeJS', 'typescript', 'svelte'],
