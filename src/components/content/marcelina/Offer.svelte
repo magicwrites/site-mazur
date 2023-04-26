@@ -1,16 +1,44 @@
 <script>
-	import Intro from './offer/Intro.svelte';
-	import Topics from './offer/Topics.svelte';
+	import { isPolish } from '$src/stores/language';
+	import { pl, en } from './Offer.content';
+	import Point from '$components/shared/Point.svelte';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
-<div class="font-work xl:bg-gray-50" id="oferta">
-	<div class="xl:h-screen xl:mx-8 xl:flex xl:items-center 2xl:mx-44 2xl:text-lg">
-		<div class="grid xl:grid-cols-2 xl:gap-8">
-			<Intro />
+<section class="xl:grid xl:grid-cols-11 px-8 2xl:px-0 flex flex-col gap-8 xl:gap-0">
+	<section class="xl:col-span-5 flex flex-col gap-8">
+		<h2 class="text-3xl -ml-0.5">{texts.analysis.title}</h2>
 
-			<section class="bg-gray-50 xl:bg-transparent">
-				<Topics />
-			</section>
+		<div class="flex flex-col gap-4">
+			{#each texts.analysis.paragraphs as paragraph}
+				<p>{@html paragraph}</p>
+			{/each}
 		</div>
-	</div>
-</div>
+	</section>
+
+	<div />
+
+	<section class="xl:col-span-5 flex flex-col gap-8">
+		<h2 class="text-3xl -ml-0.5">{texts.proposal.title}</h2>
+
+		<div class="flex flex-col gap-4">
+			{#each texts.proposal.paragraphs as paragraph}
+				<p>{@html paragraph}</p>
+			{/each}
+		</div>
+
+		<ul class="flex flex-col gap-2">
+			{#each texts.proposal.points as point, i}
+				<li>
+					<Point first={i === 0}>
+						<div>{point.text}</div>
+						{#if point.more}
+							<div class="text-xs">{point.more}</div>
+						{/if}
+					</Point>
+				</li>
+			{/each}
+		</ul>
+	</section>
+</section>

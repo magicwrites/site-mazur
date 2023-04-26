@@ -14,13 +14,9 @@
 </script>
 
 <svelte:head>
-	<title>Marcelina Mazur</title>
-	<meta name="description" content={texts.job} />
+	<title>Marcelina Mazur - cennik usług</title>
+	<meta name="description" content="Cennik usług" />
 </svelte:head>
-
-<section class="hidden print:block font-work">
-	<CurriculumVitae />
-</section>
 
 <section class="print:hidden font-work text-neutral-700 flex flex-col gap-16 xl:gap-24 2xl:gap-32">
 	<article class="lg:grid lg:grid-cols-8">
@@ -38,52 +34,6 @@
 
 		<div />
 	</article>
-
-	<article class="lg:grid lg:grid-cols-8">
-		<div />
-
-		<div class="lg:col-span-6 relative">
-			<div class="absolute -top-14 2xl:-top-28" id="offer" />
-
-			<Offer />
-		</div>
-
-		<div />
-	</article>
-
-	<div class="lg:grid lg:grid-cols-8">
-		<div class="lg:col-span-1" />
-		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 2xl:mx-0" />
-		<div class="lg:col-span-1" />
-	</div>
-
-	<article class="lg:grid lg:grid-cols-8">
-		<div />
-
-		<div class="lg:col-span-6 relative">
-			<div class="absolute -top-14 2xl:-top-28" id="skillset" />
-
-			<Experience />
-		</div>
-
-		<div />
-	</article>
-
-	<div class="lg:grid lg:grid-cols-8">
-		<div class="lg:col-span-1" />
-		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 2xl:mx-0" />
-		<div class="lg:col-span-1" />
-	</div>
-
-	<footer class="lg:grid lg:grid-cols-8">
-		<div />
-
-		<div class="lg:col-span-6">
-			<Links />
-		</div>
-
-		<div />
-	</footer>
 
 	<aside class="pb-16 lg:pb-32">
 		<Copyrights />

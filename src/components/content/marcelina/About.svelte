@@ -1,97 +1,90 @@
-<script>
-	import Title from '$components/shared/Title.svelte';
-	import Description from './about/Description.svelte';
-	import Actions from './about/Actions.svelte';
-	import Contact from './about/Contact.svelte';
+<script lang="ts">
+	import cx from 'classnames';
 	import marcelina from '$assets/marcelina-chair.jpg';
-
 	import { isPolish } from '$src/stores/language';
-	import { en, pl } from './About.content';
+	import { pl, en } from './About.content';
+
+	const years = new Date().getFullYear() - 2013;
 
 	$: texts = $isPolish ? pl : en;
 </script>
 
-<div class="relative xl:h-screen">
-	<div class="xl:mx-8 2xl:mx-44">
-		<section class="relative xl:static h-screen xl:h-auto flex flex-col overflow-hidden">
-			<header class="p-8 z-10">
-				<Actions />
+<section class={cx('2xl:grid 2xl:grid-cols-11')}>
+	<div class={cx('2xl:col-span-5', 'flex flex-col gap-16 22xl:gap-32')}>
+		<div class="flex flex-col gap-16">
+			<header class="flex flex-col gap-2 px-8 2xl:px-0">
+				<h1 class="uppercase text-6xl font-dosis -ml-1">
+					<span>Marcelina</span>
+					<span class="hidden sm:inline">Mazur</span>
+				</h1>
+				<div class="text-neutral-400">{texts.job}</div>
 			</header>
 
-			<div class="p-8 pt-0 xl:pb-4 2xl:pb-8 2xl:pt-12 z-10">
-				<Title subtitle={texts.accountant}>
-					<span style="margin-left: -2px">Marcelina</span>
-					<a class="hidden md:inline print:inline" href="/">Mazur</a>
-				</Title>
-			</div>
+			<main class="hidden 2xl:flex flex-col gap-8">
+				{#each texts.paragraphs as paragraph}
+					<p>{@html paragraph.replace('{years}', years.toString())}</p>
+				{/each}
+			</main>
+		</div>
 
-			<div class="sm-marcelina absolute flex justify-center 2xl:justify-end z-0">
-				<img src={marcelina} alt="marcelina" class="select-none" />
-			</div>
-		</section>
-
-		<div class="relative z-10 xl:w-1/2">
-			<section class="bg-gray-50 xl:bg-transparent">
-				<div class="p-8 xl:pr-0 xl:py-4 2xl:py-8 text-gray-500 xl:text-gray-400">
-					<Description />
-				</div>
-
-				<div class="hidden xl:block">
-					<div class="p-8 xl:py-4 2xl:py-8">
-						<Contact />
+		<footer class="hidden 2xl:flex flex-col gap-4">
+			{#each texts.links as link}
+				<div>
+					<div class="text-neutral-400 text-sm">{link.label}</div>
+					<div class="font-work flex items-center">
+						<span>
+							<a
+								class="border-b border-transparent hover:border-gray-700 transition"
+								href={link.href}
+							>
+								{link.text}
+							</a>
+						</span>
+						{#if link.aside}
+							<span class="text-gray-400 pr-2">&nbsp; -</span>
+							<a
+								class="flex items-center text-gray-400 border-b border-transparent hover:border-gray-700 hover:text-gray-700 transition"
+								href={link.aside.href}
+								target="_blank"
+							>
+								<span class="text-xs">{link.aside.text}</span>
+							</a>
+							{#if link.aside.icon}
+								<i class={`${link.aside.icon} text-gray-400 pl-1.5`} />
+							{/if}
+						{/if}
 					</div>
 				</div>
-			</section>
+			{/each}
+		</footer>
+	</div>
+
+	<div class="2xl:col-span-1 hidden 2xl:block" />
+
+	<div class="2xl:col-span-5 2xl:pt-24 pt-8">
+		<div
+			class={cx(
+				'lg:border-[64px] lg:border-neutral-100',
+				'lg:m-8 2xl:m-0',
+				'overflow-hidden max-w-[100vw]'
+			)}
+		>
+			<img
+				src={marcelina}
+				alt="marcelina"
+				class={cx(
+					'max-w-[130vw] w-[130vw] -ml-[15vw]',
+					'sm:w-full sm:-ml-0',
+					'md:mx-auto md:w-4/5',
+					'2xl:w-full'
+				)}
+			/>
 		</div>
 	</div>
-</div>
+</section>
 
-<style>
-	.sm-marcelina {
-		bottom: 0;
-		width: 200vw;
-		margin-left: -50vw;
-	}
-
-	.sm-marcelina img {
-		height: calc(100vh - 220px);
-		width: auto;
-	}
-
-	@media (min-width: 640px) {
-		.sm-marcelina {
-			right: 0;
-			width: auto;
-			margin-left: 0;
-		}
-
-		.sm-marcelina img {
-			height: 100vh;
-		}
-	}
-
-	@media (min-width: 768px) and (min-height: 640px) {
-		.sm-marcelina {
-			width: 100vw;
-		}
-
-		.sm-marcelina img {
-			height: calc(100vh - 220px);
-			width: auto;
-		}
-	}
-
-	@media (min-width: 1280px) {
-		.sm-marcelina {
-			width: 50vw;
-		}
-	}
-
-	@media (min-width: 1920px) {
-		.sm-marcelina img {
-			height: auto;
-			width: 680px;
-			margin-right: 0px;
-		}
-	}
-</style>
+<main class="2xl:hidden flex flex-col gap-8 p-8 pb-0">
+	{#each texts.paragraphs as paragraph}
+		<p>{@html paragraph}</p>
+	{/each}
+</main>

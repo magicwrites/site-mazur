@@ -1,23 +1,31 @@
 <script>
-	import Story from './experience/Story.svelte';
-	import Followup from './experience/Followup.svelte';
-	import Preface from '$components/shared/Preface.svelte';
+	import { isPolish } from '$src/stores/language';
+	import { pl, en } from './Experience.content';
+	import Point from '$components/shared/Point.svelte';
+
+	$: texts = $isPolish ? pl : en;
 </script>
 
-<div class="font-work">
-	<div class="xl:h-screen xl:mx-8 xl:flex xl:items-center 2xl:mx-44 2xl:text-lg">
-		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
-			<div class="col-span-2">
-				<Story />
+<section class="flex flex-col gap-8">
+	<h2 class="px-8 2xl:px-0 text-3xl -ml-0.5">{texts.title}</h2>
+
+	<div class="xl:grid xl:grid-cols-11 px-8 2xl:px-0 flex flex-col gap-8 xl:gap-0">
+		<section class="xl:col-span-5 flex flex-col gap-8">
+			<div class="flex flex-col gap-4">
+				{#each texts.paragraphs.primary as paragraph}
+					<p>{@html paragraph}</p>
+				{/each}
 			</div>
+		</section>
 
-			<section class="bg-gray-50 xl:bg-transparent xl:flex xl:flex-col xl:gap-8 xl:py-8">
-				<div class="hidden xl:block opacity-0">
-					<Preface>-</Preface>
-				</div>
+		<div />
 
-				<Followup />
-			</section>
-		</div>
+		<section class="xl:col-span-5 flex flex-col gap-8">
+			<div class="flex flex-col gap-4">
+				{#each texts.paragraphs.secondary as paragraph}
+					<p>{@html paragraph}</p>
+				{/each}
+			</div>
+		</section>
 	</div>
-</div>
+</section>
