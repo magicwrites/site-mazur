@@ -5,7 +5,7 @@
 <style>
 	@media not print {
 		.sheet {
-			width: 800px;
+			max-width: 800px;
 		}
 	}
 </style>

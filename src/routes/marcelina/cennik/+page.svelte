@@ -1,14 +1,21 @@
 <script>
-	import Copyrights from '$components/shared/Copyrights.svelte';
-	import Offer from '$components/content/marcelina/Offer.svelte';
-	import Experience from '$components/content/marcelina/Experience.svelte';
-	import About from '$components/content/marcelina/About.svelte';
-	import Actions from '$components/content/marcelina/about/Actions.svelte';
-	import Links from '$components/content/marcelina/Links.svelte';
-	import CurriculumVitae from '$components/content/marcelina/cv/Page.svelte';
+	import cx from 'classnames';
+	import Sheet from '$components/shared/Sheet.svelte';
 
 	import { en, pl } from '$components/content/maciej/About.content';
 	import { isPolish } from '$src/stores/language';
+
+	const services = [
+		{ iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 200 },
+		{ iteration: 'miesięcznie', name: 'KPiR z VAT', price: 220 },
+		{ iteration: 'miesięcznie', name: 'KPiR z VAT + transakcje zagraniczne', price: 250 },
+		{ iteration: 'miesięcznie', name: 'ryczałt bez VAT', price: 160 },
+		{ iteration: 'miesięcznie', name: 'ryczałt z VAT', price: 180 },
+		{ iteration: 'miesięcznie', name: 'ryczałt z VAT + transakcje zagraniczne', price: 200 },
+		{ iteration: 'miesięcznie', name: 'obsługa 1 pracownika', price: 50 },
+		{ name: 'rozliczenie roczne z działalności', price: 0 },
+		{ name: 'rozliczenie roczne z kilku źródeł przychodu', price: 100 }
+	];
 
 	$: texts = $isPolish ? pl : en;
 </script>
@@ -18,24 +25,71 @@
 	<meta name="description" content="Cennik usług" />
 </svelte:head>
 
-<section class="print:hidden font-work text-neutral-700 flex flex-col gap-16 xl:gap-24 2xl:gap-32">
-	<article class="lg:grid lg:grid-cols-8">
-		<div />
+<section class="lg:m-8 print:m-0 font-work">
+	<Sheet>
+		<section class="font-work print-page flex flex-col">
+			<main>
+				<div class="p-8">
+					<header class="flex justify-between">
+						<div class="flex flex-col gap-2">
+							<div class="text-5xl font-dosis uppercase -ml-1">Cennik</div>
+							<div class="text-lg -ml-0.5">Usługi księgowe na rok 2023</div>
+						</div>
+					</header>
+				</div>
 
-		<div class="lg:col-span-6 flex flex-col 2xl:gap-8">
-			<aside class="py-8 px-8 2xl:px-0">
-				<Actions />
-			</aside>
+				<div class="p-8">
+					<div class="flex gap-4">
+						<section class="flex-grow flex flex-col gap-4 print:gap-2 lg:gap-2">
+							{#each services as service}
+								<div
+									class="flex flex-col print:flex-row lg:flex-row print:gap-4 lg:gap-4 print:items lg:items-center flex-grow"
+								>
+									<div>{service.name}:</div>
+									<div
+										class={cx(
+											'hidden print:block lg:block',
+											'flex-grow h-3 border-b border-dotted border-neutral-300'
+										)}
+									/>
+									<div class="flex gap-2">
+										<span>od {service.price} zł</span>
+										{#if service.iteration}
+											<span class="print:hidden lg:hidden text-neutral-400"
+												>/ {service.iteration}</span
+											>
+										{/if}
+									</div>
+								</div>
+							{/each}
+						</section>
 
-			<div>
-				<About />
-			</div>
-		</div>
+						<aside class="hidden print:flex lg:flex flex-col gap-2 text-neutral-300">
+							{#each services as service}
+								<div class="flex gap-4 items-center flex-grow">
+									<div class="flex gap-2">
+										{@html service.iteration || '&nbsp;'}
+									</div>
+								</div>
+							{/each}
+						</aside>
+					</div>
+				</div>
+			</main>
 
-		<div />
-	</article>
-
-	<aside class="pb-16 lg:pb-32">
-		<Copyrights />
-	</aside>
+			<footer class="p-8 text-xs">
+				Podane ceny pozostają orientacyjne, mogą ulic zmianie ze względu na ilość pracy konieczną do
+				obsłużenia Twojej działalności. Zachęcam do kontaktu aby ustalić precyzyjną wycenę.
+			</footer>
+		</section>
+	</Sheet>
 </section>
+
+<style>
+	@media print {
+		.print-page {
+			height: 100vh;
+			page-break-after: always;
+		}
+	}
+</style>

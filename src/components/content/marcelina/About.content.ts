@@ -27,14 +27,19 @@ export const en = {
 	job: 'Accountant',
 	links: [
 		{
-			label: 'Reach me:',
-			text: 'maciej@mazur.site',
-			href: 'mailto:maciej@mazur.site'
+			label: "Let's talk:",
+			text: '+ 48 697 952 558',
+			href: 'tel:+48697952558',
+			aside: {
+				text: 'also on whatsapp',
+				href: 'https://wa.me/48697952558',
+				icon: 'fab fa-whatsapp'
+			}
 		},
 		{
-			label: 'Also at:',
-			text: 'linkedin',
-			href: 'https://www.linkedin.com/in/maciek-mazur-b922953a'
+			label: 'Write to me:',
+			text: 'marcelina@mazur.site',
+			href: 'mailto:marcelina@mazur.site'
 		}
 	],
 	paragraphs: [
