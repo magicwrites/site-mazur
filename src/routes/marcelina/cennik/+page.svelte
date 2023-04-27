@@ -78,8 +78,8 @@
 			</main>
 
 			<footer class="p-8 text-xs">
-				Podane ceny pozostają orientacyjne, mogą ulic zmianie ze względu na ilość pracy konieczną do
-				obsłużenia Twojej działalności. Zachęcam do kontaktu aby ustalić precyzyjną wycenę.
+				Podane ceny dotyczą działalności do 10 dokumentów i mają charakter orientacyjny. Ostateczna
+				wartość usług jest ustalana dla każdego klienta indywidualnie.
 			</footer>
 		</section>
 	</Sheet>
