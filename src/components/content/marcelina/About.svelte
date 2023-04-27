@@ -4,9 +4,14 @@
 	import { isPolish } from '$src/stores/language';
 	import { pl, en } from './About.content';
 
-	const years = new Date().getFullYear() - 2013;
+	const parse = (texts) => {
+		const years = new Date().getFullYear() - 2013;
+		const paragraphs = texts.paragraphs.map((p) => p.replace('{years}', years.toString()));
 
-	$: texts = $isPolish ? pl : en;
+		return { ...texts, paragraphs };
+	};
+
+	$: texts = $isPolish ? parse(pl) : en;
 </script>
 
 <section class={cx('2xl:grid 2xl:grid-cols-11')}>
@@ -22,7 +27,7 @@
 
 			<main class="hidden 2xl:flex flex-col gap-8">
 				{#each texts.paragraphs as paragraph}
-					<p>{@html paragraph.replace('{years}', years.toString())}</p>
+					<p>{@html paragraph}</p>
 				{/each}
 			</main>
 		</div>
