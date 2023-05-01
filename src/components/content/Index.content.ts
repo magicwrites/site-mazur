@@ -59,8 +59,8 @@ export const en = {
 		features: ['software development', 'front-end']
 	},
 	accounting: {
-		name: 'Small business accounting',
-		features: ['personal accounting', 'small companies']
+		name: 'Accounting',
+		features: ['personal / small business']
 	},
 	invoices: {
 		name: 'Elegant invoices',
