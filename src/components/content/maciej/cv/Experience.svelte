@@ -16,7 +16,7 @@
 			<div>online casino</div>
 		</div>
 		<div class="text-xs flex flex-col gap-0.5">
-			<div>front-end architect &amp; chapter lead</div>
+			<div>front-end leader / architect</div>
 			<div>front-end developer <span class="text-gray-400">&bull; senior</span></div>
 		</div>
 	</div>
