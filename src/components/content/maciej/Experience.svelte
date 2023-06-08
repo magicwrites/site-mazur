@@ -2,7 +2,7 @@
 	import { isPolish } from '$src/stores/language';
 	import { pl, en } from './Experience.content';
 
-	$: texts = $isPolish ? pl : en;
+	$: texts = $isPolish ? { ...pl } : { ...en };
 </script>
 
 <section class="xl:grid xl:grid-cols-11 px-8 2xl:px-0 flex flex-col gap-8 xl:gap-0">
