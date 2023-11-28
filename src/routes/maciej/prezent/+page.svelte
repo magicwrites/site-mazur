@@ -16,26 +16,95 @@
 			</header>
 			<main class="flex flex-col gap-6">
 				<header>
+					<div class="text-lg -ml-0.25">Narzędzia plastyczne</div>
+					<div class="text-sm text-gray-400">
+						Szukam tych konretnych modeli, zamienniki nie wchodzą w grę:
+					</div>
+				</header>
+				<div class="flex flex-col gap-2">
+					<Item>
+						<a
+							href="https://medard.pl/p8018,stol-ceramiczny-obrotowy-plastikowy-o-srednicy-20cm.html"
+							target="_blank"
+							class="underline"
+						>
+							Stół obrotowy do pracy w glinie
+						</a>
+					</Item>
+					<Item>
+						<a
+							href="https://medard.pl/p8271,zestaw-podstawowych-narzedzi-ceramicznych-komplet-8-sztuk.html"
+							target="_blank"
+							class="underline"
+						>
+							Narzędzia do pracy w glinie
+						</a>
+					</Item>
+					<Item>
+						<a
+							href="https://medard.pl/p18992,koh-i-noor-keraplast-glina-samoutwardz-biala-lekka-400g.html"
+							target="_blank"
+							class="underline"
+						>
+							Lekka glina samoutwardzalna biała
+						</a>
+					</Item>
+					<Item>
+						<a
+							href="https://medard.pl/p13787,jovi-masa-modelarska-1000g-biala.html"
+							target="_blank"
+							class="underline"
+						>
+							Masa modelarska biała
+						</a>
+					</Item>
+				</div>
+
+				<header>
+					<div class="text-lg -ml-0.25">Narzędzia</div>
+					<div class="text-sm text-gray-400">Podobnie jak z przyborami - szukam konretów:</div>
+				</header>
+				<div class="flex flex-col gap-2">
+					<Item>
+						<a
+							href="https://domitech.pl/product-pol-37403-Katownik-uniwersalny-Wolfcraft-WF5206000.html"
+							target="_blank"
+							class="underline"
+						>
+							Kątownik
+						</a>
+					</Item>
+					<Item>
+						<a
+							href="https://domitech.pl/product-pol-19031-Szczypce-uniwersalne-wydluzone-DeWALT-DWHT0-70277.html"
+							target="_blank"
+							class="underline"
+						>
+							Szczypce
+						</a>
+					</Item>
+					<!-- <Item>
+						<a
+							href="https://domitech.pl/product-pol-18954-Zestaw-kluczy-plasko-oczko-18-el-DWMT19237-1-DeWALT.html"
+							target="_blank"
+							class="underline"
+						>
+							Zestaw kluczy
+						</a>
+						<span class="text-gray-400">- bardzo drogi, szeroka składka</span>
+					</Item> -->
+				</div>
+
+				<header>
 					<div class="text-lg -ml-0.25">Książkę</div>
 					<div class="text-sm text-gray-400">
-						Kolejność nieprzypadkowa, mile widziane twarde, ładne i minimalistyczne oprawy
+						Kolejność nieprzypadkowa, mile widziane twarde, ładne i minimalistyczne oprawy:
 					</div>
 				</header>
 				<div class="flex flex-col gap-2">
 					<Item>
 						<span>Big Dept Crises</span>
 						<span class="text-gray-400">- Ray Dalio</span>
-					</Item>
-					<Item>
-						<span>Ikigai</span>
-						<span class="text-gray-400">- Garcia Hector / Ikigai</span>
-						<span class="text-gray-400">- Mogi Ken / inny autor? research</span>
-					</Item>
-					<Item>
-						<span>
-							The Rise and Fall of American Growth: The U.S. Standard of Living since the Civil War
-						</span>
-						<span class="text-gray-400">- Gordon Chang</span>
 					</Item>
 					<Item>
 						<span>Buddenbrookowie</span>
@@ -69,31 +138,16 @@
 						<span>Montaż</span>
 						<span class="text-gray-400">- Vladimir Volkoff</span>
 					</Item>
-					<Item>
-						<span>Iluzja wolnej Białorusi</span>
-						<span class="text-gray-400">- Marek Budzisz</span>
-					</Item>
-					<Item>
-						<span>Mała degeneracja</span>
-						<span class="text-gray-400">- Stefan Sękowski</span>
-					</Item>
-					<Item>
-						<span>Od foliowych czapeczek do seksualnej recesji</span>
-						<span class="text-gray-400">- Jarema Piekutowski</span>
-					</Item>
-					<Item>
-						<span>Inteligentny inwestor XXI wieku</span>
-						<span class="text-gray-400">- Cezary Głuch</span>
-					</Item>
 				</div>
-				<header>
+
+				<!-- <header>
 					<div class="text-lg -ml-0.25">Cygara</div>
 					<div class="text-sm text-gray-400">Kilka niewiążących preferencji</div>
 				</header>
 				<div class="flex flex-col gap-2">
 					<Item>Niedługie ale grube, tzw "churchille"</Item>
 					<Item>Nie Kubańskie</Item>
-				</div>
+				</div> -->
 			</main>
 		</section>
 	</div>
