@@ -42,23 +42,37 @@
 					</Item>
 					<Item>
 						<a
+							href="https://medard.pl/p13787,jovi-masa-modelarska-1000g-biala.html"
+							target="_blank"
+							class="underline"
+						>
+							Masa modelarska biała,
+						</a>
+						<span>albo</span>
+						<a
+							href="https://medard.pl/p14698,jovi-masa-modelarska-1000-g-szara.html"
+							target="_blank"
+							class="underline"
+						>
+							szara,
+						</a>
+						<span>albo</span>
+						<a
+							href="https://medard.pl/p13784,jovi-masa-modelarska-1000-g-terakota.html"
+							target="_blank"
+							class="underline"
+						>
+							terakota
+						</a>
+					</Item>
+					<Item>
+						<a
 							href="https://medard.pl/p18992,koh-i-noor-keraplast-glina-samoutwardz-biala-lekka-400g.html"
 							target="_blank"
 							class="underline"
 						>
 							Lekka glina samoutwardzalna biała
 						</a>
-						<span class="text-gray-400">- może być więcej</span>
-					</Item>
-					<Item>
-						<a
-							href="https://medard.pl/p13787,jovi-masa-modelarska-1000g-biala.html"
-							target="_blank"
-							class="underline"
-						>
-							Masa modelarska biała
-						</a>
-						<span class="text-gray-400">- może być więcej</span>
 					</Item>
 				</div>
 
