@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Maciej Mazur - CV</title>
+	<title>Maciej Mazur - prezent propozycje</title>
 	<meta name="description" content="Maciej Mazur - curriculum vitae" />
 </svelte:head>
 
