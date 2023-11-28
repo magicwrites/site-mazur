@@ -134,10 +134,6 @@
 						<span>Kontra</span>
 						<span class="text-gray-400">- Józef Mackiewicz</span>
 					</Item>
-					<Item>
-						<span>Montaż</span>
-						<span class="text-gray-400">- Vladimir Volkoff</span>
-					</Item>
 				</div>
 
 				<!-- <header>
