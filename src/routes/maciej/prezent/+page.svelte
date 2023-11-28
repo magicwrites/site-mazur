@@ -48,6 +48,7 @@
 						>
 							Lekka glina samoutwardzalna biała
 						</a>
+						<span class="text-gray-400">- może być więcej</span>
 					</Item>
 					<Item>
 						<a
@@ -57,6 +58,7 @@
 						>
 							Masa modelarska biała
 						</a>
+						<span class="text-gray-400">- może być więcej</span>
 					</Item>
 				</div>
 
