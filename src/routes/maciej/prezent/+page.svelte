@@ -98,7 +98,7 @@
 				<header>
 					<div class="text-lg -ml-0.25">Książkę</div>
 					<div class="text-sm text-gray-400">
-						Kolejność nieprzypadkowa, mile widziane twarde, ładne i minimalistyczne oprawy:
+						Kolejność nieprzypadkowa, mile widziane twarde eleganckie oprawy, może być po angielsku
 					</div>
 				</header>
 				<div class="flex flex-col gap-2">
