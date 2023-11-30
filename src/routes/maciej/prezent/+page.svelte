@@ -78,7 +78,7 @@
 
 				<header>
 					<div class="text-lg -ml-0.25">Narzędzia</div>
-					<div class="text-sm text-gray-400">Podobnie jak z przyborami - szukam konretów:</div>
+					<div class="text-sm text-gray-400">Poproszę dokładnie te modele:</div>
 				</header>
 				<div class="flex flex-col gap-2">
 					<Item>
