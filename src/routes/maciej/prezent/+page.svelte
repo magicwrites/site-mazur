@@ -15,7 +15,7 @@
 				<div class="text-lg">Chętnie przyjmę</div>
 			</header>
 			<main class="flex flex-col gap-6">
-				<header>
+				<!-- <header>
 					<div class="text-lg -ml-0.25">Narzędzia plastyczne</div>
 					<div class="text-sm text-gray-400">
 						Szukam tych konretnych modeli, zamienniki nie wchodzą w grę:
@@ -74,7 +74,7 @@
 							Lekka glina samoutwardzalna biała
 						</a>
 					</Item>
-				</div>
+				</div> -->
 
 				<header>
 					<div class="text-lg -ml-0.25">Narzędzia</div>
