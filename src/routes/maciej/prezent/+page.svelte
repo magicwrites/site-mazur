@@ -99,7 +99,7 @@
 							Szczypce
 						</a>
 					</Item>
-					<!-- <Item>
+					<Item>
 						<a
 							href="https://domitech.pl/product-pol-18954-Zestaw-kluczy-plasko-oczko-18-el-DWMT19237-1-DeWALT.html"
 							target="_blank"
@@ -108,7 +108,7 @@
 							Zestaw kluczy
 						</a>
 						<span class="text-gray-400">- bardzo drogi, szeroka składka</span>
-					</Item> -->
+					</Item>
 				</div> -->
 
 				<header>
