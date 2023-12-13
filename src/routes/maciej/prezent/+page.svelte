@@ -76,7 +76,7 @@
 					</Item>
 				</div> -->
 
-				<header>
+				<!-- <header>
 					<div class="text-lg -ml-0.25">Narzędzia</div>
 					<div class="text-sm text-gray-400">Poproszę dokładnie te modele:</div>
 				</header>
@@ -109,7 +109,7 @@
 						</a>
 						<span class="text-gray-400">- bardzo drogi, szeroka składka</span>
 					</Item> -->
-				</div>
+				</div> -->
 
 				<header>
 					<div class="text-lg -ml-0.25">Książkę</div>
