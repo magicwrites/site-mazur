@@ -32,7 +32,7 @@
 					<header class="flex justify-between">
 						<div class="flex flex-col gap-2">
 							<div class="text-5xl font-dosis uppercase -ml-1">Cennik</div>
-							<div class="text-lg -ml-0.5">Usługi księgowe na rok 2023</div>
+							<div class="text-lg -ml-0.5">Usługi księgowe na rok 2024</div>
 						</div>
 					</header>
 				</div>
