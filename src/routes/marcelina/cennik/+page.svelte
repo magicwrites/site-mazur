@@ -7,14 +7,13 @@
 
 	const services = [
 		{ iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 200 },
-		{ iteration: 'miesięcznie', name: 'KPiR z VAT', price: 220 },
-		{ iteration: 'miesięcznie', name: 'KPiR z VAT + transakcje zagraniczne', price: 250 },
+		{ iteration: 'miesięcznie', name: 'KPiR z VAT', price: 240 },
+		{ iteration: 'miesięcznie', name: 'KPiR z VAT + transakcje zagraniczne', price: 260 },
 		{ iteration: 'miesięcznie', name: 'ryczałt bez VAT', price: 160 },
-		{ iteration: 'miesięcznie', name: 'ryczałt z VAT', price: 180 },
-		{ iteration: 'miesięcznie', name: 'ryczałt z VAT + transakcje zagraniczne', price: 200 },
+		{ iteration: 'miesięcznie', name: 'ryczałt z VAT', price: 210 },
+		{ iteration: 'miesięcznie', name: 'ryczałt z VAT + transakcje zagraniczne', price: 220 },
 		{ iteration: 'miesięcznie', name: 'obsługa 1 pracownika', price: 50 },
-		{ name: 'rozliczenie roczne z działalności', price: 0 },
-		{ name: 'rozliczenie roczne z kilku źródeł przychodu', price: 100 }
+		{ name: 'rozliczenie roczne z działalności' }
 	];
 
 	$: texts = $isPolish ? pl : en;
@@ -53,11 +52,15 @@
 										)}
 									/>
 									<div class="flex gap-2">
-										<span>od {service.price} zł</span>
-										{#if service.iteration}
-											<span class="print:hidden lg:hidden text-neutral-400"
-												>/ {service.iteration}</span
-											>
+										{#if service.price}
+											<span>od {service.price} zł</span>
+											{#if service.iteration}
+												<span class="print:hidden lg:hidden text-neutral-400"
+													>/ {service.iteration}</span
+												>
+											{/if}
+										{:else}
+											<span>indywidualnie</span>
 										{/if}
 									</div>
 								</div>
