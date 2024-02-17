@@ -9,6 +9,7 @@
 
 	const accounts = {
 		personal: {
+			usd: 'PL 67 1050 1618 1000 0098 0347 0914',
 			eur: 'PL 85 1050 1618 1000 0097 0465 6108',
 			pln: '47 1050 1618 1000 0023 2118 9355'
 		},
@@ -19,6 +20,11 @@
 	};
 
 	const personal = [
+		{
+			id: Symbol(),
+			title: 'USD',
+			number: accounts.personal.usd
+		},
 		{
 			id: Symbol(),
 			title: 'EURO',
