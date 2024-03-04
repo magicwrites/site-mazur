@@ -49,7 +49,7 @@
 						<span class="text-gray-400">- Mateusz Samołyk</span>
 					</Item>
 					<Item>
-						<span>Jakiś zbiór historii po angielsku od H. P. Lovecraft</span>
+						<span class="text-gray-400">Jakiś zbiór historii po angielsku od H. P. Lovecraft</span>
 					</Item>
 					<Item>
 						<span>Buddenbrookowie</span>
