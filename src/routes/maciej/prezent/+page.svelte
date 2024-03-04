@@ -29,24 +29,24 @@
 							class="underline"
 						>
 							<span>Big Dept Crises</span>
-							<span class="text-gray-400">- Ray Dalio</span>
 						</a>
+						<span class="text-gray-400">- Ray Dalio</span>
 					</Item>
 					<Item>
 						<a
-							href="https://www.amazon.com/Broken-Money-Financial-System-Failing/dp/B0CG8985FR"
+							href="https://www.amazon.com/Broken-Money-Financial-System-Failing/dp/B0CG83QBJ6"
 							target="_blank"
 							class="underline"
 						>
-							<span>Broken Money (hardcover - twarda okładka)</span>
-							<span class="text-gray-400">- Lyn Alden</span>
+							<span>Broken Money</span>
 						</a>
+						<span class="text-gray-400">- Lyn Alden</span>
 					</Item>
 					<Item>
 						<a href="https://inwestomat.eu/ksiazka/" target="_blank" class="underline">
 							<span>Inwestowanie dla każdego</span>
-							<span class="text-gray-400">- Mateusz Samołyk</span>
 						</a>
+						<span class="text-gray-400">- Mateusz Samołyk</span>
 					</Item>
 					<Item>
 						<span>Jakiś zbiór historii po angielsku</span>
@@ -63,10 +63,6 @@
 					<Item>
 						<span>O wojnie</span>
 						<span class="text-gray-400">- clausewitz</span>
-					</Item>
-					<Item>
-						<span>Pakiet koneczny - cywilizacje</span>
-						<span class="text-gray-400">- Feliks Koneczny</span>
 					</Item>
 					<Item>
 						<span>Samodzielność strategiczna</span>
