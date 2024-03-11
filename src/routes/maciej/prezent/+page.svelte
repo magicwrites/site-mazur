@@ -16,12 +16,34 @@
 			</header>
 			<main class="flex flex-col gap-6">
 				<header>
+					<div class="text-lg -ml-0.25">Test DNA</div>
+					<div class="text-sm text-gray-400">Szczegóły na stornie internetowej.</div>
+				</header>
+				<div class="flex flex-col gap-2">
+					<Item>
+						<a href="https://www.myheritage.pl/dna" target="_blank" class="underline">
+							<span>https://www.myheritage.pl/dna</span>
+						</a>
+					</Item>
+				</div>
+
+				<header>
 					<div class="text-lg -ml-0.25">Książkę</div>
 					<div class="text-sm text-gray-400">
 						Kolejność nieprzypadkowa, mile widziane twarde eleganckie oprawy, może być po angielsku
 					</div>
 				</header>
 				<div class="flex flex-col gap-2">
+					<Item>
+						<a
+							href="https://www.amazon.com/Raymond-Feist-Riftwar-Saga/dp/0007513674"
+							target="_blank"
+							class="underline"
+						>
+							<span>Saga o wojnie światów (fantasy w oryginale)</span>
+						</a>
+						<span class="text-gray-400">- Raymond E. Feist</span>
+					</Item>
 					<Item>
 						<a
 							href="https://www.amazon.com/Big-Debt-Crises-Ray-Dalio/dp/057856565X"
