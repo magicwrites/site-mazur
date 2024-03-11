@@ -98,6 +98,23 @@
 						<span class="text-gray-400">- Józef Mackiewicz</span>
 					</Item>
 				</div>
+
+				<header>
+					<div class="text-lg -ml-0.25">Edukacja</div>
+					<div class="text-sm text-gray-400">Zabawki do nauki.</div>
+				</header>
+				<div class="flex flex-col gap-2">
+					<Item>
+						<a
+							href="https://sklep.avt.pl/pl/products/zestaw-3-kitow-diy-do-nauki-lutowania-avt-edubox4-189374.html"
+							target="_blank"
+							class="underline"
+						>
+							<span>zestaw do nauki lutowania</span>
+						</a>
+						<span class="text-gray-400">VT EDUBOX4</span>
+					</Item>
+				</div>
 			</main>
 		</section>
 	</div>
