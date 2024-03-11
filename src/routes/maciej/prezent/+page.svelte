@@ -17,7 +17,7 @@
 			<main class="flex flex-col gap-6">
 				<header>
 					<div class="text-lg -ml-0.25">Test DNA</div>
-					<div class="text-sm text-gray-400">Szczegóły na stornie internetowej.</div>
+					<div class="text-sm text-gray-400">Szczegóły na stronie internetowej.</div>
 				</header>
 				<div class="flex flex-col gap-2">
 					<Item>
