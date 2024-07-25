@@ -2,9 +2,6 @@
 	import cx from 'classnames';
 	import Sheet from '$components/shared/Sheet.svelte';
 
-	import { en, pl } from '$components/content/maciej/About.content';
-	import { isPolish } from '$src/stores/language';
-
 	const services = [
 		{ iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 200 },
 		{ iteration: 'miesięcznie', name: 'KPiR z VAT', price: 240 },
@@ -15,8 +12,6 @@
 		{ iteration: 'miesięcznie', name: 'obsługa 1 pracownika', price: 50 },
 		{ name: 'rozliczenie roczne z działalności' }
 	];
-
-	$: texts = $isPolish ? pl : en;
 </script>
 
 <svelte:head>
