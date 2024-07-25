@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import Copyrights from '$components/shared/Copyrights.svelte';
 	import Offer from '$components/content/marcelina/Offer.svelte';
 	import Experience from '$components/content/marcelina/Experience.svelte';
@@ -88,4 +88,4 @@
 	<aside class="pb-16 lg:pb-32">
 		<Copyrights />
 	</aside>
-</section>
+</section> -->
