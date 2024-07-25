@@ -1,6 +1,6 @@
 <script>
-	import frame1 from '$assets/frame-1.png';
-	import frame2 from '$assets/frame-2.png';
+	import frame1 from '$assets/frame-1.webp';
+	import frame2 from '$assets/frame-2.webp';
 </script>
 
 <section>

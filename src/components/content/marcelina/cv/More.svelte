@@ -1,6 +1,6 @@
 <script>
 	import Preface from '$components/shared/Preface.svelte';
-	import qr from '$assets/qr-code-marcelina.png';
+	import qr from '$assets/qr-code-marcelina.webp';
 
 	let age = new Date().getFullYear() - 1987;
 </script>
