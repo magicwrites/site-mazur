@@ -1,22 +1,28 @@
 <script>
-	import Icon from './Icon.svelte';
-
+	import cx from 'classnames';
 	import { isPolish, isEnglish, toggle } from '../../stores/language';
-
-	let highlighted = false;
 </script>
 
-<section
-	class="flex items-center text-gray-300 cursor-pointer hover:text-black transition"
-	on:click={toggle}
-	on:focus={() => (highlighted = true)}
-	on:mouseover={() => (highlighted = true)}
-	on:mouseleave={() => (highlighted = false)}
->
-	<div class="font-work xl:block {$isPolish ? 'xl:text-black' : 'hidden'}">PL</div>
-	<div class="font-work hidden xl:block text-gray-300 px-2">/</div>
-	<div class="font-work xl:block {$isEnglish ? 'xl:text-black' : 'hidden'}">EN</div>
-	<div class="pl-3">
-		<Icon light active={highlighted} name="text-xl fas fa-earth-europe" />
+<section class="flex gap-2 text-xs xl:text-sm items-center text-neutral-400 font-work">
+	<div
+		class={cx(
+			'hover:text-neutral-700 cursor-pointer transition',
+			$isPolish ? 'text-neutral-700' : 'text-neutral-400'
+		)}
+		on:click={() => ($isPolish ? () => {} : toggle())}
+	>
+		<div class="hidden sm:block">polski</div>
+		<div class="sm:hidden">PL</div>
+	</div>
+	<i class="fas fa-language text-neutral-700" />
+	<div
+		class={cx(
+			'hover:text-neutral-700 cursor-pointer transition',
+			$isEnglish ? 'text-neutral-700' : 'text-neutral-400'
+		)}
+		on:click={() => ($isEnglish ? () => {} : toggle())}
+	>
+		<div class="hidden sm:block">english</div>
+		<div class="sm:hidden">EN</div>
 	</div>
 </section>

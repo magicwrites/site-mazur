@@ -1,124 +1,90 @@
-<script>
+<script lang="ts">
 	import cx from 'classnames';
-	import Language from '$components/shared/Language.svelte';
-	import Link from '$components/shared/Link.svelte';
+	import Button from '$src/components/shared/buttons/Line.svelte';
+	import Supertitle from '$src/components/shared/headers/Supertitle.svelte';
 
-	import { en, pl } from '$components/content/Index.content';
+	import { en, pl } from './page.texts';
 	import { isPolish } from './../stores/language';
 
 	$: texts = $isPolish ? pl : en;
+
+	import Europe from '$src/components/content/Europe.svelte';
+	import Language from '$src/components/shared/Language.svelte';
 </script>
 
 <svelte:head>
 	<title>Mazur</title>
 </svelte:head>
 
-<div class="max-w-[480px] mx-auto xl:max-w-full xl:mx-0">
-	<div
-		class={cx(
-			'print:hidden',
-			'min-h-screen sm-mazur-bg',
-			'font-work text-neutral-700',
-			'flex flex-col gap-16 xl:gap-24 xl:gap-32'
-		)}
-	>
-		<section class={cx('xl:grid xl:grid-cols-8')}>
-			<div />
+<section class="relative min-h-screen flex flex-col sm:mx-auto sm:max-w-[380px] lg:max-w-full">
+	<main class={cx('lg:grow lg:grid lg:grid-cols-9', 'text-neutral-700', 'order-2 lg:order-1')}>
+		<div />
 
-			<div class={cx('xl:col-span-6 flex flex-col xl:gap-y-12 2xl:gap-y-24')}>
-				<header class="flex flex-col 2xl:gap-8">
-					<aside class="p-8 xl:px-0 flex justify-end">
-						<Language />
-					</aside>
+		<nav
+			class={cx(
+				'col-span-2',
+				'py-16 lg:py-24 2xl:py-32 px-8 lg:px-0',
+				'flex flex-col gap-16 justify-center'
+			)}
+		>
+			<header class="flex gap-8">
+				<Supertitle>
+					<h1>Mazur</h1>
+				</Supertitle>
+			</header>
 
-					<h1
-						class={cx(
-							'uppercase text-6xl font-dosis text-gray-700 -ml-1',
-							'pt-16 pb-24 text-center xl:text-left xl:pt-0 xl:pb-0'
-						)}
-					>
-						Mazur
-					</h1>
-				</header>
+			<section class="flex flex-col gap-6 lg:gap-8">
+				<a class="mr-auto" href="/marcelina">
+					<Button>
+						<div slot="title">{texts.marcelina.title}</div>
+						<div slot="about">{texts.marcelina.about}</div>
+					</Button>
+				</a>
+				<a class="mr-auto" href="/maciej">
+					<Button>
+						<div slot="title">{texts.maciej.title}</div>
+						<div slot="about">{texts.maciej.about}</div>
+					</Button>
+				</a>
+			</section>
 
-				<main
-					class="xl:grid xl:grid-cols-3 2xl:grid-cols-4 p-8 xl:p-0 flex flex-col gap-8 xl:gap-0"
-				>
-					<nav class="flex flex-col gap-4">
-						<h2
-							class={cx(
-								'hidden xl:block',
-								'sm:pt-8 text-gray-400 xl:pt-0 xl:col-span-2 xl:order-0 font-varela xl:col-span-3'
-							)}
-						>
-							{texts.headers.about}
-						</h2>
+			<footer class="flex flex-col gap-4 mt-4 xl:mt-8">
+				<a class="mr-auto" href="https://www.eleganckiefaktury.pl" target="_blank">
+					<Button>
+						<div slot="title">{texts.invoices.title}</div>
+						<div slot="about">{texts.invoices.about}</div>
+					</Button>
+				</a>
+			</footer>
+		</nav>
 
-						<a href="/marcelina">
-							<Link items={texts.marcelina.skills}>{texts.marcelina.name}</Link>
-						</a>
+		<div />
 
-						<a href="/maciej">
-							<Link items={texts.maciej.skills}>{texts.maciej.name}</Link>
-						</a>
-
-						<div class="h-5 xl:h-10" />
-
-						<a href="/helena">
-							<Link items={texts.helena.skills}>{texts.helena.name}</Link>
-						</a>
-
-						<a href="/mateusz">
-							<Link items={texts.mateusz.skills}>{texts.mateusz.name}</Link>
-						</a>
-					</nav>
-
-					<div class="2xl:col-span-2" />
-
-					<nav class="flex flex-col gap-4">
-						<h2
-							class={cx(
-								'sm:pt-8 text-gray-400 xl:pt-0 xl:col-span-2 xl:order-0 font-varela xl:col-span-3'
-							)}
-						>
-							{texts.headers.services}
-						</h2>
-
-						<a href="/maciej">
-							<Link items={texts.applications.features}>{texts.applications.name}</Link>
-						</a>
-
-						<a href="/marcelina#oferta">
-							<Link items={texts.accounting.features}>{texts.accounting.name}</Link>
-						</a>
-
-						<div class="h-5 xl:h-10" />
-
-						<a href="https://eleganckiefaktury.pl" target="_blank">
-							<Link items={texts.invoices.features}>{texts.invoices.name}</Link>
-						</a>
-					</nav>
-				</main>
+		<aside
+			class="lg:col-span-4 flex flex-col justify-center items-center overflow-hidden sm:overflow-visible"
+		>
+			<div
+				class={cx(
+					'stroke-neutral-200 fill-neutral-200',
+					'w-[175vw] sm:w-[80vw] md:w-[640px] lg:w-auto'
+				)}
+			>
+				<Europe
+					classes="lg:w-auto lg:h-[80vh] max-w-full"
+					poland="stroke-neutral-700 fill-neutral-700"
+					marker="fill-white"
+				/>
 			</div>
+		</aside>
+	</main>
 
-			<div />
-		</section>
-	</div>
-</div>
+	<aside class="lg:grid lg:grid-cols-9 order-1 lg:order-2">
+		<div />
 
-<style>
-	@media (min-width: 1280px) {
-		.sm-mazur-bg {
-			background-image: url('./../assets/gliwice.jpg');
-			background-repeat: no-repeat;
-			background-position: -5vw 25vh;
-			background-size: cover;
-		}
-	}
+		<div class={cx('lg:col-span-7', 'p-8 lg:p-0 lg:pb-16')}>
+			<Language />
+		</div>
 
-	@media (min-width: 1700px) {
-		.sm-mazur-bg {
-			background-position: 0 0;
-		}
-	}
-</style>
+		<div />
+	</aside>
+</section>

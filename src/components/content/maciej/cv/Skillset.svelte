@@ -1,8 +1,8 @@
 <script>
 	import Item from '$components/shared/Item.svelte';
-	import { en } from '$components/content/maciej/skillset/Engineering.content';
+	// import { en } from '$components/content/maciej/skillset/Engineering.content';
 
-	let texts = en;
+	// let texts = en;
 </script>
 
 <div class="flex flex-col gap-8">
@@ -12,7 +12,7 @@
 	</header>
 
 	<section class="text-xs grid grid-cols-4">
-		{#each texts.lists as list}
+		<!-- {#each texts.lists as list}
 			<div class="flex flex-col gap-2 text-gray-700">
 				{#each list.major as item}
 					<div>
@@ -30,6 +30,6 @@
 					</div>
 				{/each}
 			</div>
-		{/each}
+		{/each} -->
 	</section>
 </div>
