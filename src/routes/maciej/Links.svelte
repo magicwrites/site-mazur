@@ -64,9 +64,9 @@
 			class={cx(
 				'bg-neutral-50 hover:bg-neutral-700 hover:text-white',
 				'relative p-8 h-40 transition',
-				'flex flex-col justify-between bg-cover'
+				'flex flex-col justify-between bg-cover',
+				'cv-picture'
 			)}
-			style="background-image: url('/src/assets/cv-picture.webp')"
 		>
 			<header class="relative">
 				<div>{texts.cv.title}</div>
@@ -102,3 +102,9 @@
 		</a>
 	</aside>
 </section>
+
+<style>
+	.cv-picture {
+		background-image: url('$assets/cv-picture.webp');
+	}
+</style>
