@@ -57,7 +57,7 @@ export const en = {
 	entries: [
 		{
 			header: 'Atlassian',
-			note: 'Remotely for Gdańsk since 2023',
+			note: 'Remotely for Gdańsk, Poland since 2023',
 			paragraphs: [
 				`I work as a <strong>senior front-end developer</strong> for a global brand tasked with delivery of software for project management related services. As a jira data-center team member I am responsible for the overall modernization effort and accessibility aspect of the product.`
 			]
@@ -72,7 +72,7 @@ export const en = {
 		},
 		{
 			header: 'Future Processing',
-			note: 'Poland 2011 - 2018',
+			note: 'Gliwice, Poland 2011 - 2018',
 			paragraphs: [
 				`Over seven years of work in a software outsourcing company. Exposure to a vast array of
 					technologies and multitude of clients from across Europe. Contribution to public
@@ -88,7 +88,7 @@ export const en = {
 		},
 		{
 			header: 'Goodpoint',
-			note: 'Poland 2010 - 2011',
+			note: 'Olkusz and Kraków, Poland 2010 - 2011',
 			paragraphs: [
 				`
 				

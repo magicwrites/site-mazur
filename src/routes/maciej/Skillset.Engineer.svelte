@@ -2,186 +2,183 @@
 	import cx from 'classnames';
 	import { en, pl } from './Skillset.Engineer.texts';
 	import { isPolish } from '$src/stores/language';
+	import { all } from '$lib/skills';
 
 	const skills = [
 		{
-			name: 'HTML',
+			name: all.HTML,
 			bold: true
 		},
 		{
-			name: 'CSS',
+			name: all.CSS,
 			bold: true
 		},
 		{
-			name: 'javascript',
+			name: all.JS,
 			bold: true
 		},
 		{
-			name: 'typescript',
+			name: all.TS,
 			bold: true
 		},
 		{
-			name: 'nodeJS',
+			name: all.NODE,
 			bold: true
 		},
 		{
-			name: 'svelte',
+			name: all.SVELTE,
 			bold: true
 		},
 		{
-			name: 'coffescript',
+			name: all.COFFEESCRIPT,
 			bold: false
 		},
 		{
-			name: 'PHP',
+			name: all.PHP,
 			bold: false
 		},
 		{
-			name: 'C#',
+			name: all.CSHARP,
 			bold: false
 		},
 		{
-			name: 'java',
+			name: all.JAVA,
 			bold: false
 		},
 		{
-			name: 'ruby',
+			name: all.RUBY,
 			bold: false
 		},
 		{
-			name: 'python',
+			name: all.PYTHON,
 			bold: false
 		},
 		{
-			name: 'tailwindcss',
+			name: all.TAILWINDCSS,
 			bold: true
 		},
 		{
-			name: 'storybook',
+			name: all.STORYBOOK,
 			bold: true
 		},
 		{
-			name: 'react',
+			name: all.REACT,
 			bold: true
 		},
 		{
-			name: 'vue',
+			name: all.VUE,
 			bold: true
 		},
 		{
-			name: 'angular 1.6',
+			name: all.ANGULAR,
 			bold: true
 		},
 		{
-			name: 'knockoutJS',
+			name: all.KNOCKOUT,
 			bold: true
 		},
 		{
-			name: 'angular 2',
+			name: all.ANGULAR2,
 			bold: false
 		},
 		{
-			name: 'ember',
+			name: all.EMBER,
 			bold: false
 		},
 		{
-			name: 'backboneJS',
+			name: all.BACKBONE,
 			bold: false
 		},
 		{
-			name: '.NET',
+			name: all.DOTNET,
 			bold: false
 		},
 		{
-			name: 'git',
+			name: all.GIT,
 			bold: true
 		},
 		{
-			name: 'semver',
+			name: all.SEMVER,
 			bold: true
 		},
 		{
-			name: 'HTTP',
+			name: all.HTTP,
 			bold: true
 		},
 		{
-			name: 'REST',
+			name: all.REST,
 			bold: true
 		},
 		{
-			name: 'MVC',
+			name: all.MVC,
 			bold: true
 		},
 		{
-			name: 'MVVM',
+			name: all.MVVM,
 			bold: true
 		},
 		{
-			name: 'SSR',
+			name: all.SSR,
 			bold: true
 		},
 		{
-			name: 'micro frontends',
+			name: all.MICRO_FRONTENDS,
 			bold: true
 		},
 		{
-			name: 'redux',
+			name: all.REDUX,
 			bold: true
 		},
 		{
-			name: 'vuex',
+			name: all.VUEX,
 			bold: true
 		},
 		{
-			name: 'vite',
+			name: all.VITE,
 			bold: true
 		},
 		{
-			name: 'webpack',
+			name: all.WEBPACK,
 			bold: false
 		},
 		{
-			name: 'grunt',
+			name: all.GRUNT,
 			bold: false
 		},
 		{
-			name: 'gulp',
+			name: all.GULP,
 			bold: false
 		},
 		{
-			name: 'bower',
+			name: all.BOWER,
 			bold: false
 		},
 		{
-			name: 'clean coding',
+			name: all.CLEAN_CODING,
 			bold: true
 		},
 		{
-			name: 'domain design',
+			name: all.DOMAIN_DESIGN,
 			bold: true
 		},
 		{
-			name: 'testability',
+			name: all.TESTABILITY,
 			bold: true
 		},
 		{
-			name: 'CI/CD',
+			name: all.CI_CD,
 			bold: true
 		},
 		{
-			name: 'accessibility',
+			name: all.ACCESSABILITY,
 			bold: true
 		},
 		{
-			name: 'integrations',
+			name: all.INTEGRATIONS,
 			bold: false
 		},
 		{
-			name: 'web operations',
-			bold: false
-		},
-		{
-			name: 'cloud systems',
+			name: all.CLOUD_SYSTEMS,
 			bold: false
 		}
 	];
@@ -201,6 +198,8 @@
 			>{#if i !== skills.length - 1}<span class="text-neutral-400 text-sm select-none"
 					>&nbsp;&bull;
 				</span>{/if}
-		{/each}<span class="whitespace-nowrap">... {texts.more}</span>
+		{/each}<a href="/curriculum-vitae-maciej.pdf" target="_blank" class="whitespace-nowrap"
+			>... {texts.more}</a
+		>
 	</section>
 </section>

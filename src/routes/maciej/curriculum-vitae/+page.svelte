@@ -1,6 +1,6 @@
 <script>
 	import Sheet from '$components/shared/Sheet.svelte';
-	import Page from '$components/content/maciej/cv/Page.svelte';
+	import Document from './Document.svelte';
 </script>
 
 <svelte:head>
@@ -10,6 +10,6 @@
 
 <section class="m-8 print:m-0 font-work">
 	<Sheet>
-		<Page />
+		<Document />
 	</Sheet>
 </section>
