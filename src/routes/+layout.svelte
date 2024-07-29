@@ -1,14 +1,14 @@
 <script>
-	import { browser } from '$app/environment';
-	import '../app.css';
-	import '../fonts.css';
+  import { browser } from '$app/environment';
+  import '../app.css';
+  import '../fonts.css';
 
-	if (browser) {
-		console.info(`Hello inquisitive human being!
+  if (browser) {
+    console.info(`Hello inquisitive human being!
 
 If you would like to know more about my code then visit https://github.com/magicwrites/site-mazur
 The repository is open, so you should be able to check how I have cooked this thing up.`);
-	}
+  }
 </script>
 
 <slot />

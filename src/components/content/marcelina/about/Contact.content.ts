@@ -1,11 +1,11 @@
 export const pl = {
-	phone: 'Porozmawiajmy',
-	also: 'również',
-	email: 'Pisemnie'
+  phone: 'Porozmawiajmy',
+  also: 'również',
+  email: 'Pisemnie'
 };
 
 export const en = {
-	phone: `Let's talk`,
-	also: 'also',
-	email: 'Write to me'
+  phone: `Let's talk`,
+  also: 'also',
+  email: 'Write to me'
 };

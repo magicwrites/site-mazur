@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body *::selection {
-	color: white;
-	background: #444;
+  color: white;
+  background: #444;
 }

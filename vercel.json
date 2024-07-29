@@ -1,44 +1,44 @@
 {
-	"rewrites": [
-		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "maciej.mazur.site"
-				}
-			],
-			"destination": "/maciej/:path*"
-		},
-		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "marcelina.mazur.site"
-				}
-			],
-			"destination": "/marcelina/:path*"
-		},
-		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "mateusz.mazur.site"
-				}
-			],
-			"destination": "/mateusz/:path*"
-		},
-		{
-			"source": "/:path*",
-			"has": [
-				{
-					"type": "host",
-					"value": "helena.mazur.site"
-				}
-			],
-			"destination": "/helena/:path*"
-		}
-	]
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "maciej.mazur.site"
+        }
+      ],
+      "destination": "/maciej/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "marcelina.mazur.site"
+        }
+      ],
+      "destination": "/marcelina/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mateusz.mazur.site"
+        }
+      ],
+      "destination": "/mateusz/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "helena.mazur.site"
+        }
+      ],
+      "destination": "/helena/:path*"
+    }
+  ]
 }

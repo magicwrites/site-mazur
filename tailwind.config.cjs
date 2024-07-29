@@ -7,14 +7,14 @@ const backgrounds = weights.map((weight) => `bg-${color}-${weight}`);
 const texts = weights.map((weight) => `text-${color}-${weight}`);
 
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-	safelist: [...backgrounds, ...texts],
-	theme: {
-		extend: {
-			screens: {
-				print: { raw: 'print' }
-			}
-		}
-	},
-	plugins: []
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  safelist: [...backgrounds, ...texts],
+  theme: {
+    extend: {
+      screens: {
+        print: { raw: 'print' }
+      }
+    }
+  },
+  plugins: []
 };

@@ -1,7 +1,7 @@
 export const pl = {
-	paragraphs: ['Pasowany przedszkolak.', 'Psoty i poszukiwanie uwagi.']
+  paragraphs: ['Pasowany przedszkolak.', 'Psoty i poszukiwanie uwagi.']
 };
 
 export const en = {
-	paragraphs: ['Official preschooler.', 'Mischief and attention seeking.']
+  paragraphs: ['Official preschooler.', 'Mischief and attention seeking.']
 };
