@@ -5,6 +5,7 @@
 	import { isPolish } from '$src/stores/language';
 	import Europe from '$src/components/content/Europe.svelte';
 	import Code from '$src/components/shared/Redirect.svelte?raw';
+	import LinkMazur from './Links.Mazur.svelte';
 
 	$: texts = $isPolish ? pl : en;
 
@@ -23,35 +24,12 @@
 <section
 	class="flex flex-col gap-8 md:grid md:grid-cols-12 xl:gap-0 xl:grid xl:grid-cols-12 px-8 2xl:px-0"
 >
-	<aside class="md:col-span-12 xl:col-span-4 flex relative">
-		<a
-			href="/"
-			class={cx(
-				'w-full h-full block overflow-hidden',
-				'transition',
-				'bg-neutral-50 hover:bg-neutral-700',
-				'hover:text-white',
-				'stroke-neutral-200 fill-neutral-200 hover:stroke-neutral-500 hover:fill-neutral-500'
-			)}
-		>
-			<div class="p-8 absolute z-10">
+	<aside class="md:col-span-12 xl:col-span-4 flex">
+		<a href="/" class="w-full h-full">
+			<LinkMazur>
 				<div>{texts.us.title}</div>
 				<div class="text-xs">{texts.us.about}</div>
-			</div>
-			<i class="fas fa-arrow-right absolute bottom-8 left-8" />
-			<div
-				class={cx(
-					'h-40 translate-x-16 md:translate-x-24',
-					'overflow-hidden',
-					'flex justify-center items-center'
-				)}
-			>
-				<Europe
-					classes="w-full -mt-24"
-					poland="stroke-neutral-300 fill-neutral-300"
-					marker="fill-white"
-				/>
-			</div>
+			</LinkMazur>
 		</a>
 	</aside>
 
@@ -81,7 +59,7 @@
 
 	<aside class="md:col-span-6 xl:col-span-3">
 		<a
-			href="/"
+			href="https://github.com/magicwrites/site-mazur"
 			target="_blank"
 			class={cx(
 				'bg-neutral-50 hover:bg-neutral-700 hover:text-white',
