@@ -5,7 +5,7 @@
 	import About from './About.svelte';
 	import Actions from './About.Actions.svelte';
 	import Links from './Links.svelte';
-	import CurriculumVitae from '$components/content/maciej/cv/Page.svelte';
+	import CurriculumVitae from './curriculum-vitae/Document.svelte';
 
 	import { en, pl } from './About.texts';
 	import { isPolish } from '$src/stores/language';

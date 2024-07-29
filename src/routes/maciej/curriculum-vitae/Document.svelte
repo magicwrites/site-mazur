@@ -1,8 +1,8 @@
 <script>
-	import Header from './Header.svelte';
-	import Competence from './Competence.svelte';
-	import Experience from './Experience.svelte';
-	import More from './More.svelte';
+	import Header from './Document.Header.svelte';
+	import Competence from './Document.Competence.svelte';
+	import Experience from './Document.Experience.svelte';
+	import More from './Document.More.svelte';
 </script>
 
 <section class="font-work">
