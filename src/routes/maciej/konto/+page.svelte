@@ -2,7 +2,6 @@
   // @ts-ignore: there is no types package
   import Clipboard from 'svelte-clipboard';
   import Icon from '$components/shared/Icon.svelte';
-  import HomeLink from '../Links.Mazur.svelte';
   import { entries } from '$lib/accounts';
 
   let copied: Symbol | null = null;
@@ -14,10 +13,7 @@
 
 <section class="p-8 flex flex-col gap-16 font-work mx-auto w-96">
   <main class="flex flex-col gap-8">
-    <header>
-      <h2 class="font-medium">Chcesz zrobić przelew?</h2>
-      <div class="text-xs">Oto numery kont bankowych</div>
-    </header>
+    <h2 class="text-3xl">Czas na przelew?</h2>
 
     <div class="flex flex-col gap-8">
       {#each entries as entry}
@@ -51,11 +47,4 @@
       {/each}
     </div>
   </main>
-
-  <a href="/">
-    <HomeLink>
-      <div>Mazur</div>
-      <div class="text-xs">więcej o nas</div>
-    </HomeLink>
-  </a>
 </section>
