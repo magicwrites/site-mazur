@@ -1,14 +1,15 @@
 export const pl = {
-  job: 'Księgowa',
+  job: 'księgowa',
   links: [
     {
       label: 'Porozmawiajmy:',
       text: '+ 48 697 952 558',
       href: 'tel:+48697952558',
       aside: {
-        text: 'również na whatsapp',
+        label: 'Whatsapp',
+        text: 'Również poprzez:',
         href: 'https://wa.me/48697952558',
-        icon: 'fab fa-whatsapp'
+        icon: 'fab fa-whatsapp mr-0.5'
       }
     },
     {
@@ -24,16 +25,17 @@ export const pl = {
 };
 
 export const en = {
-  job: 'Accountant',
+  job: 'accountant',
   links: [
     {
       label: "Let's talk:",
       text: '+ 48 697 952 558',
       href: 'tel:+48697952558',
       aside: {
-        text: 'also on whatsapp',
+        label: 'Whatsapp',
+        text: 'Also on:',
         href: 'https://wa.me/48697952558',
-        icon: 'fab fa-whatsapp'
+        icon: 'fab fa-whatsapp mr-0.5'
       }
     },
     {

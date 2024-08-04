@@ -3,9 +3,9 @@
 
   import { en, pl } from './Links.texts';
   import { isPolish } from '$src/stores/language';
-  import Europe from '$src/components/content/Europe.svelte';
   import Code from '$src/components/shared/Redirect.svelte?raw';
-  import LinkMazur from './Links.Mazur.svelte';
+  import LinkMazur from '../../components/shared/buttons/Mazur.svelte';
+  import Maciej from '$src/components/shared/miniatures/Maciej.svelte';
 
   $: texts = $isPolish ? pl : en;
 
@@ -43,9 +43,15 @@
         'bg-neutral-50 hover:bg-neutral-700 hover:text-white',
         'relative p-8 h-40 transition',
         'flex flex-col justify-between bg-cover',
-        'cv-picture'
+        'relative overflow-hidden'
       )}
     >
+      <div class="w-[156px] bg-neutral-200 h-[128px] absolute top-2/3 right-4 -mt-2" />
+
+      <figure class="absolute top-2/3 right-6">
+        <Maciej />
+      </figure>
+
       <header class="relative">
         <div>{texts.cv.title}</div>
         <div class="text-xs">{texts.cv.about}</div>
@@ -80,9 +86,3 @@
     </a>
   </aside>
 </section>
-
-<style>
-  .cv-picture {
-    background-image: url('$assets/cv-picture.webp');
-  }
-</style>

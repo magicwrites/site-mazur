@@ -91,24 +91,4 @@
   </footer>
 
   <div class="hidden lg:block xl:pb-16" />
-
-  <!-- <div class="lg:grid lg:grid-cols-8">
-		<div class="lg:col-span-1" />
-		<div class="lg:col-span-6 border-t border-neutral-300 border-dashed mx-8 2xl:mx-0" />
-		<div class="lg:col-span-1" />
-	</div>
-
-	<footer class="lg:grid lg:grid-cols-8">
-		<div />
-
-		<div class="lg:col-span-6">
-			<Links />
-		</div>
-
-		<div />
-	</footer>
-
-	<aside class="pb-16 lg:pb-32">
-		<Copyrights />
-	</aside> -->
 </section>
