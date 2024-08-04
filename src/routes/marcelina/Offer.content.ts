@@ -12,7 +12,7 @@ export const pl = {
     paragraphs: ['Zapewniam:'],
     points: [
       { text: 'Indywidualne podejście do Twoich potrzeb księgowych' },
-      { text: 'Wsparcie przy zakładaniu firmy i wyborze formy opodatkowania' },
+      { text: 'Wsparcie przy zakładaniu firmy' },
       { text: 'Prowadzenie podatkowej księgi przychodów i rozchodów - KPiR' },
       { text: 'Prowadzenie ryczałtu ewidencjonowanego' },
       {
@@ -47,7 +47,7 @@ export const en = {
     paragraphs: ['I provide:'],
     points: [
       { text: 'Individual approach to your accounting requirements' },
-      { text: 'Support in company establishment and selection of taxation method' },
+      { text: 'Support in company establishment' },
       { text: 'Accounting for various forms of taxation' },
       {
         text: 'VAT tax services',

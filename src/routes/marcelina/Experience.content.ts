@@ -11,7 +11,7 @@ export const pl = {
       'Kilka miesięcy pracy w szkole podstawowej nauczyło mnie większej cierpliwości.',
       'Ukończona szkoła wyższa na kierunku psychologia pozwala mi lepiej rozumieć potrzeby ludzi.',
       'Dzięki ukończeniu szkoły organistowskiej mam przyjemne hobby.',
-      `Prywatnie jestem szczęśliwą Żoną i Mamą trójki "Bobasów".`
+      `Prywatnie jestem szczęśliwą Żoną i Mamą dwójki "Bobasów".`
     ]
   }
 };
@@ -29,7 +29,7 @@ export const en = {
       'Few months of work at elementary school made me into a much more patient person.',
       'A degree in psychology gave me an additional insight into human limits, needs and expectations.',
       'A finished musical school enriched my life with a joyful hobby.',
-      `In private life, I am a happy wife and a mother of three lovely babies.`
+      `In private life, I am a happy wife and a mother of two lovely babies.`
     ]
   }
 };
