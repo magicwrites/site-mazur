@@ -8,7 +8,7 @@
 
   $: texts = $isPolish ? pl : en;
 
-  import Europe from '$src/components/content/Europe.svelte';
+  import Europe from '$src/components/shared/Europe.svelte';
   import Language from '$src/components/shared/Language.svelte';
 </script>
 

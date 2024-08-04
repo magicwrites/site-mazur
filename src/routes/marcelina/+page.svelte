@@ -5,7 +5,7 @@
   import About from './About.svelte';
   import Actions from './Actions.svelte';
   import Links from './Links.svelte';
-  import CurriculumVitae from '$components/content/marcelina/cv/Page.svelte';
+  import CurriculumVitae from './curriculum-vitae/Document.svelte';
 
   import { en, pl } from './About.texts';
   import { isPolish } from '$src/stores/language';
