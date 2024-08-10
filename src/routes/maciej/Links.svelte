@@ -3,9 +3,9 @@
 
   import { en, pl } from './Links.texts';
   import { isPolish } from '$src/stores/language';
-  import Code from '$src/components/shared/Redirect.svelte?raw';
-  import LinkMazur from '../../components/shared/buttons/Mazur.svelte';
-  import Maciej from '$src/components/shared/miniatures/Maciej.svelte';
+  import Code from '$src/components/Redirect.svelte?raw';
+  import LinkMazur from '../../components/buttons/Mazur.svelte';
+  import Maciej from '$src/components/miniatures/Maciej.svelte';
 
   $: texts = $isPolish ? pl : en;
 

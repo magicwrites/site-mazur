@@ -1,10 +1,10 @@
 <script>
-  import Language from '$components/shared/Language.svelte';
-  import Icon from '$components/shared/Icon.svelte';
+  import Language from '$components/Language.svelte';
+  import Icon from '$components/Icon.svelte';
 </script>
 
 <section class="w-full flex justify-between">
-  <div class="flex gap-4 xl:hidden">
+  <div class="flex gap-4 2xl:hidden">
     <a href="https://wa.me/48697952558" target="_blank">
       <Icon reactive name="fab fa-whatsapp" />
     </a>

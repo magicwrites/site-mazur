@@ -1,7 +1,7 @@
 <script lang="ts">
   // @ts-ignore: there is no types package
   import Clipboard from 'svelte-clipboard';
-  import Icon from '$components/shared/Icon.svelte';
+  import Icon from '$components/Icon.svelte';
   import { entries } from '$lib/accounts';
 
   let copied: Symbol | null = null;

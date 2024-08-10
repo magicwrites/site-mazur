@@ -1,6 +1,6 @@
 <script>
-  import Language from '$components/shared/Language.svelte';
-  import Icon from '$components/shared/Icon.svelte';
+  import Language from '$components/Language.svelte';
+  import Icon from '$components/Icon.svelte';
 </script>
 
 <section class="w-full flex justify-between">

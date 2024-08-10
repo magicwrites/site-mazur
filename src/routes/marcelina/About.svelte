@@ -1,7 +1,7 @@
 <script lang="ts">
   import cx from 'classnames';
   import marcelina from '$assets/marcelina-chair.webp';
-  import Button from '$src/components/shared/buttons/Line.svelte';
+  import Button from '$src/components/buttons/Line.svelte';
   import { isPolish } from '$src/stores/language';
   import { pl, en } from './About.texts';
 

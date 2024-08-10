@@ -5,7 +5,7 @@
   import { isPolish } from '$src/stores/language';
   import * as about from './About.texts';
   import * as description from './About.Description.texts';
-  import Button from '$src/components/shared/buttons/Line.svelte';
+  import Button from '$src/components/buttons/Line.svelte';
 
   $: texts = $isPolish
     ? {

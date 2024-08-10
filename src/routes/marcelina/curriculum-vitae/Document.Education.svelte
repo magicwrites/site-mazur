@@ -1,5 +1,5 @@
 <script>
-  import Item from '$components/shared/Item.svelte';
+  import Item from '$components/Item.svelte';
 
   const trainings = [
     {

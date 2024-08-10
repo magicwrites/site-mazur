@@ -1,6 +1,6 @@
 <script lang="ts">
   import cx from 'classnames';
-  import Europe from '$src/components/shared/Europe.svelte';
+  import Europe from '$src/components/Europe.svelte';
 </script>
 
 <section

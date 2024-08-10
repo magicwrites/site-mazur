@@ -1,7 +1,7 @@
 <script>
   import { isPolish } from '$src/stores/language';
   import { pl, en } from './Offer.content';
-  import Point from '$components/shared/Point.svelte';
+  import Point from '$components/Point.svelte';
 
   $: texts = $isPolish ? pl : en;
 </script>

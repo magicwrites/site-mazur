@@ -1,15 +1,15 @@
 <script lang="ts">
   import cx from 'classnames';
-  import Button from '$src/components/shared/buttons/Line.svelte';
-  import Supertitle from '$src/components/shared/headers/Supertitle.svelte';
+  import Button from '$src/components/buttons/Line.svelte';
+  import Supertitle from '$src/components/headers/Supertitle.svelte';
 
   import { en, pl } from './page.texts';
   import { isPolish } from './../stores/language';
 
   $: texts = $isPolish ? pl : en;
 
-  import Europe from '$src/components/shared/Europe.svelte';
-  import Language from '$src/components/shared/Language.svelte';
+  import Europe from '$src/components/Europe.svelte';
+  import Language from '$src/components/Language.svelte';
 </script>
 
 <svelte:head>

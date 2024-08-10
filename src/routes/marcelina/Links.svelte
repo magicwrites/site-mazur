@@ -3,9 +3,9 @@
 
   import { en, pl } from './Links.texts';
   import { isPolish } from '$src/stores/language';
-  import LinkMazur from '$src/components/shared/buttons/Mazur.svelte';
-  import Prices from '$src/components/shared/miniatures/Prices.svelte';
-  import Marcelina from '$src/components/shared/miniatures/Marcelina.svelte';
+  import LinkMazur from '$src/components/buttons/Mazur.svelte';
+  import Prices from '$src/components/miniatures/Prices.svelte';
+  import Marcelina from '$src/components/miniatures/Marcelina.svelte';
 
   $: texts = $isPolish ? pl : en;
 </script>

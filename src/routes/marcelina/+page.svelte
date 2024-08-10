@@ -1,5 +1,4 @@
 <script>
-  //   import Copyrights from '$components/shared/Copyrights.svelte';
   import Offer from './Offer.svelte';
   import Experience from './Experience.svelte';
   import About from './About.svelte';

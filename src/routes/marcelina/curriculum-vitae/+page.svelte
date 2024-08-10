@@ -1,5 +1,5 @@
 <script>
-  import Sheet from '$components/shared/Sheet.svelte';
+  import Sheet from '$components/Sheet.svelte';
   import Page from './Document.svelte';
 </script>
 
