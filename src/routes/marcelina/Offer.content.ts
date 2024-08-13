@@ -38,7 +38,7 @@ export const en = {
     title: 'Company owner?',
     paragraphs: [
       'Do you want to start one?',
-      'Are you a software developer, a consultant or another type of specialist interested in a wider array of job opportunites?',
+      'Are you a software developer, a consultant or another type of specialist interested in a wider array of job opportunities?',
       'Or maybe your trade activity is expanding and you need to formalise your status?'
     ]
   },
@@ -51,7 +51,7 @@ export const en = {
       { text: 'Accounting for various forms of taxation' },
       {
         text: 'VAT tax services',
-        more: 'Maintanance of VAT records including proper declarations'
+        more: 'Maintenance of VAT records including proper declarations'
       },
       {
         text: 'ZUS services',
@@ -59,7 +59,7 @@ export const en = {
       },
       {
         text: 'Support in IP box tax relief',
-        more: 'Maintanance of qualified costs records, yearly tax report including the relief'
+        more: 'Maintenance of qualified costs records, yearly tax report including the relief'
       },
       { text: 'Support in proper invoice issuing' },
       { text: 'Support in costs of income identification' }
