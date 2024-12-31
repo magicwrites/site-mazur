@@ -4,7 +4,8 @@ export const pl = {
     paragraphs: [
       'Może planujesz jej założenie?',
       'Jesteś programistą, konsultantem albo innego rodzaju specjalistą zainteresowanym większą swobodą zawodową?',
-      'A może rozkręcasz działalność handlową i potrzebujesz uregulować swoją sytuację formalną?'
+      'A może rozkręcasz działalność handlową i potrzebujesz uregulować swoją sytuację formalną?',
+      'Niezależnie od branży w jakiej operujesz możesz liczyć na moje wsparcie w zakresie prowadzenia księgowości Twojej firmy.'
     ]
   },
   proposal: {
@@ -39,7 +40,8 @@ export const en = {
     paragraphs: [
       'Do you want to start one?',
       'Are you a software developer, a consultant or another type of specialist interested in a wider array of job opportunities?',
-      'Or maybe your trade activity is expanding and you need to formalise your status?'
+      'Or maybe your trade activity is expanding and you need to formalise your status?',
+      'Regardless of the industry you operate in, you can count on my support in the field of accounting for your company.'
     ]
   },
   proposal: {

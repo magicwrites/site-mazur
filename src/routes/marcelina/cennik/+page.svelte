@@ -2,11 +2,14 @@
   import cx from 'classnames';
   import Sheet from '$components/Sheet.svelte';
 
+  const YEAR = 2025;
+  const DOCUMENT_LIMIT = 10;
+
   const services = [
-    { iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 200 },
+    { iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 220 },
     { iteration: 'miesięcznie', name: 'KPiR z VAT', price: 240 },
     { iteration: 'miesięcznie', name: 'KPiR z VAT + transakcje zagraniczne', price: 260 },
-    { iteration: 'miesięcznie', name: 'ryczałt bez VAT', price: 160 },
+    { iteration: 'miesięcznie', name: 'ryczałt bez VAT', price: 170 },
     { iteration: 'miesięcznie', name: 'ryczałt z VAT', price: 210 },
     { iteration: 'miesięcznie', name: 'ryczałt z VAT + transakcje zagraniczne', price: 220 },
     { iteration: 'miesięcznie', name: 'obsługa 1 pracownika', price: 50 },
@@ -27,7 +30,7 @@
           <header class="flex justify-between">
             <div class="flex flex-col gap-2">
               <div class="text-5xl font-dosis uppercase -ml-1">Cennik</div>
-              <div class="text-lg -ml-0.5">Usługi księgowe na rok 2024</div>
+              <div class="text-lg -ml-0.5">Usługi księgowe na rok {YEAR}</div>
             </div>
           </header>
         </div>
@@ -76,8 +79,8 @@
       </main>
 
       <footer class="p-8 text-xs">
-        Podane ceny dotyczą działalności do 10 dokumentów i mają charakter orientacyjny. Ostateczna
-        wartość usług jest ustalana dla każdego klienta indywidualnie.
+        Podane ceny dotyczą działalności do {DOCUMENT_LIMIT} dokumentów i mają charakter orientacyjny.
+        Ostateczna wartość usług jest ustalana dla każdego klienta indywidualnie.
       </footer>
     </section>
   </Sheet>

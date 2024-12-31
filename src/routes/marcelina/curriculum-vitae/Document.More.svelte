@@ -26,6 +26,8 @@
         <span>symfonia finanse i księgowość</span>
         <span class="text-gray-400">/</span>
         <span>optima</span>
+        <span class="text-gray-400">/</span>
+        <span>wfirma</span>
       </div>
       <div class="text-gray-400">programy inne</div>
       <div class="col-span-3">excel</div>
@@ -36,13 +38,11 @@
       <div class="col-span-3">
         <span>zamężna</span>
         <span class="text-gray-400">/</span>
-        <span>dwójka dzieci</span>
+        <span>trójka dzieci</span>
       </div>
       <div class="text-gray-400">zainteresowania</div>
       <div class="col-span-3">
         <span>squash</span>
-        <span class="text-gray-400">/</span>
-        <span>książki</span>
         <span class="text-gray-400">/</span>
         <span>psychologia</span>
         <span class="text-gray-400">/</span>
