@@ -5,6 +5,10 @@
 
 <section class="w-full flex justify-between">
   <div class="flex gap-4 2xl:hidden">
+    <a href="https://www.facebook.com/profile.php?id=61571217423938" target="_blank">
+      <Icon reactive name="fab fa-facebook" />
+    </a>
+
     <a href="https://wa.me/48697952558" target="_blank">
       <Icon reactive name="fab fa-whatsapp" />
     </a>

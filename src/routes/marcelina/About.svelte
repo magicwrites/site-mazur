@@ -33,17 +33,29 @@
       </main>
     </div>
 
-    <footer class="hidden 2xl:flex flex-col gap-8">
+    <footer class="hidden 2xl:grid grid-cols-2 gap-8">
       {#each texts.links as link}
-        <div class="grid grid-cols-2">
-          <a href={link.href}>
+        <div class="">
+          <a href={link.href} target={link.target || '_self'}>
             <Button reversed>
               <div slot="about">{link.label}</div>
-              <div slot="title">{link.text}</div>
+              <div slot="title">
+                {#if link.icon}
+                  <i class={link.icon} />
+                {/if}
+                <span>{link.text}</span>
+              </div>
             </Button>
           </a>
-          {#if link.aside}
-            <a class="my-auto hover:ml-2 transition-all" href={link.aside.href}>
+        </div>
+
+        {#if link.aside}
+          <div>
+            <a
+              class="my-auto hover:ml-2 transition-all"
+              href={link.aside.href}
+              target={link.aside.target || '_self'}
+            >
               <Button reversed>
                 <div slot="about">{link.aside.text}</div>
                 <div slot="title">
@@ -54,8 +66,8 @@
                 </div>
               </Button>
             </a>
-          {/if}
-        </div>
+          </div>
+        {/if}
       {/each}
     </footer>
   </div>

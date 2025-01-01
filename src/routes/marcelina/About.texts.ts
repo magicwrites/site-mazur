@@ -6,7 +6,7 @@ export const pl = {
       text: '+ 48 697 952 558',
       href: 'tel:+48697952558',
       aside: {
-        label: 'Whatsapp',
+        label: 'WhatsApp',
         text: 'Również poprzez:',
         href: 'https://wa.me/48697952558',
         icon: 'fab fa-whatsapp mr-0.5'
@@ -16,7 +16,14 @@ export const pl = {
       label: 'Pisemnie:',
       text: 'marcelina@mazur.site',
       href: 'mailto:marcelina@mazur.site'
-    }
+    },
+    {
+      label: 'Sledź mnie na:',
+      text: 'Facebook',
+      href: 'https://www.facebook.com/profile.php?id=61571217423938',
+      icon: 'fab fa-facebook mr-0.5',
+      target: '_blank'
+    },
   ],
   paragraphs: [
     'Moja przygoda z księgowością rozpoczęła się {years} lat temu i trwa do dziś. Swoje doświadczenie zdobywałam w dużej firmie z sektora IT oraz prowadząc księgowość mniejszych, jednoosobowych działalności gospodarczych operujących w&nbsp;ramach różnych branż.',
@@ -32,7 +39,7 @@ export const en = {
       text: '+ 48 697 952 558',
       href: 'tel:+48697952558',
       aside: {
-        label: 'Whatsapp',
+        label: 'WhatsApp',
         text: 'Also on:',
         href: 'https://wa.me/48697952558',
         icon: 'fab fa-whatsapp mr-0.5'
@@ -42,7 +49,14 @@ export const en = {
       label: 'Write to me:',
       text: 'marcelina@mazur.site',
       href: 'mailto:marcelina@mazur.site'
-    }
+    },
+    {
+      label: 'Follow me on:',
+      text: 'Facebook',
+      href: 'https://www.facebook.com/profile.php?id=61571217423938',
+      icon: 'fab fa-facebook mr-0.5',
+      target: '_blank'
+    },
   ],
   paragraphs: [
     'My adventure with the vocation started in 2013 and is ongoing. Most of my experience comes from working at a sizable company counting hundreds of employees. Additionally I provide accounting services for sole proprietorship.',
