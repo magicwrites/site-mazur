@@ -2,19 +2,33 @@
   import cx from 'classnames';
   import Sheet from '$components/Sheet.svelte';
 
-  const YEAR = 2025;
-  const DOCUMENT_LIMIT = 10;
+  const YEAR = 2026;
 
-  const services = [
-    { iteration: 'miesięcznie', name: 'KPiR bez VAT', price: 220 },
-    { iteration: 'miesięcznie', name: 'KPiR z VAT', price: 240 },
-    { iteration: 'miesięcznie', name: 'KPiR z VAT + transakcje zagraniczne', price: 260 },
-    { iteration: 'miesięcznie', name: 'ryczałt bez VAT', price: 170 },
-    { iteration: 'miesięcznie', name: 'ryczałt z VAT', price: 210 },
-    { iteration: 'miesięcznie', name: 'ryczałt z VAT + transakcje zagraniczne', price: 220 },
-    { iteration: 'miesięcznie', name: 'obsługa 1 pracownika', price: 50 },
-    { name: 'rozliczenie roczne z działalności' }
-  ];
+  const services = {
+    documents: [
+      { iteration: 'miesięcznie', name: 'KPiR bez VAT', to5: 240, to15: 260 },
+      { iteration: 'miesięcznie', name: 'KPiR z VAT', to5: 300, to15: 350 },
+      { iteration: 'miesięcznie', name: 'ryczałt bez VAT', to5: 170, to15: 200 },
+      { iteration: 'miesięcznie', name: 'ryczałt z VAT', to5: 230, to15: 250 }
+    ],
+    others: [
+      {
+        iteration: 'miesięcznie',
+        name: 'obsługa 1 pracownika',
+        note: 'Przy większej liczbie pracowników cena jest ustalana indywidualnie',
+        price: 150
+      },
+      {
+        iteration: 'miesięcznie',
+        name: 'obsługa 1 zleceniobiorcy',
+        price: 50
+      },
+      {
+        iteration: 'miesięcznie',
+        name: 'rozliczenie roczne z działalności'
+      }
+    ]
+  };
 </script>
 
 <svelte:head>
@@ -35,52 +49,121 @@
           </header>
         </div>
 
-        <div class="p-8">
-          <div class="flex gap-4">
-            <section class="flex-grow flex flex-col gap-4 print:gap-2 lg:gap-2">
-              {#each services as service}
+        <div class="p-8 flex flex-col gap-2">
+          <header class="grid grid-cols-4 text-right text-xs hidden print:grid md:grid">
+            <div />
+            <div>do 5 dokumentów:</div>
+            <div>do 15 dokumentów:</div>
+          </header>
+
+          <main
+            class="grid md:grid-cols-4 print:grid-cols-4 gap-0 print:gap-y-2 md:gap-y-2 gap-x-2"
+          >
+            {#each services.documents as service}
+              <div class="flex items-center gap-2">
+                <div class="font-medium print:font-normal md:font-normal">{service.name}</div>
                 <div
-                  class="flex flex-col print:flex-row lg:flex-row print:gap-4 lg:gap-4 print:items lg:items-center flex-grow"
-                >
-                  <div>{service.name}:</div>
-                  <div
-                    class={cx(
-                      'hidden print:block lg:block',
-                      'flex-grow h-3 border-b border-dotted border-neutral-300'
-                    )}
-                  />
-                  <div class="flex gap-2">
-                    {#if service.price}
-                      <span>od {service.price} zł</span>
-                      {#if service.iteration}
-                        <span class="print:hidden lg:hidden text-neutral-400"
-                          >/ {service.iteration}</span
-                        >
+                  class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                />
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                />
+                <div class="print:hidden md:hidden">do 5 dokumentów:</div>
+                <div>{service.to5} zł</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                />
+                <div class="print:hidden md:hidden">do 15 dokumentów:</div>
+                <div>{service.to15} zł</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                />
+                <div class="text-neutral-300 pb-4 print:pb-0 md:pb-0 ml-auto print:ml-0 md:ml-0">
+                  {service.iteration}
+                </div>
+              </div>
+            {/each}
+          </main>
+        </div>
+
+        <div class="p-8 flex flex-col gap-2">
+          <header class="grid grid-cols-4 text-right text-xs hidden print:grid md:grid">
+            <div />
+            <div />
+            <div>cena:</div>
+          </header>
+
+          <main
+            class="grid md:grid-cols-4 print:grid-cols-4 gap-0 print:gap-y-4 md:gap-y-4 gap-x-2"
+          >
+            {#each services.others as service}
+              <div
+                class={cx(
+                  service.price
+                    ? 'print:col-span-2 md:col-span-2'
+                    : 'print:col-span-4 md:col-span-4'
+                )}
+              >
+                <div>
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <span class="font-medium print:font-normal md:font-normal"
+                        >{service.name}</span
+                      >
+                      {#if !service.price}
+                        <span>jest ustalane indywidualnie</span>
                       {/if}
-                    {:else}
-                      <span>indywidualnie</span>
+                    </div>
+                    {#if service.price}
+                      <div
+                        class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                      />
                     {/if}
                   </div>
                 </div>
-              {/each}
-            </section>
-
-            <aside class="hidden print:flex lg:flex flex-col gap-2 text-neutral-300">
-              {#each services as service}
-                <div class="flex gap-4 items-center flex-grow">
-                  <div class="flex gap-2">
-                    {@html service.iteration || '&nbsp;'}
+                {#if service.note}
+                  <div class="hidden print:block md:block text-xs pr-16">{service.note}</div>
+                {/if}
+              </div>
+              {#if service.price}
+                <div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                    />
+                    <div>{service.price} zł</div>
                   </div>
                 </div>
-              {/each}
-            </aside>
-          </div>
+                {#if service.note}
+                  <div class="print:hidden md:hidden mt-1 text-xs pr-16">{service.note}</div>
+                {/if}
+                <div>
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="border-b border-dotted border-neutral-300 flex-grow h-3 hidden print:block md:block"
+                    />
+                    <div
+                      class="text-neutral-300 pb-4 print:pb-0 md:pb-0 ml-auto print:ml-0 md:ml-0"
+                    >
+                      {service.iteration}
+                    </div>
+                  </div>
+                </div>
+              {/if}
+            {/each}
+          </main>
         </div>
       </main>
 
       <footer class="p-8 text-xs">
-        Podane ceny dotyczą działalności do {DOCUMENT_LIMIT} dokumentów i mają charakter orientacyjny.
-        Ostateczna wartość usług jest ustalana dla każdego klienta indywidualnie.
+        Podane ceny mają charakter orientacyjny. Ostateczne stawki są ustalane z każdym Klientem
+        indywidualnie.
       </footer>
     </section>
   </Sheet>
