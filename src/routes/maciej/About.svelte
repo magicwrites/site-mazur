@@ -1,7 +1,5 @@
 <script>
   import cx from 'classnames';
-  import portrait from '$assets/maciej-easy.webp';
-  import portraitCut from '$assets/maciej-easy-transparent.webp';
   import { isPolish } from '$src/stores/language';
   import * as about from './About.texts';
   import * as description from './About.Description.texts';
