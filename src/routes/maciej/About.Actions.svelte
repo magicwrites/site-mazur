@@ -3,14 +3,14 @@
   import Icon from '$components/Icon.svelte';
 </script>
 
-<section class="w-full flex justify-between">
+<section class="w-full flex justify-between items-center xl:px-32 xl:pt-16 font-inter">
   <div class="flex gap-4 xl:hidden">
     <a href="mailto:maciej@mazur.site" target="_blank">
-      <Icon reactive name="fas fa-envelope" />
+      <Icon reactive name="fa-envelope" />
     </a>
 
     <a href="https://www.linkedin.com/in/maciek-mazur-b922953a/" target="_blank">
-      <Icon reactive name="fab fa-linkedin-in" />
+      <Icon reactive name="fa-linkedin" />
     </a>
   </div>
 

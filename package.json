@@ -15,6 +15,13 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/inter-tight": "^5.2.7",
+    "@fontsource/spectral": "^5.2.8",
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "1.0.0-next.539",
     "@typescript-eslint/eslint-plugin": "^5.27.0",

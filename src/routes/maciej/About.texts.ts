@@ -1,5 +1,5 @@
 export const pl = {
-  job: 'programista, architekt oprogramownia',
+  job: 'Programista, architekt oprogramownia',
   links: [
     {
       label: 'Napisz do mnie:',
@@ -15,7 +15,7 @@ export const pl = {
 };
 
 export const en = {
-  job: 'software developer, architect',
+  job: 'Software developer, architect',
   links: [
     {
       label: 'Write to me:',

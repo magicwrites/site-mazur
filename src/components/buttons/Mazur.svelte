@@ -1,6 +1,7 @@
 <script lang="ts">
   import cx from 'classnames';
   import Europe from '$src/components/Europe.svelte';
+  import FontAwesome from '$src/components/FontAwesome.svelte';
 </script>
 
 <section
@@ -15,7 +16,7 @@
   <div class="p-8 absolute z-10">
     <slot />
   </div>
-  <i class="fas fa-arrow-right absolute bottom-8 left-8" />
+  <FontAwesome iconName="fa-arrow-right" className="absolute bottom-8 left-8" />
   <div
     class={cx(
       'h-40 translate-x-16 md:translate-x-24',

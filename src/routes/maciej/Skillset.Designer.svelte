@@ -5,13 +5,13 @@
   $: texts = $isPolish ? pl : en;
 </script>
 
-<section class="flex flex-col gap-8">
+<section class="flex flex-col gap-4">
   <header class="flex flex-col gap-2">
-    <h4 class="text-3xl -ml-0.5">{texts.header}</h4>
-    <section class="flex flex-col gap-8">
-      {#each texts.paragraphs as paragraph}
-        <p>{@html paragraph}</p>
-      {/each}
-    </section>
+    <h3 class="text-2xl 2xl:text-3xl font-inter font-bold">{texts.header}</h3>
   </header>
+  <section class="flex flex-col gap-8">
+    {#each texts.paragraphs as paragraph}
+      <p>{@html paragraph}</p>
+    {/each}
+  </section>
 </section>

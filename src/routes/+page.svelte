@@ -16,7 +16,9 @@
   <title>Mazur</title>
 </svelte:head>
 
-<section class="relative min-h-screen flex flex-col sm:mx-auto sm:max-w-[380px] lg:max-w-full">
+<section
+  class="relative min-h-screen flex flex-col sm:mx-auto sm:max-w-[380px] lg:max-w-full font-inter"
+>
   <main class={cx('lg:grow lg:grid lg:grid-cols-9', 'text-neutral-700', 'order-2 lg:order-1')}>
     <div />
 
@@ -29,7 +31,7 @@
     >
       <header class="flex gap-8">
         <Supertitle>
-          <h1>Mazur</h1>
+          <h1 class="font-bold text-6xl text-neutral-800">Mazur</h1>
         </Supertitle>
       </header>
 
