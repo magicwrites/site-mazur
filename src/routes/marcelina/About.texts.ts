@@ -5,12 +5,12 @@ export const pl = {
       label: 'Porozmawiajmy:',
       text: '+ 48 697 952 558',
       href: 'tel:+48697952558',
-      aside: {
-        label: 'WhatsApp',
-        text: 'Również poprzez:',
-        href: 'https://wa.me/48697952558',
-        icon: 'fab fa-whatsapp mr-0.5'
-      }
+    },
+    {
+      label: 'Również poprzez:',
+      text: 'WhatsApp',
+      href: 'https://wa.me/48697952558',
+      icon: 'fab fa-whatsapp mr-0.5'
     },
     {
       label: 'Pisemnie:',

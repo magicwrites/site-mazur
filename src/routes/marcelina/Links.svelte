@@ -3,13 +3,33 @@
 
   import { en, pl } from './Links.texts';
   import { isPolish } from '$src/stores/language';
-  import LinkMazur from '$src/components/buttons/Mazur.svelte';
-  import Prices from '$src/components/miniatures/Prices.svelte';
-  import Marcelina from '$src/components/miniatures/Marcelina.svelte';
+  import Button from '$src/components/buttons/Line.svelte';
 
   $: texts = $isPolish ? pl : en;
 </script>
 
+<section class="grid sm:grid-cols-2 gap-8 px-8 xl:px-16 2xl:px-32 font-inter">
+  <a href="https://eleganckiefaktury.pl" target="_blank">
+    <Button>
+      <div slot="about">{texts.prices.about}</div>
+      <div slot="title">{texts.prices.title}</div>
+    </Button>
+  </a>
+  <a href="/curriculum-vitae-marcelina.pdf" target="_blank">
+    <Button>
+      <div slot="about">{texts.cv.about}</div>
+      <div slot="title">{texts.cv.title}</div>
+    </Button>
+  </a>
+  <a href="/">
+    <Button>
+      <div slot="about">{texts.us.about}</div>
+      <div slot="title">{texts.us.title}</div>
+    </Button>
+  </a>
+</section>
+
+<!-- 
 <section
   class="flex flex-col gap-8 grid md:grid-cols-12 2xl:gap-x-0 2xl:gap-y-16 2xl:grid-cols-11 px-8 2xl:px-0"
 >
@@ -101,4 +121,4 @@
       </LinkMazur>
     </a>
   </aside>
-</section>
+</section> -->

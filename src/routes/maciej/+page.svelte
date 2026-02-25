@@ -41,7 +41,7 @@
         'max-w-prose mx-auto xl:mx-0 xl:max-w-none'
       )}
     >
-      <section class="xl:min-h-screen flex flex-col gap-4 2xl:gap-16">
+      <section class="xl:min-h-screen flex flex-col 2xl:gap-16">
         <div class="hidden xl:block">
           <Actions />
         </div>

@@ -4,10 +4,11 @@
     faLanguage,
     faArrowUpRightFromSquare,
     faArrowRight,
-    faCircle
+    faCircle,
+    faPhone
   } from '@fortawesome/free-solid-svg-icons';
   import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-  import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+  import { faLinkedinIn, faWhatsapp, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
   // Add icons to library
   library.add(
@@ -16,6 +17,9 @@
     faArrowRight,
     faCircle,
     faEnvelope,
+    faPhone,
+    faWhatsapp,
+    faFacebook,
     faLinkedinIn
   );
 
@@ -29,7 +33,10 @@
     'fa-arrow-right': faArrowRight,
     'fa-circle': faCircle,
     'fa-envelope': faEnvelope,
-    'fa-linkedin': faLinkedinIn
+    'fa-linkedin': faLinkedinIn,
+    'fa-phone': faPhone,
+    'fa-whatsapp': faWhatsapp,
+    'fa-facebook': faFacebook
   };
 
   $: faIcon = iconMap[iconName as keyof typeof iconMap];

@@ -2,10 +2,15 @@
   import cx from 'classnames';
   import { isPolish, isEnglish, toggle } from '../stores/language';
   import FontAwesome from './FontAwesome.svelte';
+
+  export let contrast = false;
 </script>
 
 <section
-  class="xl:hidden text-black font-inter text-right flex flex-col gap-1.5"
+  class={cx(
+    'xl:hidden font-inter text-right flex flex-col gap-1.5',
+    contrast ? 'text-neutral-300' : 'text-black'
+  )}
   on:click={() => toggle()}
 >
   <div class="leading-none text-[10px]">{$isPolish ? 'switch to' : 'przęłącz na'}</div>
