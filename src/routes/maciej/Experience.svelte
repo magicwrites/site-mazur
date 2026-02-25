@@ -6,7 +6,7 @@
   $: texts = $isPolish ? { ...pl } : { ...en };
 </script>
 
-<section class="p-11 pt-0 2xl:p-32 flex flex-col gap-16">
+<section class="px-8 xl:px-16 2xl:p-32 2xl:pt-0 flex flex-col gap-16">
   <header class="flex flex-col gap-8">
     <h2 class="text-3xl 2xl:text-5xl font-inter font-bold uppercase pt-1">
       {texts.description.header}

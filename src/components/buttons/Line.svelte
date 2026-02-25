@@ -1,9 +1,17 @@
 <script lang="ts">
+  import cx from 'classnames';
+
   export let reversed = false;
 </script>
 
 <div
-  class="lg:border-l-4 hover:lg:border-l-8 lg:border-neutral-700 transition-all lg:p-2 lg:px-5 pr-0 font-inter text-lg"
+  class={cx(
+    'lg:border-l-4 hover:lg:border-l-8 lg:border-neutral-700',
+    'transition-all',
+    'lg:p-2 lg:px-5 pr-0',
+    'font-inter text-lg',
+    'flex flex-col gap-0.5 lg:gap-0'
+  )}
 >
   {#if reversed}
     <div class="text-sm whitespace-nowrap">

@@ -14,12 +14,16 @@
       };
 </script>
 
-<header class="mx-12 absolute bottom-0 -mb-2">
-  <div class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white p-8">
-    <div class="relative flex flex-col gap-2">
-      <h1 class="text-3xl font-inter uppercase font-bold -ml-0.5 text-neutral-800">Maciej Mazur</h1>
-      <div class="font-inter font-light text-lg relative">
-        {texts.about.job}
+<header class="absolute bottom-0 left-9 right-9 -mb-2 sm:-mb-4 text-center xl:text-left">
+  <div class="max-w-prose mx-auto relative">
+    <div class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white p-8">
+      <div class="relative flex flex-col gap-2">
+        <h1 class="text-3xl font-inter uppercase font-bold -ml-0.5 text-neutral-800">
+          Maciej Mazur
+        </h1>
+        <div class="font-inter font-light text-lg relative">
+          {texts.about.job}
+        </div>
       </div>
     </div>
   </div>
