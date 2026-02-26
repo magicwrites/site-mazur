@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let tag: 'h3' | 'h4' | 'h5' = 'h4';
+  export let tag: string = 'h4';
   export let about: string;
 </script>
 

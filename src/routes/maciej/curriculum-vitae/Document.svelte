@@ -7,7 +7,7 @@
   const header = 'Curriculum Vitae';
 </script>
 
-<section class="m-24 print:m-0 font-spectral text-black">
+<section class="m-8 my-24 xl:m-24 print:m-0 font-spectral text-black">
   <Sheet {header} footer="1 / 4">
     <div class="flex flex-col gap-12">
       <header class="font-inter flex flex-col gap-0.5">
@@ -19,12 +19,12 @@
         <h3 class="text-xl font-bold font-inter">Experience</h3>
 
         <div class="flex flex-col gap-5">
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2">
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2">
               <Subheader tag="h4" about="Remote for Gdańsk, Poland">Atlassian</Subheader>
             </div>
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2023 - now">Senior frontend developer</Subheader>
 
               <Role>
@@ -44,12 +44,12 @@
             </div>
           </article>
 
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2">
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2">
               <Subheader tag="h4" about="Remotely for Malta">Casumo</Subheader>
             </div>
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2022 - 2023">Frontend architect</Subheader>
 
               <Role>
@@ -67,10 +67,10 @@
             </div>
           </article>
 
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2" />
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2" />
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2018 - 2022">Senior frontend developer</Subheader>
 
               <Role>
@@ -98,12 +98,12 @@
     <div class="flex flex-col gap-12">
       <section class="flex flex-col gap-3">
         <div class="flex flex-col gap-5">
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2">
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2">
               <Subheader tag="h4" about="On site in Gliwice, Poland">Future-Processing</Subheader>
             </div>
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2016 - 2018">Senior frontend developer</Subheader>
 
               <Role>
@@ -119,10 +119,10 @@
             </div>
           </article>
 
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2" />
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2" />
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2011 - 2016">Frontend developer</Subheader>
 
               <Role>
@@ -141,12 +141,12 @@
             </div>
           </article>
 
-          <article class="grid grid-cols-7 gap-4">
-            <div class="col-span-2">
+          <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
+            <div class="xl:col-span-2 print:col-span-2">
               <Subheader tag="h4" about="On site in Olkusz, Poland">Goodpoint</Subheader>
             </div>
 
-            <div class="col-span-5 flex flex-col gap-3">
+            <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
               <Subheader tag="h5" about="2010 - 2011">Web developer</Subheader>
 
               <Role>

@@ -11,7 +11,7 @@
       <div class="h-full relative">
         {#if header}
           <aside class="opacity-30 absolute right-0 -top-12">
-            {header}
+            {@html header}
           </aside>
         {/if}
 
@@ -26,7 +26,7 @@
               'text-right'
             )}
           >
-            {footer}
+            {@html footer}
           </footer>
         {/if}
       </div>

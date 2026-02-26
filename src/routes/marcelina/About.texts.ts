@@ -1,5 +1,5 @@
 export const pl = {
-  job: 'księgowa',
+  job: 'Księgowa',
   links: [
     {
       label: 'Porozmawiajmy:',
@@ -32,7 +32,7 @@ export const pl = {
 };
 
 export const en = {
-  job: 'accountant',
+  job: 'Accountant',
   links: [
     {
       label: "Let's talk:",
