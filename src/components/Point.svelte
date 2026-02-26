@@ -1,6 +1,4 @@
 <script>
-  import FontAwesome from './FontAwesome.svelte';
-
   export let first = false;
 </script>
 
@@ -8,13 +6,10 @@
   <div class="py-2 sm:py-0 print:py-0 sm:mr-4 print:mr-8">
     <div class={first ? 'hidden sm:block print:block' : ''}>
       <div class="sm:hidden py-2">
-        <FontAwesome iconName="fa-circle" className="text-xs" />
+        <div class="w-20 my-6 border-t border-dashed border-neutral-600" />
       </div>
       <div class="hidden sm:block">
-        <FontAwesome
-          iconName="fa-circle"
-          className="text-sm rotate-90 sm:rotate-0 print:rotate-0"
-        />
+        <div class="w-1.5 h-1.5 mt-3 bg-neutral-600 rounded-full" />
       </div>
     </div>
   </div>

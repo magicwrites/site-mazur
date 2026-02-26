@@ -4,13 +4,16 @@
   import Actions from './About.Actions.svelte';
   import Links from './Links.svelte';
   import AboutMobile from './About.Mobile.svelte';
+  import Offer from './Offer.svelte';
   import CurriculumVitae from './curriculum-vitae/Document.svelte';
+  import Experience from './Experience.svelte';
 
   import { en, pl } from './About.texts';
   import { isPolish } from '$src/stores/language';
 
   $: texts = $isPolish ? pl : en;
   import bg from '$assets/marcelina-desk.webp';
+  import FontAwesome from '$src/components/FontAwesome.svelte';
 </script>
 
 <svelte:head>
@@ -46,26 +49,27 @@
         <About />
       </section>
 
-      <section class="min-h-screen flex flex-col gap-16">
+      <section class="flex flex-col gap-16">
+        <div class="lg:col-span-6 relative">
+          <div class="absolute -top-14 2xl:-top-28" id="offer" />
+          <Offer />
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-16">
         <div class="lg:col-span-6 relative">
           <div class="absolute -top-14 2xl:-top-28" id="experience" />
-          <!-- <Experience /> -->
+          <Experience />
         </div>
       </section>
 
-      <section class="min-h-screen flex flex-col gap-16">
-        <div class="lg:col-span-6 relative">
-          <div class="absolute -top-14 2xl:-top-28" id="skillset" />
-          <!-- <Skillset /> -->
-        </div>
-      </section>
-
-      <footer class="flex flex-col gap-16">
+      <footer class="flex flex-col gap-16 xl:pt-16">
         <Links />
 
-        <aside class="px-16 pt-16 hidden xl:block 2xl:hidden font-inter text-sm">
-          <span>Masz temat do dyskusji? Czekam na:</span>
-          <span>marcelina@mazur.site</span>
+        <aside class="px-16 hidden 2xl:hidden font-inter text-sm xl:flex xl:gap-2 items-center">
+          <span>Masz temat do dyskusji? Zapraszam do kontaktu:</span>
+          <span>+ 48 697 952 558</span>
+          <FontAwesome iconName="fa-whatsapp" />
         </aside>
       </footer>
     </main>

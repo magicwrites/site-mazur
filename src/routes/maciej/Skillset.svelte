@@ -7,7 +7,7 @@
   $: text = $isPolish ? 'Kompetencje' : 'Capabilities';
 </script>
 
-<section class="px-8 xl:px-16 2xl:pt-0 2xl:p-32 flex flex-col gap-16">
+<section class="px-8 xl:px-16 2xl:pt-0 2xl:px-32 flex flex-col gap-16">
   <div class="flex flex-col gap-8">
     <h2 class="text-3xl 2xl:text-5xl font-inter font-bold uppercase">{text}</h2>
     <Engineer />

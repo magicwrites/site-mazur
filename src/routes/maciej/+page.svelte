@@ -48,21 +48,21 @@
         <About />
       </section>
 
-      <section class="min-h-screen flex flex-col gap-16">
+      <section class="flex flex-col gap-16">
         <div class="lg:col-span-6 relative">
           <div class="absolute -top-14 2xl:-top-28" id="experience" />
           <Experience />
         </div>
       </section>
 
-      <section class="min-h-screen flex flex-col gap-16">
+      <section class="flex flex-col gap-16">
         <div class="lg:col-span-6 relative">
           <div class="absolute -top-14 2xl:-top-28" id="skillset" />
           <Skillset />
         </div>
       </section>
 
-      <footer class="flex flex-col gap-16">
+      <footer class="flex flex-col gap-16 xl:pt-16">
         <Links />
 
         <aside class="px-16 pt-16 hidden xl:block 2xl:hidden font-inter text-sm">
