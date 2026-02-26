@@ -15,7 +15,7 @@
       {
         iteration: 'miesięcznie',
         name: 'Obsługa 1 pracownika',
-        note: 'Przy większej liczbie pracowników cena jest ustalana indywidualnie',
+        note: 'Przy większej liczbie pracowników cena może ulec rabatowi',
         price: 150
       },
       {

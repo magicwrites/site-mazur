@@ -248,7 +248,7 @@
 
   <Sheet {header} footer="4 / 4">
     <div class="flex flex-col gap-12">
-      <section class="flex flex-col gap-6">
+      <section class="flex flex-col gap-5">
         <h3 class="text-xl font-bold font-inter">Additional information</h3>
 
         <Subheader tag="div" about="Date of birth">July 15, 1988</Subheader>
