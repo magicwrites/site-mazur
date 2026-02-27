@@ -18,17 +18,20 @@
 
 <svelte:head>
   <title>Marcelina Mazur</title>
-  <meta name="description" content={texts.meta.description} />
-
   <link rel="canonical" href="https://mazur.site/marcelina" />
 
   <meta name="description" content={texts.meta.description} />
-  <meta property="og:description" content={texts.meta.description} />
-  <meta property="twitter:description" content={texts.meta.description} />
 
   <meta property="og:title" content="Marcelina Mazur" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content={texts.meta.description} />
   <meta property="og:url" content="https://mazur.site/marcelina" />
+  <meta property="og:image" content="https://mazur.site/512-marcelina.webp" />
+
   <meta property="twitter:title" content="Marcelina Mazur" />
+  <meta property="twitter:description" content={texts.meta.description} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mazur.site/512-marcelina.png" />
 </svelte:head>
 
 <section class="hidden print:block">
@@ -48,8 +51,8 @@
       class={cx(
         'order-2 xl:order-1',
         'flex flex-col gap-16 2xl:gap-32',
-        'py-16 xl:py-0 xl:pb-32',
-        'max-w-prose mx-auto xl:mx-0 xl:max-w-none'
+        'max-w-prose xl:max-w-none',
+        'mx-auto xl:mx-0'
       )}
     >
       <section class="xl:min-h-screen flex flex-col 2xl:gap-16">
@@ -91,7 +94,8 @@
         'xl:order-2',
         'xl:sticky',
         'relative top-0 left-0 xl:left-auto xl:right-0',
-        'h-screen w-screen xl:w-auto'
+        'h-screen w-screen xl:w-auto',
+        'mb-16 xl:mb-0' // for the skewed decoration in mobile views
       )}
     >
       <div

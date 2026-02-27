@@ -17,17 +17,21 @@
 
 <svelte:head>
   <title>Maciej Mazur</title>
-  <meta name="description" content={texts.meta.description} />
 
   <link rel="canonical" href="https://mazur.site/maciej" />
 
   <meta name="description" content={texts.meta.description} />
-  <meta property="og:description" content={texts.meta.description} />
-  <meta property="twitter:description" content={texts.meta.description} />
 
   <meta property="og:title" content="Maciej Mazur" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content={texts.meta.description} />
   <meta property="og:url" content="https://mazur.site/maciej" />
+  <meta property="og:image" content="https://mazur.site/512-maciej.webp" />
+
   <meta property="twitter:title" content="Maciej Mazur" />
+  <meta property="twitter:description" content={texts.meta.description} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mazur.site/512-maciej.png" />
 </svelte:head>
 
 <section class="hidden print:block">
@@ -46,9 +50,9 @@
     <main
       class={cx(
         'order-2 xl:order-1',
-        'flex flex-col gap-16 2xl:gap-32',
-        'py-16 xl:py-0 xl:pb-32',
-        'max-w-prose mx-auto xl:mx-0 xl:max-w-none'
+        'flex flex-col gap-20 2xl:gap-32',
+        'max-w-prose xl:max-w-none',
+        'mx-auto xl:mx-0'
       )}
     >
       <section class="xl:min-h-screen flex flex-col 2xl:gap-16">
@@ -72,10 +76,10 @@
         </div>
       </section>
 
-      <footer class="flex flex-col gap-16 xl:pt-16">
+      <footer class="flex flex-col gap-32 py-16">
         <Links />
 
-        <aside class="px-8 xl:px-16 2xl:px-32 pt-16 font-inter text-sm">
+        <aside class="px-8 xl:px-16 2xl:px-32 font-inter text-sm text-center xl:text-left">
           <span>{texts.footer.call}</span>
           <span>{texts.footer.email}</span>
         </aside>
@@ -87,7 +91,8 @@
         'xl:order-2',
         'xl:sticky',
         'relative top-0 left-0 xl:left-auto xl:right-0',
-        'h-screen w-screen xl:w-auto'
+        'h-screen w-screen xl:w-auto',
+        'mb-16 xl:mb-0' // for the skewed decoration in mobile views
       )}
     >
       <div

@@ -14,6 +14,12 @@
 
 <svelte:head>
   <title>Mazur</title>
+
+  <meta property="og:image" content="https://mazur.site/favicon-512.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mazur.site/favicon-512.png" />
 </svelte:head>
 
 <section

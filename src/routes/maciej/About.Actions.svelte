@@ -1,7 +1,11 @@
-<script>
+<script lang="ts">
   import cx from 'classnames';
   import Language from '$components/Language.svelte';
   import Icon from '$components/Icon.svelte';
+  import * as about from './About.texts';
+
+  $: email = about.pl.links.find((l) => l.href.includes('mailto'))!.href;
+  $: linkedin = about.pl.links.find((l) => l.href.includes('linkedin'))!.href;
 </script>
 
 <section
@@ -13,11 +17,11 @@
   )}
 >
   <div class="flex gap-4 xl:-ml-[14px] 2xl:hidden">
-    <a href="mailto:maciej@mazur.site" target="_blank">
+    <a href={email} target="_blank">
       <Icon reactive name="fa-envelope" />
     </a>
 
-    <a href="https://www.linkedin.com/in/maciek-mazur-b922953a/" target="_blank">
+    <a href={linkedin} target="_blank">
       <Icon reactive name="fa-linkedin" />
     </a>
   </div>

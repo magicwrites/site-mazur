@@ -3,6 +3,7 @@
   import { en, pl } from './Skillset.Engineer.texts';
   import { isPolish } from '$src/stores/language';
   import { all } from '$lib/skills';
+  import MinorHeader from '$src/components/headers/Minor.svelte';
 
   const skills = [
     {
@@ -188,7 +189,7 @@
 
 <section class="flex flex-col gap-4">
   <header class="flex flex-col gap-2">
-    <h3 class="text-2xl 2xl:text-3xl font-inter font-bold">{texts.header}</h3>
+    <MinorHeader>{texts.header}</MinorHeader>
   </header>
 
   <p>{texts.about}</p>
