@@ -1,32 +1,35 @@
 <script lang="ts">
-  // @ts-ignore: there is no types package
+  // @ts-expect-error: no types for this package
   import Clipboard from 'svelte-clipboard';
-  import Icon from '$components/Icon.svelte';
   import { entries } from '$lib/accounts';
+  import FontAwesome from '$src/components/FontAwesome.svelte';
 
-  let copied: Symbol | null = null;
+  let copied: symbol | null = null;
 </script>
 
 <svelte:head>
   <title>Konto do wpłat</title>
+  <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
-<section class="p-8 flex flex-col gap-16 font-work mx-auto w-96">
+<section class="p-8 flex flex-col gap-16 mx-auto w-96">
   <main class="flex flex-col gap-8">
-    <h2 class="text-3xl">Czas na przelew?</h2>
+    <h1 class="text-3xl font-bold uppercase -ml-[0.5px]">Rachunki</h1>
 
     <div class="flex flex-col gap-8">
       {#each entries as entry}
-        <section class="flex flex-col gap-4">
-          <div class="font-medium">{entry.title}</div>
+        <section class="flex flex-col gap-4 pb-8">
+          <h2 class="text-xl font-bold font-inter">{entry.title}</h2>
           <section>
             <div class="flex flex-col gap-4">
               {#each entry.accounts as account}
                 <div class="flex items-center justify-between">
-                  <header>
-                    <div>{account.title}</div>
-                    <div class="font-nunito text-xs">
-                      {account.number}
+                  <header class="flex flex-col gap-1">
+                    <h3 class="font-bold font-inter">{account.title}</h3>
+                    <div class="font-mono text-xs">
+                      {@html account.number.includes('PL')
+                        ? account.number
+                        : '&nbsp;&nbsp;&nbsp;' + account.number}
                     </div>
                   </header>
 
@@ -36,7 +39,7 @@
                     on:copy={() => (copied = account.id)}
                   >
                     <button on:click={copy}>
-                      <Icon name={copied === account.id ? 'fas fa-check' : 'fas fa-copy'} />
+                      <FontAwesome iconName={copied === account.id ? 'fa-check' : 'fa-copy'} />
                     </button>
                   </Clipboard>
                 </div>

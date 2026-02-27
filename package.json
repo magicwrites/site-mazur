@@ -2,8 +2,8 @@
   "name": "site-mazur",
   "version": "1.0.0",
   "engines": {
-    "node": ">=20.0.0 <21.0.0",
-    "npm": ">=8.1.0"
+    "node": ">=20.12.0 <21.13.0",
+    "npm": ">=10.5.0"
   },
   "scripts": {
     "dev": "vite dev",
@@ -12,9 +12,17 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/inter-tight": "^5.2.7",
+    "@fontsource/spectral": "^5.2.8",
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "1.0.0-next.539",
     "@typescript-eslint/eslint-plugin": "^5.27.0",

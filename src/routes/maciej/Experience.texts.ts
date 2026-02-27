@@ -1,8 +1,10 @@
+const years = new Date().getFullYear() - 2010;
+
 export const pl = {
   description: {
     header: 'Doświadczenie',
     paragraphs: [
-      `Od ponad <strong>14 lat</strong> pracuję nad rozwojem oprogramowania.`,
+      `Od ponad <strong>${years} lat</strong> pracuję nad rozwojem oprogramowania.`,
 
       `Unikam stagnacji. Zdobywam doświadczenie w różnych technologiach, branżach i kulturach pracy. Dzięki temu regularne poszerzam wachlarz moich umiejętności, utrwalam swoją zdolność do szybkiej adaptacji i wyłamuję się z przestarzałych nawyków.`,
 
@@ -47,7 +49,7 @@ export const en = {
   description: {
     header: 'Experience',
     paragraphs: [
-      `I have spent over <strong>14 years</strong> working as a software developer.`,
+      `I have spent over <strong>${years} years</strong> working as a software developer.`,
 
       `I thrive in change. My experience originates from various technology stacks, business applications and work cultures. Such an exposure enables a continued growth for me as an engineer, maintains my ability to adapt quickly and helps to break out of outdated habits.`,
 

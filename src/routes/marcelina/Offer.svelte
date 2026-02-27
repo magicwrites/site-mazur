@@ -1,4 +1,5 @@
 <script>
+  import cx from 'classnames';
   import { isPolish } from '$src/stores/language';
   import { pl, en } from './Offer.content';
   import Point from '$components/Point.svelte';
@@ -6,9 +7,11 @@
   $: texts = $isPolish ? pl : en;
 </script>
 
-<section class="xl:grid xl:grid-cols-11 px-8 2xl:px-0 flex flex-col gap-8 xl:gap-0">
-  <section class="xl:col-span-5 flex flex-col gap-8">
-    <h2 class="text-3xl -ml-0.5">{texts.analysis.title}</h2>
+<section class={cx('px-8 xl:px-16 2xl:px-32', 'flex flex-col gap-8')}>
+  <section class="2xl:col-span-5 flex flex-col gap-8">
+    <h2 class="text-3xl 2xl:text-5xl font-inter font-bold uppercase">
+      {texts.analysis.title}
+    </h2>
 
     <div class="flex flex-col gap-4">
       {#each texts.analysis.paragraphs as paragraph}
@@ -19,8 +22,10 @@
 
   <div />
 
-  <section class="xl:col-span-5 flex flex-col gap-8">
-    <h2 class="text-3xl -ml-0.5">{texts.proposal.title}</h2>
+  <section class="2xl:col-span-5 flex flex-col gap-8">
+    <h3 class="text-2xl 2xl:text-3xl font-inter font-bold">
+      {texts.proposal.title}
+    </h3>
 
     <div class="flex flex-col gap-4">
       {#each texts.proposal.paragraphs as paragraph}
@@ -28,13 +33,13 @@
       {/each}
     </div>
 
-    <ul class="flex flex-col gap-2">
+    <ul class="flex flex-col sm:gap-2">
       {#each texts.proposal.points as point, i}
         <li>
           <Point first={i === 0}>
             <div>{point.text}</div>
             {#if point.more}
-              <div class="text-xs">{point.more}</div>
+              <div class="font-inter text-sm sm:pb-2">{point.more}</div>
             {/if}
           </Point>
         </li>

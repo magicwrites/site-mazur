@@ -1,17 +1,31 @@
 <script>
-	export let name = 'fas fa-arrow-right';
-	export let reactive = false;
-	export let active = false;
-	export let light = false;
+  import cx from 'classnames';
+  import FontAwesome from './FontAwesome.svelte';
 
-	let text = `text-gray-${light ? 400 : 700}`;
-	let background = `bg-gray-${light ? 50 : 100}`;
+  export let name = 'fas fa-arrow-right';
+  export let reactive = false;
+  export let active = false;
+
+  const text = 'text-neutral-700';
+  const background = 'bg-white';
+
+  const activeText = 'text-white';
+  const activeBackground = 'bg-neutral-700';
+
+  const reactiveClasses = 'hover:bg-neutral-700 hover:text-white';
 </script>
 
 <div
-	class="flex items-center justify-center w-10 h-10 rounded-full transition {active
-		? 'bg-gray-700 text-white'
-		: `${background} ${text}`} {reactive ? 'hover:bg-gray-700 hover:text-white' : ''}"
+  class={cx(
+    'flex items-center justify-center',
+    'w-12 h-12',
+    'rounded-full',
+    'transition',
+    active ? `${activeBackground} ${activeText}` : `${background} ${text}`,
+    {
+      [reactiveClasses]: reactive && !active
+    }
+  )}
 >
-	<i class={name} />
+  <FontAwesome iconName={name} />
 </div>

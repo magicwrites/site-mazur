@@ -1,5 +1,12 @@
 export const pl = {
-  job: 'programista, architekt oprogramownia',
+  job: 'Programista, architekt oprogramownia',
+  meta: {
+    description: 'Programista, architekt oprogramowania. Od ponad 15 lat tworzę interfejsy użytkownika dla aplikacji internetowych.'
+  },
+  footer: {
+    call: 'Masz temat do dyskusji? Zapraszam na',
+    email: 'maciej@mazur.site'
+  },
   links: [
     {
       label: 'Napisz do mnie:',
@@ -15,7 +22,14 @@ export const pl = {
 };
 
 export const en = {
-  job: 'software developer, architect',
+  job: 'Software developer, architect',
+  meta: {
+    description: 'Software developer, architect. For over 15 years I have been shaping user interfaces for web applications.'
+  },
+  footer: {
+    call: 'Have an idea to talk through? Reach me at',
+    email: 'maciej@mazur.site'
+  },
   links: [
     {
       label: 'Write to me:',

@@ -3,6 +3,7 @@
   import { en, pl } from './Skillset.Engineer.texts';
   import { isPolish } from '$src/stores/language';
   import { all } from '$lib/skills';
+  import MinorHeader from '$src/components/headers/Minor.svelte';
 
   const skills = [
     {
@@ -186,20 +187,24 @@
   $: texts = $isPolish ? pl : en;
 </script>
 
-<section class="flex flex-col gap-8">
+<section class="flex flex-col gap-4">
   <header class="flex flex-col gap-2">
-    <h4 class="text-3xl -ml-0.5">{texts.header}</h4>
-    <p>{texts.about}</p>
+    <MinorHeader>{texts.header}</MinorHeader>
   </header>
 
-  <section class="text-xs leading-6">
+  <p>{texts.about}</p>
+
+  <section class="text-sm leading-8 font-inter">
     {#each skills as skill, i}
-      <span class={cx({ 'font-semibold text-sm': skill.bold })}>{skill.name}</span
-      >{#if i !== skills.length - 1}<span class="text-neutral-400 text-sm select-none"
+      <span class={cx({ 'font-medium text-base': skill.bold })}>{skill.name}</span
+      >{#if i !== skills.length - 1}<span class="text-neutral-400 text-base select-none"
           >&nbsp;&bull;
         </span>{/if}
-    {/each}<a href="/curriculum-vitae-maciej.pdf" target="_blank" class="whitespace-nowrap"
-      >... {texts.more}</a
+    {/each}<span>... </span><a
+      href="/curriculum-vitae-maciej.pdf"
+      target="_blank"
+      class="whitespace-nowrap underline underline-offset-8 hover:text-black transition-all"
+      >{texts.more}</a
     >
   </section>
 </section>

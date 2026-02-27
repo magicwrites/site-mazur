@@ -14,9 +14,17 @@
 
 <svelte:head>
   <title>Mazur</title>
+
+  <meta property="og:image" content="https://mazur.site/favicon-512.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mazur.site/favicon-512.png" />
 </svelte:head>
 
-<section class="relative min-h-screen flex flex-col sm:mx-auto sm:max-w-[380px] lg:max-w-full">
+<section
+  class="relative min-h-screen flex flex-col sm:mx-auto sm:max-w-[380px] lg:max-w-full font-inter"
+>
   <main class={cx('lg:grow lg:grid lg:grid-cols-9', 'text-neutral-700', 'order-2 lg:order-1')}>
     <div />
 
@@ -29,7 +37,7 @@
     >
       <header class="flex gap-8">
         <Supertitle>
-          <h1>Mazur</h1>
+          <h1 class="font-bold text-6xl text-neutral-800">Mazur</h1>
         </Supertitle>
       </header>
 
@@ -47,15 +55,6 @@
           </Button>
         </a>
       </section>
-
-      <!-- <footer class="flex flex-col gap-4 mt-4 xl:mt-8">
-        <a class="mr-auto" href="https://www.eleganckiefaktury.pl" target="_blank">
-          <Button>
-            <div slot="title">{texts.invoices.title}</div>
-            <div slot="about">{texts.invoices.about}</div>
-          </Button>
-        </a>
-      </footer> -->
     </nav>
 
     <div />
