@@ -16,7 +16,7 @@
       };
 </script>
 
-<section class="px-8 xl:px-16 2xl:p-32 2xl:pt-0 flex flex-col gap-16">
+<section class="px-8 xl:px-16 2xl:p-32 2xl:py-0 flex flex-col gap-16">
   <header class="hidden xl:flex flex-col gap-2">
     <h1
       class={cx(

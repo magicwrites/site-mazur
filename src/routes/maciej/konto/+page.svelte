@@ -9,7 +9,6 @@
 
 <svelte:head>
   <title>Konto do wpłat</title>
-
   <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 

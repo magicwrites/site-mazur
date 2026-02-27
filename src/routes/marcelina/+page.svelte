@@ -7,18 +7,28 @@
   import Offer from './Offer.svelte';
   import CurriculumVitae from './curriculum-vitae/Document.svelte';
   import Experience from './Experience.svelte';
+  import FontAwesome from '$src/components/FontAwesome.svelte'; // @ts-expect-error: correct path
+  import bg from '$assets/marcelina-chair.webp';
 
   import { en, pl } from './About.texts';
   import { isPolish } from '$src/stores/language';
 
   $: texts = $isPolish ? pl : en;
-  import bg from '$assets/marcelina-desk.webp';
-  import FontAwesome from '$src/components/FontAwesome.svelte';
 </script>
 
 <svelte:head>
   <title>Marcelina Mazur</title>
-  <meta name="description" content={texts.job} />
+  <meta name="description" content={texts.meta.description} />
+
+  <link rel="canonical" href="https://mazur.site/marcelina" />
+
+  <meta name="description" content={texts.meta.description} />
+  <meta property="og:description" content={texts.meta.description} />
+  <meta property="twitter:description" content={texts.meta.description} />
+
+  <meta property="og:title" content="Marcelina Mazur" />
+  <meta property="og:url" content="https://mazur.site/marcelina" />
+  <meta property="twitter:title" content="Marcelina Mazur" />
 </svelte:head>
 
 <section class="hidden print:block">
@@ -37,7 +47,7 @@
     <main
       class={cx(
         'order-2 xl:order-1',
-        'flex flex-col gap-16',
+        'flex flex-col gap-16 2xl:gap-32',
         'py-16 xl:py-0 xl:pb-32',
         'max-w-prose mx-auto xl:mx-0 xl:max-w-none'
       )}
@@ -66,9 +76,11 @@
       <footer class="flex flex-col gap-16 xl:pt-16">
         <Links />
 
-        <aside class="px-16 hidden 2xl:hidden font-inter text-sm xl:flex xl:gap-2 items-center">
-          <span>Masz temat do dyskusji? Zapraszam do kontaktu:</span>
-          <span>+ 48 697 952 558</span>
+        <aside
+          class="p-8 xl:px-16 2xl:px-32 font-inter text-sm flex flex-col xl:flex-row gap-2 items-center"
+        >
+          <span>{texts.footer.call}</span>
+          <span>{texts.footer.phone}</span>
           <FontAwesome iconName="fa-whatsapp" />
         </aside>
       </footer>

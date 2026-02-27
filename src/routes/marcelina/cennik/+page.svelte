@@ -33,7 +33,7 @@
 
 <svelte:head>
   <title>Marcelina Mazur - cennik usług</title>
-  <meta name="description" content="Cennik usług" />
+  <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 <section class="m-8 my-24 xl:m-24 print:m-0 font-spectral text-black">

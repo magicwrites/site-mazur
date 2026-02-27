@@ -25,6 +25,13 @@ export const pl = {
       target: '_blank'
     }
   ],
+  meta: {
+    description: 'Księgowa. Od ponad dekady pomagam mniejszym działalnościom i spółkom odnaleźć się w zawiłym świecie przepisów.'
+  },
+  footer: {
+    call: 'Czas zadziałać? Czekam pod numerem',
+    phone: '+ 48 697 952 558'
+  },
   paragraphs: [
     'Moja przygoda z księgowością rozpoczęła się {years} lat temu i trwa do dziś. Swoje doświadczenie zdobywałam w dużej firmie z sektora IT oraz prowadząc księgowość mniejszych, jednoosobowych działalności gospodarczych operujących w&nbsp;ramach różnych branż.',
     'Na co dzień pomagam moim klientom odnaleźć się w świecie zawiłych i&nbsp;skomplikowanych przepisów. Czerpię ogromną satysfakcję, gdy moją wiedzę mogę wykorzystać do rozwiązywania realnych problemów przedsiębiorców. Cenię sobie kontakt z klientem, wspólne omawianie problemu i&nbsp;indywidualne podejście do każdego tematu.'
@@ -33,6 +40,13 @@ export const pl = {
 
 export const en = {
   job: 'Accountant',
+  meta: {
+    description: 'Accountant. For over a decade I help small businesses and companies navigate the complex world of regulations.'
+  },
+  footer: {
+    call: 'Time to act? I am waiting for your call at',
+    phone: '+ 48 697 952 558'
+  },
   links: [
     {
       label: "Let's talk:",

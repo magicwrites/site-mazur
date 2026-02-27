@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Maciej Mazur - CV</title>
-  <meta name="description" content="Maciej Mazur - curriculum vitae" />
+  <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 <Document />

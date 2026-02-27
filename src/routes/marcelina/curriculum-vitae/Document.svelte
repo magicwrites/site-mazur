@@ -1,16 +1,20 @@
-<script>
+<script lang="ts">
   import cx from 'classnames';
   import Sheet from '$components/Sheet.svelte';
+  import Sheets from '$components/Sheets.svelte';
   import Subheader from './Document.Subheader.svelte';
-  // import Skills from './Document.Skills.svelte';
-  // import Role from './Document.Role.svelte';
 
   const header = 'Curriculum Vitae';
-  const disclaimer = `<div class="text-xs text-left">Wyrażam zgodę na przetwarzanie danych osobowych zawartych w moich dokumentach aplikacyjnych na potrzeby przyszłych rekrutacji. Przyjmuję do wiadomości, że zgodę mogę wycofać w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania przed wycofaniem zgody<br /></div>`;
+
+  const disclaimerHtml = `<div class="text-xs text-left">{text}<br /></div>`;
+  const disclaimerText = `Wyrażam zgodę na przetwarzanie danych osobowych zawartych w moich dokumentach aplikacyjnych na potrzeby przyszłych rekrutacji. Przyjmuję do wiadomości, że zgodę mogę wycofać w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania przed wycofaniem zgody.`;
+  const disclaimer = disclaimerHtml.replace('{text}', disclaimerText);
+
+  const getFooter = (page: number) => `${disclaimer}<div>${page} / 3</div>`;
 </script>
 
-<section class="m-8 my-24 xl:m-24 print:m-0 font-spectral text-black">
-  <Sheet {header} footer={`${disclaimer}<div>1 / 3</div>`}>
+<Sheets>
+  <Sheet {header} footer={getFooter(1)}>
     <div class="flex flex-col gap-12">
       <header class="font-inter flex flex-col gap-0.5">
         <h1 class="text-3xl font-bold uppercase -ml-[0.5px]">Marcelina Mazur</h1>
@@ -101,7 +105,7 @@
 
   <div class="break-after-page py-16 print:py-0" />
 
-  <Sheet {header} footer={`${disclaimer}<div>2 / 3</div>`}>
+  <Sheet {header} footer={getFooter(2)}>
     <div class="flex flex-col gap-12">
       <div class="flex flex-col gap-5">
         <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
@@ -197,7 +201,7 @@
 
   <div class="break-after-page py-16 print:py-0" />
 
-  <Sheet {header} footer={`${disclaimer}<div>3 / 3</div>`}>
+  <Sheet {header} footer={getFooter(3)}>
     <div class="flex flex-col gap-12">
       <section class="flex flex-col gap-3">
         <h3 class="text-xl font-bold font-inter">Szkolenia</h3>
@@ -244,4 +248,4 @@
       </section>
     </div>
   </Sheet>
-</section>
+</Sheets>

@@ -6,18 +6,28 @@
   import Actions from './About.Actions.svelte';
   import Links from './Links.svelte';
   import AboutMobile from './About.Mobile.svelte';
-  import CurriculumVitae from './curriculum-vitae/Document.svelte';
+  import CurriculumVitae from './curriculum-vitae/Document.svelte'; // @ts-expect-error: correct path
+  import bg from '$assets/maciej-golf.webp';
 
   import { en, pl } from './About.texts';
   import { isPolish } from '$src/stores/language';
 
   $: texts = $isPolish ? pl : en;
-  import bg from '$assets/maciej-golf.webp';
 </script>
 
 <svelte:head>
   <title>Maciej Mazur</title>
-  <meta name="description" content={texts.job} />
+  <meta name="description" content={texts.meta.description} />
+
+  <link rel="canonical" href="https://mazur.site/maciej" />
+
+  <meta name="description" content={texts.meta.description} />
+  <meta property="og:description" content={texts.meta.description} />
+  <meta property="twitter:description" content={texts.meta.description} />
+
+  <meta property="og:title" content="Maciej Mazur" />
+  <meta property="og:url" content="https://mazur.site/maciej" />
+  <meta property="twitter:title" content="Maciej Mazur" />
 </svelte:head>
 
 <section class="hidden print:block">
@@ -36,7 +46,7 @@
     <main
       class={cx(
         'order-2 xl:order-1',
-        'flex flex-col gap-16',
+        'flex flex-col gap-16 2xl:gap-32',
         'py-16 xl:py-0 xl:pb-32',
         'max-w-prose mx-auto xl:mx-0 xl:max-w-none'
       )}
@@ -65,9 +75,9 @@
       <footer class="flex flex-col gap-16 xl:pt-16">
         <Links />
 
-        <aside class="px-16 pt-16 hidden xl:block 2xl:hidden font-inter text-sm">
-          <span>Masz temat do dyskusji? Czekam na:</span>
-          <span>maciej@mazur.site</span>
+        <aside class="px-8 xl:px-16 2xl:px-32 pt-16 font-inter text-sm">
+          <span>{texts.footer.call}</span>
+          <span>{texts.footer.email}</span>
         </aside>
       </footer>
     </main>

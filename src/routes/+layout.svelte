@@ -11,4 +11,12 @@ The repository is open, so you should be able to check how I have cooked this th
   }
 </script>
 
+<svelte:head>
+  <meta property="og:image" content="https://mazur.site/favicon-512.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://mazur.site/favicon-512.png" />
+</svelte:head>
+
 <slot />

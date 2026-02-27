@@ -1,4 +1,5 @@
 <script>
+  import Sheets from '$components/Sheets.svelte';
   import Sheet from '$components/Sheet.svelte';
   import Subheader from './Document.Subheader.svelte';
   import Skills from './Document.Skills.svelte';
@@ -7,7 +8,7 @@
   const header = 'Curriculum Vitae';
 </script>
 
-<section class="m-8 my-24 xl:m-24 print:m-0 font-spectral text-black">
+<Sheets>
   <Sheet {header} footer="1 / 4">
     <div class="flex flex-col gap-12">
       <header class="font-inter flex flex-col gap-0.5">
@@ -264,4 +265,4 @@
       </section>
     </div>
   </Sheet>
-</section>
+</Sheets>
