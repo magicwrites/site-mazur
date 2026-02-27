@@ -50,7 +50,7 @@
     <main
       class={cx(
         'order-2 xl:order-1',
-        'flex flex-col gap-16 2xl:gap-32',
+        'flex flex-col gap-20 2xl:gap-32',
         'max-w-prose xl:max-w-none',
         'mx-auto xl:mx-0'
       )}
@@ -76,7 +76,7 @@
         </div>
       </section>
 
-      <footer class="flex flex-col gap-16 xl:pt-16">
+      <footer class="flex flex-col gap-32 py-16">
         <Links />
 
         <aside
