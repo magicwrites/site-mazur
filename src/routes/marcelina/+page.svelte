@@ -20,16 +20,16 @@
   <title>Marcelina Mazur</title>
   <link rel="canonical" href="https://mazur.site/marcelina" />
 
-  <meta name="description" content={texts.meta.description} />
+  <meta name="description" content={pl.meta.description} />
 
   <meta property="og:title" content="Marcelina Mazur" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content={texts.meta.description} />
+  <meta property="og:description" content={pl.meta.description} />
   <meta property="og:url" content="https://mazur.site/marcelina" />
   <meta property="og:image" content="https://mazur.site/512-marcelina.webp" />
 
   <meta property="twitter:title" content="Marcelina Mazur" />
-  <meta property="twitter:description" content={texts.meta.description} />
+  <meta property="twitter:description" content={pl.meta.description} />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="https://mazur.site/512-marcelina.png" />
 </svelte:head>
