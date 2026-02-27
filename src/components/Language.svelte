@@ -1,5 +1,6 @@
 <script>
   import cx from 'classnames';
+  import { noop } from 'svelte/internal';
   import { isPolish, isEnglish, toggle } from '../stores/language';
   import FontAwesome from './FontAwesome.svelte';
 
@@ -23,7 +24,7 @@
       'hover:text-neutral-700 cursor-pointer transition',
       $isPolish ? 'text-neutral-700' : 'text-neutral-400'
     )}
-    on:click={() => ($isPolish ? () => {} : toggle())}
+    on:click={() => ($isPolish ? noop() : toggle())}
   >
     <div class="hidden sm:block">polski</div>
     <div class="sm:hidden">PL</div>
@@ -36,7 +37,7 @@
       'hover:text-neutral-700 cursor-pointer transition',
       $isEnglish ? 'text-neutral-700' : 'text-neutral-400'
     )}
-    on:click={() => ($isEnglish ? () => {} : toggle())}
+    on:click={() => ($isEnglish ? noop() : toggle())}
   >
     <div class="hidden sm:block">english</div>
     <div class="sm:hidden">EN</div>

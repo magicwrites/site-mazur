@@ -4,7 +4,7 @@
   import { isPolish } from '$src/stores/language';
   import { pl, en } from './About.texts';
 
-  const parse = (texts: any) => {
+  const parse = (texts: { paragraphs: string[] }) => {
     const years = new Date().getFullYear() - 2013;
     const paragraphs = texts.paragraphs.map((p: string) => p.replace('{years}', years.toString()));
 

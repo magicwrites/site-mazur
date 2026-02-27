@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let tag: string = '';
-  export let about: string = '';
+  export let tag = '';
+  export let about = '';
 </script>
 
 <header class="font-inter flex flex-col gap-1.5">

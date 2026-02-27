@@ -4,7 +4,7 @@ export const pl = {
     {
       label: 'Porozmawiajmy:',
       text: '+ 48 697 952 558',
-      href: 'tel:+48697952558',
+      href: 'tel:+48697952558'
     },
     {
       label: 'Również poprzez:',
@@ -23,7 +23,7 @@ export const pl = {
       href: 'https://www.facebook.com/profile.php?id=61571217423938',
       icon: 'fab fa-facebook mr-0.5',
       target: '_blank'
-    },
+    }
   ],
   paragraphs: [
     'Moja przygoda z księgowością rozpoczęła się {years} lat temu i trwa do dziś. Swoje doświadczenie zdobywałam w dużej firmie z sektora IT oraz prowadząc księgowość mniejszych, jednoosobowych działalności gospodarczych operujących w&nbsp;ramach różnych branż.',
@@ -37,12 +37,12 @@ export const en = {
     {
       label: "Let's talk:",
       text: '+ 48 697 952 558',
-      href: 'tel:+48697952558',
+      href: 'tel:+48697952558'
     },
     {
       text: 'WhatsApp',
       label: 'Also on:',
-      href: 'https://wa.me/48697952558',
+      href: 'https://wa.me/48697952558'
     },
     {
       label: 'Write to me:',
@@ -55,7 +55,7 @@ export const en = {
       href: 'https://www.facebook.com/profile.php?id=61571217423938',
       icon: 'fab fa-facebook mr-0.5',
       target: '_blank'
-    },
+    }
   ],
   paragraphs: [
     'My adventure with the vocation started in 2013 and is ongoing. Most of my experience comes from working at a sizable company counting hundreds of employees. Additionally I provide accounting services for sole proprietorship.',

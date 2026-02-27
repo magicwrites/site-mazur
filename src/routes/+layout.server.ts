@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 
-const subdomains = ['maciej', 'marcelina', 'helena', 'mateusz'];
+const subdomains = ['maciej', 'marcelina'];
 const PERMANENT_REDIRECT_CODE = 308;
 
 export const load = ({ url }) => {

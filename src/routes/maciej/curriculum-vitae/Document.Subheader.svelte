@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let tag: string = 'h4';
+  export let tag = 'h4';
   export let about: string;
 </script>
 

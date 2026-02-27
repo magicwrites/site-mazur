@@ -1,6 +1,4 @@
 <script lang="ts">
-  import cx from 'classnames';
-
   import { en, pl } from './Links.texts';
   import { isPolish } from '$src/stores/language';
   import Button from '$src/components/buttons/Line.svelte';

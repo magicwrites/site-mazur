@@ -49,15 +49,6 @@
           </Button>
         </a>
       </section>
-
-      <!-- <footer class="flex flex-col gap-4 mt-4 xl:mt-8">
-        <a class="mr-auto" href="https://www.eleganckiefaktury.pl" target="_blank">
-          <Button>
-            <div slot="title">{texts.invoices.title}</div>
-            <div slot="about">{texts.invoices.about}</div>
-          </Button>
-        </a>
-      </footer> -->
     </nav>
 
     <div />

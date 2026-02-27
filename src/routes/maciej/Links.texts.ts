@@ -1,7 +1,7 @@
 export const pl = {
   app: {
     title: 'Eleganckie faktury',
-    about: 'twórca i właściciel aplikacji'
+    about: 'autor i właściciel aplikacji'
   },
   us: {
     title: 'Mazur',
@@ -20,7 +20,7 @@ export const pl = {
 export const en = {
   app: {
     title: 'Elegant Invoices',
-    about: 'application owner and creator'
+    about: 'application author and owner'
   },
   us: {
     title: 'Mazur',

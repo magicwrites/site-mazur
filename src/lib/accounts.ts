@@ -51,11 +51,11 @@ export const company = [
 
 export const entries = [
   {
-    title: 'środki prywatne',
+    title: 'Prywatnie',
     accounts: personal
   },
   {
-    title: 'środki firmowe',
+    title: 'Na firmę',
     accounts: company
   }
 ];
