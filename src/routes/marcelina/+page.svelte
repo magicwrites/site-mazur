@@ -8,7 +8,7 @@
   import CurriculumVitae from './curriculum-vitae/Document.svelte';
   import Experience from './Experience.svelte';
   import FontAwesome from '$src/components/FontAwesome.svelte'; // @ts-expect-error: correct path
-  import bg from '$assets/marcelina-chair.webp';
+  import bg from '$assets/marcelina-desk.webp';
 
   import { en, pl } from './About.texts';
   import { isPolish } from '$src/stores/language';
