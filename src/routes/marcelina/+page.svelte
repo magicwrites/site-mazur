@@ -18,14 +18,14 @@
 
 <svelte:head>
   <title>Marcelina Mazur</title>
-  <link rel="canonical" href="https://mazur.site/marcelina" />
+  <link rel="canonical" href="https://www.mazur.site/marcelina" />
 
   <meta name="description" content={pl.meta.description} />
 
   <meta property="og:title" content="Marcelina Mazur" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content={pl.meta.description} />
-  <meta property="og:url" content="https://mazur.site/marcelina" />
+  <meta property="og:url" content="https://www.mazur.site/marcelina" />
   <meta property="og:image" content="https://mazur.site/512-marcelina.webp" />
 
   <meta property="twitter:title" content="Marcelina Mazur" />

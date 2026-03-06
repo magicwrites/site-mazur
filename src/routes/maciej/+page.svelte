@@ -18,14 +18,14 @@
 <svelte:head>
   <title>Maciej Mazur</title>
 
-  <link rel="canonical" href="https://mazur.site/maciej" />
+  <link rel="canonical" href="https://www.mazur.site/maciej" />
 
   <meta name="description" content={texts.meta.description} />
 
   <meta property="og:title" content="Maciej Mazur" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content={texts.meta.description} />
-  <meta property="og:url" content="https://mazur.site/maciej" />
+  <meta property="og:url" content="https://www.mazur.site/maciej" />
   <meta property="og:image" content="https://mazur.site/512-maciej.webp" />
 
   <meta property="twitter:title" content="Maciej Mazur" />

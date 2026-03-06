@@ -14,9 +14,9 @@
 
 <svelte:head>
   <title>Mazur</title>
-  <link rel="canonical" href="https://mazur.site" />
+  <link rel="canonical" href="https://www.mazur.site" />
 
-  <meta property="og:url" content="https://mazur.site" />
+  <meta property="og:url" content="https://www.mazur.site" />
   <meta property="og:image" content="https://mazur.site/favicon-512.png" />
   <meta property="og:type" content="website" />
 
