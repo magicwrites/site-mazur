@@ -4,6 +4,7 @@
   import Subheader from './Document.Subheader.svelte';
   import Skills from './Document.Skills.svelte';
   import Role from './Document.Role.svelte';
+  import Qr from '$src/components/Qr.svelte';
 
   const header = 'Curriculum Vitae';
 </script>
@@ -22,32 +23,38 @@
         <div class="flex flex-col gap-5">
           <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
             <div class="xl:col-span-2 print:col-span-2">
-              <Subheader tag="h4" about="Remote for Gdańsk, Poland">Atlassian</Subheader>
+              <Subheader tag="h4" about="Remotely: Gdańsk, Poland">Atlassian</Subheader>
             </div>
 
             <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
-              <Subheader tag="h5" about="2023 - now">Senior frontend developer</Subheader>
+              <Subheader tag="h5" about="2023 - 2026">Senior frontend developer</Subheader>
 
               <Role>
-                <p>
-                  As a data-center team member I am responsible for the accessibility, security and
-                  compliance aspects for the on-premise Jira variant. I modernise the application
-                  and ensure smooth operations for our enterprise customers while accelerating the
-                  company mission of evolution towards the cloud setup. I leverage AI tools to power
-                  up my work.
-                </p>
+                <section class="flex flex-col gap-3">
+                  <p>
+                    As a data-center team member I take care of accessibility, security and
+                    compliance aspects of the <span class="whitespace-nowrap">on-premise</span> Jira
+                    variant. I leverage AI tools to power up my work.
+                  </p>
+                  <p>
+                    I build dark theme feature, realign our technical stack by reworking vue
+                    features into react, integrate software bill of materials audits into frontend
+                    build process and modernise the setup itself to rely on webpack. I support yarn
+                    workspaces as a centralisation effort and kickstart react 18 to 19 upgrade.
+                  </p>
+                </section>
               </Role>
               <Skills>
                 java server pages, on-premise software, javascript, typescript, jQuery, backboneJS,
                 various template engines, react, vue, multiple long living release branches,
-                backporting, accessibility, security, AI powered work
+                backporting, accessibility, security, gulp, grunt, webpack
               </Skills>
             </div>
           </article>
 
           <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
             <div class="xl:col-span-2 print:col-span-2">
-              <Subheader tag="h4" about="Remotely for Malta">Casumo</Subheader>
+              <Subheader tag="h4" about="Remotely: Malta">Casumo</Subheader>
             </div>
 
             <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
@@ -78,8 +85,8 @@
                 <p>
                   Member of a team responsible for compliance and security concerns. KYC, AML and
                   player management functionalities mostly on the backoffice system. Pushing
-                  migration of knockoutJS based tech stack to the modern react counterpart. Drove
-                  and delivered an initiative to overhaul the entirety of the KYC feature.
+                  migration of knockoutJS based tech stack to the modern react counterpart. Planned
+                  and executed an overhaul of the entire KYC feature.
                 </p>
               </Role>
               <Skills>
@@ -101,7 +108,7 @@
         <div class="flex flex-col gap-5">
           <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
             <div class="xl:col-span-2 print:col-span-2">
-              <Subheader tag="h4" about="On site in Gliwice, Poland">Future-Processing</Subheader>
+              <Subheader tag="h4" about="On site: Gliwice, Poland">Future-Processing</Subheader>
             </div>
 
             <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
@@ -144,7 +151,7 @@
 
           <article class="grid xl:grid-cols-7 print:grid-cols-7 gap-4">
             <div class="xl:col-span-2 print:col-span-2">
-              <Subheader tag="h4" about="On site in Olkusz, Poland">Goodpoint</Subheader>
+              <Subheader tag="h4" about="On site: Olkusz, Poland">Goodpoint</Subheader>
             </div>
 
             <div class="xl:col-span-5 print:col-span-5 flex flex-col gap-3">
@@ -193,9 +200,9 @@
       <section class="flex flex-col gap-3">
         <p>
           <strong>Vast experience with modern javascript libraries and tooling</strong> such as vue,
-          react, svelte or original angular 1.6. I am familiar with state management systems such as
-          redux, redux sagas, redux toolkit or vuex and principles behind those. I can also be a bit
-          nostalgic about the older libraries such as knockoutJS or backboneJS.
+          react, svelte or angular in both original v1.6 and later 2+ variants. I am familiar with state
+          management systems such as redux, redux sagas, redux toolkit or vuex and principles behind
+          those. I can also be a bit nostalgic about the older libraries such as knockoutJS or backboneJS.
         </p>
         <p>
           <strong>Experience with design systems</strong>. I have relied on external UI concepts
@@ -248,17 +255,46 @@
   <div class="break-after-page py-16 print:py-0" />
 
   <Sheet {header} footer="4 / 4">
-    <div class="flex flex-col gap-12">
+    <div class="flex flex-col gap-16">
       <section class="flex flex-col gap-5">
-        <h3 class="text-xl font-bold font-inter">Additional information</h3>
+        <h3 class="col-span-2 text-xl font-bold font-inter">See my work in action</h3>
+        <p>
+          In 2021 I have built an invoice issuing application for my own needs. Nowadays it is
+          maturing into a full-fledged SaaS solution for basic invoicing needs.
+        </p>
+
+        <div class="grid grid-cols-2 gap-5 gap-x-12 items-start">
+          <Skills
+            >It integrates payments provider and KSeF. Is built with svelte, tailwindcss,
+            typescript. Relies on vercel, github and npm packages.</Skills
+          >
+          <div class="flex justify-between items-center">
+            <Subheader tag="div" about="Personal project">https://eleganckiefaktury.pl</Subheader>
+
+            <div class="w-8 h-8">
+              <Qr url="https://www.eleganckiefaktury.pl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-5 gap-x-12">
+        <h3 class="col-span-2 text-xl font-bold font-inter">Additional information</h3>
 
         <Subheader tag="div" about="Date of birth">July 15, 1988</Subheader>
-        <Subheader tag="div" about="Residence">Gliwice, Poland</Subheader>
+
+        <div class="flex justify-between items-center">
+          <Subheader tag="div" about="Personal website">https://mazur.site/maciej</Subheader>
+          <div class="w-8 h-8">
+            <Qr url="https://www.mazur.site/maciej" />
+          </div>
+        </div>
+
         <Subheader tag="div" about="Timezone">Central European Time</Subheader>
         <Subheader tag="div" about="Contact e-mail">maciej@mazur.site</Subheader>
-        <Subheader tag="div" about="Personal website">https://maciej.mazur.site</Subheader>
+        <Subheader tag="div" about="Residence">Gliwice, Poland</Subheader>
 
-        <aside class="text-right pt-64 font-bold flex flex-col gap-8 opacity-10">
+        <aside class="col-span-2 text-right pt-64 font-bold flex flex-col gap-8 opacity-10">
           <div class="text-8xl">Thank you</div>
           <div class="text-2xl">for your time and consideration.</div>
         </aside>

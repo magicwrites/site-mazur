@@ -16,7 +16,8 @@ export const pl = {
       header: 'Atlassian',
       note: 'Zdalnie dla Gdańska od 2023',
       paragraphs: [
-        `Pracuję jako <strong>senior front-end developer</strong> dla globalnej marki dostarczającej oprogramowanie służące do zarządzania projektami. Dołączam do jednego z zespołów jira data-center gdzie zajmuję się modernizacją oraz zagadnieniami dostępności (accessibility).`
+        `Jako <strong>senior frontend developer</strong> w Data Center odpowiadam za kwestie dostępności, bezpieczeństwa oraz zgodności z prawem dla aplikacji Jira w wersji on-premise. Korzystam z narzędzi AI, stając się częścią rewolucji wydajności zachodzącej w branży IT.`,
+        `Buduję ciemny motyw dla aplikacji. Uspójniam architekturę systemu migrując skomplikowane funkcjonalności oparte o Vue do React'a. Wprowadzam "Software Bill of Materials" jako część procesu budowania frontendu oraz modernizuję samą konfigurację, przenosząc ją do webpack'a. Wprowadzam Yarn Workspaces w ramach centralizacji zależności i rozpoczynam proces migracji Reacta z wersji 18 do 19.`
       ]
     },
     {
@@ -61,7 +62,8 @@ export const en = {
       header: 'Atlassian',
       note: 'Remotely for Gdańsk, Poland since 2023',
       paragraphs: [
-        `I work as a <strong>senior front-end developer</strong> for a global brand tasked with delivery of software for project management related services. As a jira data-center team member I am responsible for the overall modernization effort and accessibility aspect of the product.`
+        `As a <strong>senior frontend developer</strong> in data-center I take care of accessibility, security and compliance aspects of the on-premise Jira variant. I leverage AI tools to power up my work.`,
+        `I build dark theme feature, realign our technical stack by reworking vue features into react, integrate software bill of materials audits into frontend build process and modernise the setup itself to rely on webpack. I support yarn workspaces as a centralisation effort and kickstart react 18 to 19 upgrade.`
       ]
     },
     {
